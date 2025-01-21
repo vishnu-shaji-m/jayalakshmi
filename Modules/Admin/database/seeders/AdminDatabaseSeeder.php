@@ -1,0 +1,23 @@
+<?php
+
+namespace Modules\Admin\Database\Seeders;
+
+use Illuminate\Database\Seeder;
+
+class AdminDatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $this->call([
+            AdminSeeder::class,
+            AdminSettingsSeeder::class,
+            BannerAndMetaTagSeeder::class,
+            HomeAboutSeeder::class,
+            SiteSettingsSeeder::class,
+            ContactEnquirySeeder::class,
+        ]);
+    }
+}

@@ -1,0 +1,54 @@
+//ERROR_PAGE
+/******************ERROR_PAGE**********************/
+.errorPage
+    #error
+        position: relative
+        padding: 10px 0px 40px
+        @media only screen and (min-width: 1200px)
+            padding: 10px 0px 100px
+        @media only screen and (min-width: 1441px)
+            padding: 10px 0px 150px
+    .page_cntnt
+        padding: 20px 0 
+        text-align: center
+        margin: auto
+        max-width: 380px
+        @media only screen and (min-width: 468px)
+            padding: 40px 0
+        @media only screen and (min-width: 1551px)
+            max-width: 495px
+    .imgBx
+        max-width: 330px
+        margin: auto
+        margin-bottom: 45px
+        @media only screen and (min-width: 1551px)
+            max-width: 455px
+        img
+            @include imgFit
+    .head_one
+        font-size: 25px
+        font-weight: 600
+        color: #231F20
+        margin-bottom: 15px
+        @media only screen and (min-width: 468px)
+            font-size: 30px
+    %errorTxt
+        font-size: 14px
+        line-height: 1.4
+        font-weight: 400
+        color: $text
+        margin-bottom: 10px
+        @media only screen and (min-width: 576px)
+            font-size: 15px
+            margin-bottom: 15px
+        @media only screen and (min-width: 992px)
+            font-size: 16px
+            margin-bottom: 20px
+    p
+        @extend %errorTxt
+    .cmnBtn
+        margin: auto
+        background-color: $basecolor
+        color: #fff
+        border-radius: 0px
+        width: 192px

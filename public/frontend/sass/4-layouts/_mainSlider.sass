@@ -1,0 +1,228 @@
+// MAINSLIDER
+/************** ******* **************/
+/************* MAINSLIDER *************/
+/************** ******* **************/
+#MainBanner
+    width: 100%
+    height: auto
+    overflow: hidden
+    position: relative
+    z-index: 0
+    background: #F8F8F8
+
+    .carousel-item
+        height: 550px
+        position: relative
+        z-index: 0
+        min-height: 500px
+        @media only screen and (min-width: 992px)
+            height: calc(100vh - 100px)
+        &::after
+            content: ''
+            position: absolute
+            z-index: -1
+            left: 0
+            right: 0
+            bottom: 0
+            width: 100%
+            pointer-events: none
+            height: 80%
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #000000 99.61%)
+
+        &.active
+            .contentBx
+                .subT, .mHead
+                    opacity: 1
+                    visibility: visible
+                    transform: translateY(0)
+
+    .container
+        height: 100%
+        display: flex
+        align-items: center
+        @media only screen and (min-width: 992px)
+            align-items: flex-end
+
+    .bgImgWrap
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: -1
+        top: 0
+        left: 0
+        aspect-ratio: 1920 / 1080
+        img, picture, video
+            position: absolute
+            top: 0
+            left: 0
+            @include imgFit
+        .dsk
+            display: none
+            @media only screen and (min-width: 768px)
+                display: block
+        .mob
+            display: block
+            @media only screen and (min-width: 768px)
+                display: none
+    .contentBx
+        width: 100%
+        height: auto
+        position: relative
+        z-index: 1
+        text-align: center
+        @media only screen and (min-width: 992px) 
+            text-align: left
+            max-width: 50%
+            padding-bottom: 240px
+        @media only screen and (min-width: 1200px)
+            max-width: 65%
+        .subT
+            color: $white
+            font-weight: 400
+            font-size: 14px
+            line-height: 1.2
+            position: relative
+            opacity: 0
+            visibility: hidden
+            transform: translateY(10px)
+            transition-delay: 1s
+            --lines: 1
+            transition: all 0.5s
+            @include clamp
+            @media only screen and (min-width: 1200px)
+                font-size: 16px
+            @media only screen and (min-width: 1441px)
+                font-size: 18px
+            @media only screen and (min-width: 1551px)
+                font-size: 22px
+            @media only screen and (min-width: 1661px)
+                font-size: 24px
+        .mHead
+            font-size: 24px
+            line-height: 1.2
+            font-weight: 500
+            font-family: $fontstack2
+            color: $white
+            margin-bottom: 10px
+            position: relative
+            transition: all 0.5s
+            --lines: 2
+            @include clamp
+            opacity: 0
+            visibility: hidden
+            transform: translateY(30px)
+            @media only screen and (min-width: 468px)
+                font-size: 28px
+            @media only screen and (min-width: 576px)
+                font-size: 32px
+            @media only screen and (min-width: 768px)
+                font-size: 38px
+                margin-bottom: 10px
+            @media only screen and (min-width: 992px)
+                font-size: 45px
+            @media only screen and (min-width: 1441px)
+                font-size: 55px
+                margin-bottom: 15px
+            @media only screen and (min-width: 1551px)
+                font-size: 70px
+            @media only screen and (min-width: 1661px)
+                font-size: 80px
+            span, strong, b
+                color: $basecolor
+
+        .cmnBtn
+            width: fit-content
+            padding: 0 15px
+            @media only screen and (max-width: 992px)
+                margin: auto
+    .cmContainer
+        position: relative
+        .indictorsFlx
+            position: absolute
+            right: 15px
+            height: fit-content
+            width: fit-content
+            bottom: 0
+            pointer-events: none
+            padding-bottom: var(--pb)
+            display: flex
+            align-items: center
+            margin: -10px
+            @media only screen and (min-width: 1441px)
+                margin: 0 -20px
+            @media only screen and (min-width: 1551px)
+                margin: 0 -35px
+            @media only screen and (max-width: 992px)
+                width: 100%
+                flex-wrap: wrap
+            >*
+                padding: 10px
+                @media only screen and (max-width: 992px)
+                    width: 100%
+                @media only screen and (min-width: 1441px)
+                    padding: 0 20px
+                @media only screen and (min-width: 1551px)
+                    padding: 0 35px
+        
+        .conteBx
+            .numberBx
+                display: flex
+                align-items: flex-end
+                position: relative
+                margin: -7px
+                margin-bottom: 10px
+                @media only screen and (min-width: 1200px)
+                    margin-bottom: 15px
+                @media only screen and (min-width: 1351px)
+                    margin-bottom: 20px
+                @media only screen and (min-width: 1441px)
+                    margin-bottom: 30px
+                >*
+                    padding: 7px
+                    position: relative
+                    &:last-of-type
+                        &::after
+                            position: absolute
+                            content: ""
+                            left: 0px
+                            width: 2px
+                            margin: auto
+                            bottom: 10px
+                            transform: translateX(0) rotate(20deg)
+                            background: $white
+                            height: 15px
+                            @media only screen and (min-width: 576px)
+                                height: 20px
+                            @media only screen and (min-width: 768px)
+                                height: 23px
+                .num
+                    font-size: 30px
+                    font-weight: 400
+                    font-family: $fontstack2
+                    position: relative
+                    line-height: 0.9
+                    color: $white 
+                    @media only screen and (min-width: 576px)
+                        font-size: 52px
+                    @media only screen and (min-width: 768px)
+                        font-size: 40px
+                    @media only screen and (min-width: 1441px)
+                        font-size: 45px
+                    @media only screen and (min-width: 1551px)
+                        font-size: 56px
+                  
+                    &.total
+                        font-size: 20px
+                        font-weight: 400
+                        color: $white !important
+                        font-family: $fontstack2
+                        line-height: 1
+                        position: relative
+                        @media only screen and (min-width: 468px)
+                            font-size: 22px
+                        @media only screen and (min-width: 576px)
+                            font-size: 25px
+                        @media only screen and (min-width: 768px)
+                            font-size: 30px
+
+        

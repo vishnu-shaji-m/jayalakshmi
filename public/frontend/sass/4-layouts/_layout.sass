@@ -1,0 +1,192 @@
+
+#pageWrapper
+    overflow: hidden
+    padding-top: 105px 
+    // &:has(#topBanner, #InnerBanner, .thankyouPage, .homepage)
+    //     padding-top: 0
+
+// BUTTON STYLE
+.hoveranim
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    overflow: hidden
+    &::before
+        content: ''
+        position: absolute
+        z-index: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        background: $black
+        -webkit-transform: scaleX(0)
+        -ms-transform: scaleX(0)
+        transform: scaleX(0)
+        -webkit-transition: -webkit-transform 0.3s ease
+        transition: -webkit-transform 0.3s ease
+        transition: transform 0.3s ease
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease
+        left: 0
+        -webkit-transform-origin: right
+        -ms-transform-origin: right
+        transform-origin: right
+    span
+        position: relative
+        z-index: 1
+    &:hover
+        color: $white
+        &::before
+            -webkit-transform-origin: left
+            -ms-transform-origin: left
+            transform-origin: left
+            -webkit-transform: scaleX(1)
+            -ms-transform: scaleX(1)
+            transform: scaleX(1)
+        span
+            color: $white
+            svg
+                fill: $white
+.upper
+    text-transform: uppercase
+.mainHead
+    position: relative
+    margin-bottom: 15px
+    @media only screen and (min-width:992px)
+        margin-bottom: 30px
+    &.center
+        text-align: center
+        .subT, h1
+            margin: auto
+            margin-bottom: 15px
+            &::after
+                display: block
+    &.white
+        .mainTitle
+            color: $white
+    .mainTitle
+        color: $text
+        font-weight: 700
+        line-height: 1
+        font-size: 20px
+        @media only screen and (min-width:768px)
+            font-size: 22px
+        @media only screen and (min-width:992px)
+            font-size: 24px
+        @media only screen and (min-width:1200px)
+            font-size: 26px
+        @media only screen and (min-width:1351px)
+            font-size: 30px
+        @media only screen and (min-width:1441px)
+            font-size: 35px
+        @media only screen and (min-width:1551px)
+            font-size: 40px
+        @media only screen and (min-width:1661px)
+            font-size: 48px
+    .subT, h1
+        color: #00B6B6
+        font-weight: 500
+        margin-bottom: 15px
+        position: relative
+        display: flex
+        align-items: baseline
+        width: fit-content
+        font-size: 16px
+        @media only screen and (min-width:992px)
+            font-size: 18px
+        &::after, &:before
+            position: relative
+            content: ""
+            bottom: 0
+            display: block
+            left: 0
+            width: 40px
+            height: 1px
+            background: #00B6B6
+            margin: 5px
+        &::after
+            display: none
+
+.cmnBtn
+    background: $basecolor
+    color: $white
+    border-radius: 30px
+    font-weight: 700
+    font-size: 12px
+    text-transform: uppercase
+    padding: 0 10px
+    @include  center
+    justify-content: space-between
+    overflow: hidden
+    transition: all 1s
+    width: fit-content
+    width: -webkit-fit-content
+    height: 40px
+    @media only screen and (min-width: 478px)
+        min-width: 140px
+        padding: 0 5px
+    @media only screen and (min-width: 1351px)
+        min-width: 155px
+        height: 45px
+    @media only screen and (min-width: 1441px)
+        font-size: 14px
+        height: 50px
+    &.white
+        background: $white
+        color: $basecolor
+        &:has(.icon)
+            .icon
+                background: $hover
+                svg
+                    fill: $white
+        &:hover
+            .icon
+                background: $white !important
+                svg
+                    fill: $basecolor
+    &:has(.icon)
+        span
+            padding: 0 15px
+        .icon
+            border-radius: 50%
+            background: $white
+            transition: all 0.4s
+            position: relative
+            z-index: 1
+            @include center
+            width: 30px
+            height: 30px
+            @media only screen and (min-width: 478px)
+                width: 35px
+                height: 35px
+            @media only screen and (min-width: 1351px)
+                width: 40px
+                height: 40px
+            svg
+                width: 12px
+                fill: $basecolor
+        .lIcon
+            width: 0
+            height: 0
+            left: -100%
+        .rIcon
+            right: 0
+    &:hover
+        .lIcon
+            left: 0
+            width: 30px
+            height: 30px
+            @media only screen and (min-width: 478px)
+                width: 35px
+                height: 35px
+            @media only screen and (min-width: 1351px)
+                width: 40px
+                height: 40px
+        .rIcon
+            width: 0
+            height: 0
+            right: -100%
+        .icon
+            background: $white !important
+            svg
+                fill: $hover

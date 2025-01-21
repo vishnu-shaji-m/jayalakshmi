@@ -1,0 +1,533 @@
+// BASE STYLES
+*
+    margin: 0
+    padding: 0
+    border: none
+    outline: none
+    list-style: none
+    box-sizing: border-box
+    border-collapse: inherit
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    -webkit-tap-highlight-color: transparent
+    -webkit-text-rendering: optimizeSpeed
+    text-rendering: optimizeSpeed
+    // scrollbar-width: thin
+    // scrollbar-color: $basecolor2 rgb(0, 0, 0)
+
+html, body
+    font-family: $fontstack1
+    line-height: normal
+    font-weight: 400
+    color: $text
+    // overflow-x: hidden
+// body 
+//     overflow-x: hidden
+@-moz-document url-prefix()
+    html
+        scrollbar-width: thin
+        scrollbar-color: #F1F1F1
+
+@media(prefers-reduced-motion:no-preference)
+    :root
+        scroll-behavior: smooth
+
+.cPop-open
+    overflow: hidden 
+
+::selection
+    color: $white
+    background: $basecolor
+::-moz-selection
+    color: $white
+    background: $basecolor
+::-webkit-scrollbar
+    width: 4px
+::-webkit-scrollbar-thumb
+    background: $basecolor
+    will-change: transform
+    border-radius: 30px
+::-webkit-scrollbar-track
+    box-shadow: inset 0 0 0 grey
+    border-radius: 0px
+    background: rgb(168, 180, 198)
+
+h1,
+h2,
+h3,
+h4
+    margin: 0.1rem 0 0
+
+h1
+    font-size: 2rem
+
+h2
+    font-size: 1.5rem
+
+h3
+    font-size: 1.2rem
+
+h4
+    font-size: 1rem
+
+p, %pTxt
+    font-size: 13px
+    line-height: 1.4
+    font-weight: 400
+    margin-bottom: 15px
+    color: #0D0D0D
+    @media only screen and (min-width: 768px)
+        font-size: 14px
+        margin-bottom: 20px 
+    @media only screen and (min-width: 1441px)
+        font-size: 16px
+        margin-bottom: 25px
+    @media only screen and (min-width: 1551px)
+        font-size: 18px
+    strong
+        font-weight: 600
+    a
+        display: inline
+        text-decoration: none
+        text-underline-position: under
+        &:hover
+            color: $basecolor
+            text-decoration: underline
+
+a
+    color: $basecolor
+    text-decoration: none
+    transition: all .3s
+    &:hover
+        color: inherit
+
+a:not([href]):not([class]),a:not([href]):not([class]):hover
+    color: inherit
+    text-decoration: none
+
+ul
+    margin: 0
+    padding: 0
+    list-style: none
+
+img
+    border: 0
+    vertical-align: middle
+    -ms-interpolation-mode: bicubic
+    max-width: 100%
+    height: auto
+
+iframe
+    width: 100%
+    height: 100%
+
+.form-group
+    position: relative
+    margin-bottom: 5px
+    @media only screen and (min-width: 576px)
+        margin-bottom: 10px
+    @media only screen and (min-width: 992px)
+        margin-bottom: 15px
+    @media only screen and (min-width: 1441px)
+        margin-bottom: 20px
+    .iti
+        font-size: 12px
+        line-height: 1
+        color: $black
+        width: 100%
+        @include display
+        flex-wrap: nowrap
+        @media only screen and (min-width: 376px)
+            font-size: 13px
+        @media only screen and (min-width: 576px)
+            font-size: 14px
+        @media only screen and (min-width: 992px)
+            font-size: 16px
+        @media only screen and (min-width: 1441px)
+            font-size: 18px
+        .iti__flag.iti__in
+            border-radius: 50%
+        .iti__arrow
+            visibility: hidden
+            display: none
+            @media only screen and (min-width: 992px)
+                display: block
+        .iti__selected-flag
+            border-radius: 5px
+            background: $white !important
+            margin-right: 2px
+            @media only screen and (min-width: 576px)
+                margin-right: 4px
+            @media only screen and (min-width: 992px)
+                margin-right: 6px
+            @media only screen and (min-width: 1441px)
+                margin-right: 8px
+        .iti__flag-container
+            position: unset
+        input, input[type=text], input[type=tel]
+            padding: 5px 10px !important
+            @media only screen and (min-width: 992px)
+                padding: 10px 15px !important
+            @media only screen and (min-width: 1441px)
+                padding: 10px 20px !important
+    label, .label
+        font-size: 13px
+        line-height: 1
+        color: $black
+        font-weight: 400
+        margin-bottom: 5px
+        @media only screen and (min-width: 576px)
+            font-size: 14px
+        @media only screen and (min-width: 992px)
+            font-size: 16px
+            margin-bottom: 10px
+        @media only screen and (min-width: 1441px)
+            font-size: 18px
+    .inputWrap
+        position: relative
+        z-index: 0
+        &.hasIcon
+            .form-control
+                padding-right: 20px
+                @media only screen and (min-width: 576px)
+                    padding-right: 25px
+            &.lft
+                .form-control
+                    padding-left: 20px
+                    @media only screen and (min-width: 576px)
+                        padding-left: 25px
+                .icon
+                    left: 0
+                    right: auto
+            .icon
+                width: 12px
+                height: 12px
+                position: absolute
+                top: 10px
+                right: 0
+                left: auto
+                margin: 0 5px
+                @media only screen and (min-width: 576px)
+                    top: 18px
+                    width: 14px
+                    height: 14px
+                svg, img
+                    display: block
+                    fill: $black
+                    @include imgFit
+            .toggle-password
+                opacity: 0
+        .form-control:focus~.toggle-password, .form-control:not(:placeholder-shown)~.toggle-password
+            opacity: 1
+
+.toggle-password
+    cursor: pointer
+    &.icon
+        top: 50% !important
+        transform: translateY(-50%) !important
+        width: 16px !important
+        height: 16px !important
+        margin: 0 15px !important
+        @media only screen and (min-width: 576px)
+            width: 18px !important
+            height: 18px !important
+        svg
+            opacity: 50%
+            fill: $basecolor !important
+
+.form-control
+    font-size: 13px
+    font-weight: 400
+    line-height: 1
+    color: $black
+    width: 100%
+    height: 40px
+    border: 1px solid #E1E6EB
+    border-radius: 5px
+    background-color: $white
+    padding: 5px 10px
+    transition: all .3s ease
+    align-items: center
+    @include display
+    @media only screen and (min-width: 576px)
+        height: 45px
+    @media only screen and (min-width: 992px)
+        font-size: 14px
+        height: 48px
+        padding: 10px 15px
+    @media only screen and (min-width: 1441px)
+        height: 50px
+        padding: 10px 20px
+    &:valid ~ .showPass
+        opacity: 1
+        pointer-events: all
+    &::placeholder
+        font-size: 12px
+        line-height: normal
+        font-weight: 300
+        color: $black
+        text-transform: none
+        @media only screen and (min-width: 576px)
+            font-size: 13px
+    &:focus
+        box-shadow: none
+        border-color: $basecolor
+        background: $white
+        color: $black
+    &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, :-webkit-autofill:active
+        -webkit-box-shadow: 0 0 0 1000px white inset
+        -webkit-text-fill-color: black
+        transition: background-color 5000s ease-in-out 0s
+    &:-internal-autofill-selected
+        background-color: -internal-light-dark(rgb(0, 0, 0), rgba(70, 90, 126, 0.4)) !important
+        -webkit-box-shadow: 0 0 0px 30px rgb(0, 0, 0) inset
+    &:-webkit-autofill
+        -webkit-box-shadow: 0 0 0 1000px white inset !important
+        -webkit-text-fill-color: $basecolor
+    &::-ms-expand
+        background-color: transparent
+        border: 0
+    @media (prefers-reduced-motion: reduce)
+        transition: none
+
+input[type=number]::-webkit-inner-spin-
+    -webkit-appearance: none
+
+.form-floating
+    &>label
+        font-size: 12px
+        line-height: 1
+        color: $text
+        padding: 15px 5px
+        left: 10px
+        z-index: 3
+        display: flex
+        align-items: center
+        @media only screen and (min-width: 576px)
+            font-size: 13px
+        @media only screen and (min-width: 992px)
+            left: 15px
+            font-size: 14px
+    .form-control, .form-control-plaintext
+        padding: 5px 15px
+        will-change: transform
+        border-radius: 5px
+        border: 1px solid #d6d6d6
+        min-height: auto
+        height: 35px
+        @media only screen and (min-width: 576px)
+            height: 45px
+        @media only screen and (min-width: 992px)
+            padding: 5px 20px
+        @media only screen and (min-width: 1200px)
+            height: 50px
+    .form-control-plaintext:-webkit-autofill, .form-control:-webkit-autofill
+        padding: 5px 10px
+        @media only screen and (min-width: 992px)
+            padding: 10px 20px
+    .form-control-plaintext:focus, .form-control-plaintext:not(:placeholder-shown), .form-control:focus, .form-control:not(:placeholder-shown)
+        padding: 5px 10px
+        @media only screen and (min-width: 992px)
+            padding: 10px 20px
+    .form-control:-webkit-autofill, .form-control-plaintext, .form-control:focus, .form-control:not(:placeholder-shown), .form-select
+        border-color: $basecolor
+    .form-control:-webkit-autofill~label, .form-control-plaintext~label, .form-control:focus~label, .form-control:not(:placeholder-shown)~label, .form-select~label
+        opacity: 1
+        transform: scale(0.85) translateY(-10px) translateX(0)
+        height: auto
+        width: auto
+        padding: 0px 5px
+        background: $white
+    .form-control:-webkit-autofill ~ .showPass, .form-control:focus ~ .showPass, .form-control:not(:placeholder-shown) ~ .showPass, .form-select ~ .showPass
+        opacity: 1
+        pointer-events: all
+
+textarea.form-control
+    min-height: 100px
+    padding-top: 10px
+    @media only screen and ( min-width: 576px )
+        padding-top: 15px
+    @media only screen and ( min-width: 992px )
+        min-height: 100px
+        padding-top: 20px
+input[type="date"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control,
+input[type="time"].form-control
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+input[type="date"]
+    position: relative
+[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator
+    display: none!important
+input[type="date"]::-webkit-calendar-picker-indicator
+    color: rgba(0, 0, 0, 0)
+    opacity: 1
+    display: block
+    background: url('../images/calendar.svg') no-repeat
+    width: 18px
+    height: 18px
+    border-width: thin
+    position: absolute
+    right: 22px
+[type=button],[type=reset],[type=submit],button
+    -webkit-appearance: button
+
+[type=button]:not(:disabled),[type=reset]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled)
+    cursor: pointer
+::-moz-focus-inner
+    padding: 0
+    border-style: none
+::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-fields-wrapper,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-text,::-webkit-datetime-edit-year-field
+    padding: 0
+
+::-webkit-inner-spin-button
+    height: auto
+[type=search]
+    -webkit-appearance: textfield
+    outline-offset: -2px
+
+::-webkit-search-decoration
+    -webkit-appearance: none
+
+::-webkit-color-swatch-wrapper
+    padding: 0
+
+::-webkit-file-upload-button
+    font: inherit
+    -webkit-appearance: button
+
+::file-selector-button
+    font: inherit
+    -webkit-appearance: button
+[hidden]
+    display: none!important
+textarea
+    resize: vertical
+.help-block
+    font-size: 12px
+    line-height: 1
+    color: $black
+    margin: 2px 0
+    transition: all 0.3s
+    position: absolute
+    &.success
+        color: green
+    &.danger
+        color: red
+
+.action-alert
+    font-size: 12px
+    color: $black
+    line-height: 1.2
+    padding: 9px 10px
+    width: fit-content
+    transition: all 0.3s
+    width: 100%
+    will-change: transform
+    border-radius: 5px
+    border-width: 1px
+    border-style: solid
+    margin: 10px 0
+    @media only screen and ( min-width: 576px )
+        font-size: 12px
+    &.success
+        color: $black
+        background: #c6ffc6
+        border-color: rgba(green, 0.5 )
+    &.danger
+        color: $black
+        background: #ffc6c6
+        border-color: rgba(red, 0.5 )
+
+svg
+    display: inline-block
+    position: relative
+    width: 100%
+    vertical-align: middle
+    overflow: hidden
+
+.btn-check:focus+.btn, .btn:focus
+    outline: 0
+    box-shadow: none
+
+.row
+    margin-left: -10px
+    margin-right: -10px
+    @include display
+    >*
+        padding-left: 10px
+        padding-right: 10px
+
+.c-checkbox
+    align-items: center
+    @include display
+    input
+        padding: 0
+        height: initial
+        width: initial
+        margin-bottom: 0
+        display: none
+        cursor: pointer
+    label
+        position: relative
+        cursor: pointer
+        margin: 0
+        font-size: 12px
+        line-height: 1
+        font-weight: 400
+        @media only screen and (min-width: 376px)
+            font-size: 13px
+        @media only screen and (min-width: 992px)
+            font-size: 14px
+        @media only screen and (min-width: 1441px)
+            font-size: 16px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 3px
+            left: 6px
+            width: 5px
+            height: 10px
+            border: solid transparent
+            border-width: 0 2px 2px 0
+            transform: rotate(45deg)
+            margin-top: -2px
+            @media only screen and (min-width: 992px)
+                top: 4px
+        &:before
+            content: ''
+            -webkit-appearance: none
+            background-color: #4C2236
+            border: 1px solid $white
+            will-change: transform
+            border-radius: 0
+            box-shadow: none
+            padding: 8px
+            display: inline-block
+            position: relative
+            vertical-align: middle
+            cursor: pointer
+            margin-right: 5px
+            margin-top: -2px
+            @media only screen and (min-width: 992px)
+                margin-right: 10px
+    input:checked + label
+        color: $basecolor
+        &::before
+            background-color: $white
+            border-color: $white
+    input:checked + label:after
+        border-color: $black
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+/* Firefox */
+input[type=number]
+    -moz-appearance: textfield

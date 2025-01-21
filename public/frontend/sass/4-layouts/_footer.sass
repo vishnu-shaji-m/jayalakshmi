@@ -1,0 +1,295 @@
+/************ ****** ************/
+/************ FOOTER ************/
+/************ ****** ************/
+#footer
+    background: #11294B
+    padding: 20px 0
+    @media only screen and (min-width:992px)
+        padding: 40px 0
+    @media only screen and (min-width:1200px)
+        padding: 50px 0 30px
+    @media only screen and (min-width:1551px)
+        padding: 80px 0 60px
+
+    .row
+        margin: -7px
+        @media only screen and (min-width:1551px)
+            margin: -15px
+        >*
+            padding: 7px
+            @media only screen and (min-width:1551px)
+                padding: 15px
+            &:nth-child(1)
+                .accordion-item
+                    .accordion-header
+                        display: none !important
+                    .accordion-collapse
+                        display: block !important
+                        @media only screen and (min-width:992px)
+                            padding-left: 0px
+
+    .cmnLink
+        display: flex
+        align-items: center
+        font-weight: 300
+        color: $white
+        width: fit-content
+        font-family: $fontstack2
+        font-size: 13px
+        @media only screen and (min-width:1351px)
+            font-size: 14px
+        @media only screen and (min-width:1441px)
+            font-size: 15px
+        @media only screen and (min-width:1551px)
+            font-size: 16px
+        @media only screen and (min-width:1661px)
+            font-size: 18px
+        &:hover
+            color: $basecolor1
+        .icon
+            width: 22px
+            height: 22px
+            overflow: hidden
+            @include center
+            svg
+                max-width: 100%
+
+        &:has(.icon)
+            align-items: flex-start
+            white-space-collapse: preserve-spaces
+            span
+                padding-left: 15px
+                width: calc(100% - 22px)
+    .accordion
+        .accordion-item
+            box-shadow: none
+            border: 0
+            background: transparent
+
+        .accordion-header
+            @media only screen and (min-width:992px)
+                display: none
+            .accordion-button
+                background: transparent
+                color: $white
+                padding: 5px 0
+                box-shadow: none
+                outline: 0
+                &:not(.collapsed)
+                    &::after
+                        content: '-'
+                &::after
+                    position: absolute
+                    content: '+'
+                    font-family: $fontstack2
+                    right: 0
+                    top: 0
+                    bottom: 0
+                    font-size: 20px
+                    color: $white
+                    font-weight: 500
+                    background-image: none
+                    transform: none
+        .mainTitle
+            font-family: $fontstack2
+            font-weight: 800
+            color: $basecolor1
+            padding-bottom: 10px
+            position: relative
+            text-transform: uppercase
+            position: relative
+            display: flex
+            align-items: baseline
+            width: fit-content
+            font-size: 14px
+            @media only screen and (min-width:992px)
+                padding-bottom: 15px
+            @media only screen and (min-width:1351px)
+                font-size: 16px
+            @media only screen and (min-width:1441px)
+                font-size: 17px
+            @media only screen and (min-width:1661px)
+                font-size: 18px
+            &::after
+                position: relative
+                content: ""
+                bottom: 0
+                display: block
+                left: 0
+                width: 66px
+                height: 1px
+                background: #00B6B6
+                margin: 5px
+
+        .accordion-collapse
+            @media only screen and (min-width:992px)
+                display: block
+                padding-left: 45px
+
+            .accordion-body
+                color: $white
+                padding: 15px 0
+                @media only screen and (min-width:992px)
+                    padding: 0
+                .webBox
+                    margin-top: 20px
+                    @media only screen and (min-width:992px)
+                        margin-top: 40px
+                    .Txt
+                        color: $basecolor1
+                        margin-bottom: 5px
+                        font-size: 13px
+                        @media only screen and (min-width:1351px)
+                            font-size: 14px
+                        @media only screen and (min-width:1441px)
+                            font-size: 15px
+                        @media only screen and (min-width:1551px)
+                            font-size: 16px
+                        @media only screen and (min-width:1661px)
+                            font-size: 18px
+
+                p
+                    color: $white
+                    margin-bottom: 0
+                    font-weight: 300
+                    font-size: 13px
+                    @media only screen and (min-width:1351px)
+                        font-size: 14px
+                    @media only screen and (min-width:1441px)
+                        font-size: 15px
+                    @media only screen and (min-width:1551px)
+                        font-size: 16px
+                    @media only screen and (min-width:1661px)
+                        font-size: 18px
+
+                .mainTitle
+                    margin-bottom: 10px
+                    @media only screen and (max-width:992px)
+                        display: none
+
+                .logFlx
+                    margin-bottom: 20px
+                    @media only screen and (min-width:992px)
+                        margin-bottom: 30px
+                        max-width: 340px
+                    .logoBx
+                        display: flex
+                        width: 150px
+                        margin-bottom: 15px
+                        @media only screen and (min-width:1441px)
+                            margin-bottom: 20px
+                            width: 210px
+                        @media only screen and (min-width:1551px)
+                            width: 275px
+                        .imgBx
+                            width: 100%
+                            height: 100%
+
+                    .info
+                        width: 100%
+
+                ul
+                    li
+                        &:not(:last-of-type)
+                            margin-bottom: 10px
+                            @media only screen and (min-width:1551px)
+                                margin-bottom: 15px
+                        &:has(.icon)
+                            margin-bottom: 20px
+#copyRights
+    background: #11294B
+    .cmnLink
+        display: flex
+        align-items: center
+        font-weight: 400
+        color: $white
+        font-size: 14px
+        white-space-collapse: break-spaces
+
+        @media only screen and (min-width:1441px)
+            font-size: 16px
+        &:hover
+            .icon
+                svg
+                    fill: $basecolor1
+        .icon
+            overflow: hidden
+            // background: $basecolor
+            margin-right: 15px
+            @include center
+
+            svg
+                max-width: 14px
+                transition: all 0.5s
+                fill: $white
+                @media only screen and (min-width:1441px)
+                    max-width: 14px
+                &#fb
+                    max-width: 9px
+                &#youtube
+                    max-width: 20px
+                &#insta
+                    max-width: 13px
+
+        &:has(.icon)
+            align-items: flex-start
+            span
+                width: calc(100% - 36px)
+    .copyRight
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+        padding: 30px 0
+        border-top: 1px solid rgba($white, 0.1)
+        width: 100%
+        >*
+            padding: 8px
+            @media only screen and (max-width:992px)
+                width: 100%
+            // width: calc(100% / 3)
+        .copyLink
+            display: flex
+            width: fit-content
+            color: $white
+            font-size: 16px
+            @media only screen and (max-width:992px)
+                margin: auto
+                text-align: center
+                font-size: 14px
+
+        .flxBx
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .txt
+                font-weight: 500
+                font-family: $fontstack2
+                color: $white
+                font-size: 18px
+
+            .social
+                display: flex
+                align-items: center
+                margin: 0 8px
+                li
+                    &:not(:last-of-type)
+                        margin-right: 5px
+
+        .ftTxt
+            color: $white
+            font-weight: 400
+            display: flex
+            align-items: center
+            line-height: 1
+            margin-bottom: 0
+            @media only screen and (max-width: 992px)
+                font-size: 14px
+                justify-content: center
+            a
+                display: inline-flex
+                margin: 0 5px
+            img
+                @media only screen and (max-width: 1200px)
+                    max-width: 95px
