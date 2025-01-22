@@ -1,7 +1,7 @@
 
 #pageWrapper
     overflow: hidden
-    padding-top: 105px 
+    padding-top: 105px
     // &:has(#topBanner, #InnerBanner, .thankyouPage, .homepage)
     //     padding-top: 0
 
@@ -51,86 +51,92 @@
     text-transform: uppercase
 .mainHead
     position: relative
-    margin-bottom: 15px
-    @media only screen and (min-width:992px)
-        margin-bottom: 30px
+    margin-bottom: 25px 
+    &::after
+        position: absolute
+        content: ''
+        left: 0
+        bottom: -40px
+        right: 0
+        background: url('../images/iconLog.svg') no-repeat
+        width: 110px
+        background-size: 110px
+        height: 30px
+        margin: auto
     &.center
         text-align: center
+        max-width: 650px
+        margin: auto
+        margin-bottom: 25px 
         .subT, h1
             margin: auto
             margin-bottom: 15px
             &::after
                 display: block
     &.white
-        .mainTitle
+        .mainTitle, .subT, h1, p
             color: $white
     .mainTitle
-        color: $text
+        color: $black
         font-weight: 700
         line-height: 1
-        font-size: 20px
-        @media only screen and (min-width:768px)
-            font-size: 22px
+        font-size: 24px
+        font-family: $fontstack2
+        margin-bottom: 10px
+        @media only screen and (min-width:578px)
+            font-size: 28px
         @media only screen and (min-width:992px)
-            font-size: 24px
-        @media only screen and (min-width:1200px)
-            font-size: 26px
-        @media only screen and (min-width:1351px)
             font-size: 30px
+        @media only screen and (min-width:1200px)
+            font-size: 34px
+        @media only screen and (min-width:1351px)
+            font-size: 38px
         @media only screen and (min-width:1441px)
-            font-size: 35px
+            font-size: 44px
         @media only screen and (min-width:1551px)
-            font-size: 40px
-        @media only screen and (min-width:1661px)
-            font-size: 48px
-    .subT, h1
-        color: #00B6B6
-        font-weight: 500
+            font-size: 56px
+        span
+            font-style: italic
+            padding-right: 5px
+    .subT, h1, p
+        color: $text
+        font-weight: 400
         margin-bottom: 15px
         position: relative
-        display: flex
-        align-items: baseline
-        width: fit-content
-        font-size: 16px
-        @media only screen and (min-width:992px)
+        font-size: 14px 
+        @media only screen and (min-width:768px)
+            font-size: 16px
+        @media only screen and (min-width:1200px)
             font-size: 18px
-        &::after, &:before
-            position: relative
-            content: ""
-            bottom: 0
-            display: block
-            left: 0
-            width: 40px
-            height: 1px
-            background: #00B6B6
-            margin: 5px
-        &::after
-            display: none
 
 .cmnBtn
     background: $basecolor
     color: $white
-    border-radius: 30px
-    font-weight: 700
-    font-size: 12px
+    border-radius: 0px
+    font-weight: 400
+    font-size: 14px
     text-transform: uppercase
     padding: 0 10px
-    @include  center
     justify-content: space-between
     overflow: hidden
     transition: all 1s
     width: fit-content
     width: -webkit-fit-content
     height: 40px
-    @media only screen and (min-width: 478px)
+    min-width: 130px
+    padding: 0 10px
+    @include  center
+    @media only screen and (min-width:992px)
         min-width: 140px
         padding: 0 5px
     @media only screen and (min-width: 1351px)
         min-width: 155px
         height: 45px
     @media only screen and (min-width: 1441px)
-        font-size: 14px
+        font-size: 16px
         height: 50px
+    @media only screen and (min-width: 1551px)
+        font-size: 18px
     &.white
         background: $white
         color: $basecolor

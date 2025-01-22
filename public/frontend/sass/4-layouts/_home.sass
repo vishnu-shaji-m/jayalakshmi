@@ -4,4 +4,519 @@
 /************** ******* **************/
 .homepage
     overflow-x: hidden
- 
+
+    #about
+        position: relative
+        padding: 40px 0
+        @media only screen and (min-width:1200px)
+            padding: 60px 0
+        @media only screen and (min-width:1441px)
+            padding: 80px 0
+        @media only screen and (min-width:1551px)
+            padding: 110px 0 120px
+        .mainHeads
+            position: relative
+            margin-bottom: 15px
+            @media only screen and (min-width:992px)
+                margin-bottom: 25px
+            &.center
+                text-align: center
+                max-width: 700px
+                margin: auto
+                .subT, h1
+                    margin: auto
+                    margin-bottom: 15px
+                    &::after
+                        display: block
+            &.white
+                .mainTitle
+                    color: $white
+            .mainTitle
+                color: $black
+                font-weight: 700
+                line-height: 1
+                font-size: 24px
+                font-family: $fontstack2
+                @media only screen and (min-width:578px)
+                    font-size: 28px
+                @media only screen and (min-width:992px)
+                    font-size: 30px
+                @media only screen and (min-width:1200px)
+                    font-size: 34px
+                @media only screen and (min-width:1351px)
+                    font-size: 38px
+                @media only screen and (min-width:1441px)
+                    font-size: 44px
+                @media only screen and (min-width:1551px)
+                    font-size: 55px
+                @media only screen and (min-width:1661px)
+                    font-size: 64px
+                span
+                    font-style: italic
+            .subT, h1
+                color: $basecolor
+                font-weight: 500
+                margin-bottom: 15px
+                position: relative
+                font-size: 12px
+                @media only screen and (min-width:578px)
+                    font-size: 14px
+                @media only screen and (min-width:768px)
+                    font-size: 16px
+                @media only screen and (min-width:1200px)
+                    font-size: 18px
+
+        .abtLx
+            display: flex
+            flex-wrap: wrap
+            margin: -8px
+            >*
+                padding: 8px
+            .alx
+                width: 100%
+                @media only screen and (min-width:992px)
+                    width: 450px
+                @media only screen and (min-width:1200px)
+                    width: 520px
+                @media only screen and (min-width:1351px)
+                    width: 575px
+                @media only screen and (min-width:1551px)
+                    width: 700px
+                .mainTxt, h6
+                    font-weight: 500
+                    color: $text
+                    font-size: 15px
+                    @media only screen and (min-width:1351px)
+                        font-size: 18px
+                    @media only screen and (min-width:1551px)
+                        font-size: 20px
+                .contentBx
+                    margin-bottom: 30px
+                    @media only screen and (min-width:1200px)
+                        padding-right: 50px
+            .arlx
+                width: 100%
+                @media only screen and (min-width:992px)
+                    width: calc(100% - 450px)
+                @media only screen and (min-width:1200px)
+                    width: calc(100% - 520px)
+                @media only screen and (min-width:1351px)
+                    width: calc(100% - 575px)
+                @media only screen and (min-width:1551px)
+                    width: calc(100% - 700px)
+                .flxBx
+                    display: flex
+                    flex-wrap: wrap
+                    .imgWrap
+                        position: relative
+                        width: 100%
+                        margin-bottom: 25px
+                        @media only screen and (min-width:678px)
+                            width: 60%
+                            margin-bottom: 0
+                        @media only screen and (min-width:992px)
+                            width: 370px
+                        @media only screen and (min-width:1200px)
+                            width: 430px
+                        @media only screen and (min-width:1551px)
+                            width: 515px
+                        .imgBx
+                            width: 100%
+                            height: 100%
+                            overflow: hidden
+                            img
+                                @include imgFit
+                        .tptxt
+                            position: absolute
+                            top: 15px
+                            left: 35px
+                            width: 100%
+                            .txt
+                                color: $white
+                                font-style: italic
+                                font-family: $fontstack2
+                                opacity: 0.4
+                                font-size: 50px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 60px
+                                @media only screen and (min-width:1551px)
+                                    font-size: 70px
+
+                        .btnmTxt
+                            position: absolute
+                            bottom: 25px
+                            left: 0
+                            width: 100%
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            padding: 0 25px
+                            .year
+                                color: $basecolor
+                                font-weight: 700
+                                font-size: 18px
+                                @media only screen and (min-width:1200px)
+                                    font-size: 20px
+                                @media only screen and (min-width:1351px)
+                                    font-size: 22px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 24px
+                            .cpmyNam
+                                font-family: $fontstack2
+                                font-weight: 700
+                                color: $white
+                                font-size: 25px
+                                @media only screen and (min-width:1351px)
+                                    font-size: 30px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 36px
+                    .conterBx
+                        width: 100%
+                        @media only screen and (min-width:678px)
+                            padding-left: 35px
+                            width: calc(100% - 60%)
+                        @media only screen and (min-width:992px)
+                            width: calc(100% - 370px)
+                            padding-left: 35px
+                        @media only screen and (min-width:1200px)
+                            width: calc(100% - 430px)
+                            padding-left: 55px
+                        @media only screen and (min-width:1551px)
+                            padding-left: 75px
+                        @media only screen and (min-width:1551px)
+                            width: calc(100% - 515px)
+                            padding-left: 100px
+                        .itemList
+                            display: flex
+                            flex-wrap: wrap
+                            justify-content: center
+                            margin: -8px
+                            @media only screen and (min-width:678px)
+                                justify-content: space-between
+                                flex-direction: column
+                            @media only screen and (min-width:768px)
+                                height: 100%
+                                flex-direction: row
+
+                            >*
+                                width: calc(100% / 2)
+                                flex-grow: 1
+                                padding: 8px
+
+                                @media only screen and (min-width:378px)
+                                    width: calc(100% / 3)
+                                @media only screen and (min-width:678px)
+                                    border-bottom: 1px solid #F9CBCB
+                                    width: 100%
+                                    border: 0
+                                &:first-of-type
+                                    @media only screen and (max-width:678px)
+                                        .countBx
+                                            padding-left: 0
+                                &:not(:last-of-type)
+                                    margin-bottom: 0px
+                                    @media only screen and (min-width:378px)
+                                        border-right: 1px solid #F9CBCB
+                                    @media only screen and (min-width:678px)
+                                        border: 0
+                                        border-bottom: 1px solid #F9CBCB
+                                        margin-bottom: 20px
+                                    .countBx
+                                        @media only screen and (min-width:678px)
+                                            padding-bottom: 40px
+                                .countBx
+                                    @media only screen and (min-width:1200px)
+                                        max-width: 115px
+                                    @media only screen and (max-width:678px)
+                                        padding-left: 20px
+                                    .num
+                                        font-weight: 800
+                                        color: $basecolor
+                                        margin-bottom: 5px
+                                        font-family: $fontstack2
+                                        line-height: 1
+                                        font-size: 25px
+                                        @media only screen and (min-width:420px)
+                                            font-size: 30px
+                                        @media only screen and (min-width:678px)
+                                            font-size: 40px
+                                        @media only screen and (min-width:992px)
+                                            font-size: 45px
+                                        @media only screen and (min-width:1200px)
+                                            font-size: 55px
+                                        @media only screen and (min-width:1441px)
+                                            font-size: 65px
+                                        @media only screen and (min-width:1551px)
+                                            font-size: 76px
+                                        @media only screen and (max-width:378px)
+                                            text-align: center
+                                        span
+                                            padding-right: 5px
+                                    .txt
+                                        font-weight: 400
+                                        color: #3D3D3D
+                                        font-size: 12px
+                                        line-height: 1.2
+                                        @media only screen and (min-width:420px)
+                                            font-size: 13px
+                                        @media only screen and (min-width:992px)
+                                            font-size: 14px
+                                        @media only screen and (min-width:1200px)
+                                            font-size: 16px
+                                        @media only screen and (min-width:1351px)
+                                            font-size: 18px
+                                        @media only screen and (min-width:1551px)
+                                            font-size: 20px
+                                        @media only screen and (max-width:378px)
+                                            text-align: center
+#saree
+    position: relative
+    background: #FFEDED
+    padding: 30px 0
+    @media only screen and (min-width:1200px)
+        padding: 50px 0
+    @media only screen and (min-width:1551px)
+        padding: 75px 0 90px
+    .mainHead
+        margin-bottom: 70px
+    .sareeSlider
+        overflow: hidden
+        .sareeBx
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            overflow: hidden
+            &:hover
+                .imgbx
+                    img
+                        transform: scale(1.1)
+            &::before, &::after
+                position: absolute
+                content: ""
+                left: -20px
+                width: 100%
+                background: url(../images/sareTicon.svg) no-repeat
+                top: -15px
+                z-index: 3
+                @media only screen and (min-width:1351px)
+                    background-size: 220px
+                    height: 220px
+                @media only screen and (min-width:1441px)
+                    background-size: 265px
+                    height: 265px
+                @media only screen and (min-width:1551px)
+                    background-size: 307px
+                    height: 307px
+
+            &::after
+                background: url(../images/sareBicon.svg) no-repeat
+                top: unset
+                left: unset
+                bottom: -5px
+                right: -90px
+                background-size: 220px
+                @media only screen and (min-width:1441px)
+                    bottom: -15px
+                    background-size: 265px
+                    right: -70px
+                @media only screen and (min-width:1551px)
+                    background-size: 307px
+                    right: -90px
+
+            .imgbx
+                width: 100%
+                height: 100%
+                overflow: hidden
+                position: relative
+                z-index: 1
+                &:after
+                    position: absolute
+                    content: ''
+                    left: 0
+                    bottom: 0
+                    width: 100%
+                    height: 150px
+                    z-index: 2
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+
+                img
+                    transition: all 0.9s
+                    @include imgFit
+            .info
+                position: absolute
+                bottom: 0
+                left: 0
+                padding: 20px
+                z-index: 4
+                .mainTxt
+                    font-family: $fontstack2
+                    color: $white
+                    text-transform: capitalize
+                    font-size: 20px
+                    @media only screen and (min-width:992px)
+                        font-size: 24px
+#moments
+    position: relative
+    padding: 160px 0 30px
+    @media only screen and (min-width:678px)
+        padding: 160px 0 60px
+    @media only screen and (min-width:992px)
+        padding: 160px 0
+    &::after
+        position: absolute
+        content: ''
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #2C0000 99.61%)
+        top: 0
+        z-index: -1
+        transition: all 0.5s
+        @media only screen and (min-width:992px)
+            width: 45%
+            background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #010000 99.61%)
+    .row
+        margin: -10px
+        >*
+            padding: 10px
+    .leftbx
+        display: flex
+        align-items: center
+        .contentBx
+            max-width: 300px
+            @media only screen and (min-width:992px)
+                max-width: 345px
+            @media only screen and (min-width:1351px)
+                max-width: 385px
+            @media only screen and (min-width:1441px)
+                max-width: 485px
+            .mainHead
+                &::after
+                    display: none
+                p
+                    font-weight: 300
+            .cmnBtn
+                min-width: 215px
+                font-weight: 300
+    .momentBx
+        display: block
+        width: 100%
+        height: 100%
+        transition: all 0.5s
+        padding: 40px 20px
+        @media only screen and (min-width:768px)
+            padding: 50px 30px
+        @media only screen and (min-width:1200px)
+            padding: 55px 30px
+        &:hover
+            .imgbx
+                img
+                    transform: scale(1.1)
+        &::after
+            position: absolute
+            content: ''
+            left: 0
+            top: 0
+            background: url('../images/borderBx.svg') no-repeat
+            width: 100%
+            height: 100%
+            transition: all 0.5s
+            background-size: contain
+        .imgbx
+            width: 100%
+            height: 100%
+            overflow: hidden
+            img
+                transition: all 0.5s
+                @include imgFit
+    .sliderBx
+        overflow: hidden
+
+#fashion
+    position: relative
+    padding: 30px 0
+    @media only screen and (min-width:1200px)
+        padding: 50px 0
+    @media only screen and (min-width:1551px)
+        padding: 95px 0 110px
+    .mainHead
+        margin-bottom: 70px
+    .fashionSlider
+        position: relative
+        .swiper-slide
+            &:not(.swiper-slide-visible)
+                opacity: 0
+                visibility: hidden
+    .btnBx
+        @media only screen and (max-width:992px)
+            display: flex
+            align-items: center
+            justify-content: center
+            max-width: 120px
+            width: 100%
+            margin: auto
+
+        .swiper-button-next, .swiper-button-prev
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            background: $white
+            border: 1px solid #EAAA56
+            left: -22px
+            @include center
+            @media only screen and (max-width:992px)
+                position: relative
+                left: 0
+                top: 0
+                margin: 0
+                margin-top: 15px
+                width: 35px
+                height: 35px
+
+            .icon
+                display: flex
+                max-width: 14px
+        .swiper-button-next
+            left: unset
+            right: -22px
+
+    .fashionBx
+        display: block
+        width: 100%
+        height: 100%
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            left: 0
+            bottom: 0
+            width: 100%
+            height: 50%
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+
+        .imgbx
+            width: 100%
+            height: 100%
+            overflow: hidden
+            img
+                transition: all 0.5s
+                @include imgFit
+        .info
+            position: absolute
+            bottom: 0
+            left: 0
+            padding: 20px
+            z-index: 4
+            .mainTxt
+                color: $white
+                text-transform: capitalize
+                font-size: 12px
+                @media only screen and (min-width:578px)
+                    font-size: 14px
+                @media only screen and (min-width:1351px)
+                    font-size: 16px
+                @media only screen and (min-width:1441px)
+                    font-size: 17px
+                @media only screen and (min-width:1551px)
+                    font-size: 18px
