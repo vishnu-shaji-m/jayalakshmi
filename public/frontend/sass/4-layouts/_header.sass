@@ -239,9 +239,12 @@
                         width: calc(var(--btn-w) / 7 )
             &.open
                 --btn-w: 25px
+                .icon
+                    display: flex
                 span
                     width: 100% !important
                     margin: 0
+                    display: none
                     &:nth-child(1)
                         transform: rotate(45deg) translate(0, 0)
                     &:nth-child(2)
@@ -268,6 +271,13 @@
                     width: 85%
                 &:nth-child(3)
                     width: 55%
+            .icon
+                width: 24px
+                height: 24px
+                display: none
+
+                svg
+                    @include imgFit
         .cNacBtnWrap
             display: flex
             transition: transform .4s ease
@@ -316,10 +326,19 @@
                 justify-content: space-between
         .cNavWrap
             width: 100%
+            .menuTxt
+                font-weight: 500
+                color: $black
+                font-size: 22px
+                margin-bottom: 10px
+                padding: 15px
+                text-transform: capitalize
+                display: none
+                background: $white
 
         #AccordMenu
             height: 100%
-            transition: all 1s
+            transition: all 0.2s
             @media only screen and (min-width: 992px)
                 padding: 0
                 align-items: center
@@ -333,20 +352,24 @@
                 opacity: 1
                 visibility: visible
                 right: 0
+                .menuTxt
+                    display: block
             @media only screen and (max-width:992px)
                 position: absolute
                 display: block !important
-                background: $basecolor1
+                background: #DDB17A
                 height: 100vh
-                max-width: 350px
+                max-width: 100%
                 opacity: 0
                 visibility: hidden
                 right: 0
                 top: 0
                 width: 100%
-                padding-top: 20px
+                // padding-top: 20px
                 backdrop-filter: blur(20px)
                 --webkit-backdrop-filter: blur(20px)
+                margin-top: 80px
+
             .accordion-item
                 border-radius: 0
                 border: none
@@ -354,7 +377,8 @@
                 position: relative
                 &:nth-child(1)
                     .accordion-button
-                        padding-left: 0
+                        @media only screen and (min-width: 992px)
+                            padding-left: 0
                 &:has(.cmnBtn )
                     @media only screen and (max-width: 992px)
                         padding: 0 10px
@@ -362,9 +386,10 @@
                         @media only screen and (max-width: 992px)
                             margin: 10px 0
                             width: 100%
+
                 &:has(.accordion-collapse)
                     &:hover
-                        .accordion-collapse
+                        .dropBxMenu
                             @media only screen and (min-width: 992px)
                                 display: block !important
                                 opacity: 1
@@ -387,7 +412,7 @@
 
                         span
                             margin-right: 15px
-                .accordion-collapse
+                .dropBxMenu
                     background: #626e7899
                     @media only screen and (min-width: 992px)
                         position: absolute
@@ -426,6 +451,105 @@
                                 &:hover, &.active
                                     background: $basecolor
                                     color: $white
+                &:has(.megMenu)
+                    &:hover
+                        .megMenu
+                            display: block
+                    .megMenu
+                        @media only screen and (min-width: 992px)
+                            position: absolute
+                            top: 100%
+                            left: unset
+                            background: $white
+                            padding: 0
+                            min-width: 450px
+                        @media only screen and (min-width:1441px)
+                            min-width: 540px
+                        .accordion-body
+                            padding: 0
+                        .flxBx
+                            display: flex
+                            .lftbX
+                                width: 200px
+                                background: #F5F5F5
+                                box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08) inset
+                                padding: 20px 0
+                                @media only screen and (min-width:1441px)
+                                    padding: 25px 0
+                                @media only screen and (max-width: 992px)
+                                    display: none
+                                ul
+                                    li
+                                        position: relative
+                                        .accordion-button
+                                            box-shadow: none
+                                            border: 0
+                                            outline: 0
+                                            background: transparent
+                                            font-size: 16px
+                                            font-weight: 400
+                                            padding: 10px 30px
+                                            color: #1D1D1D
+                                            transition: all 0.5s
+                                            position: relative
+                                            &:hover
+                                                background: rgba(255, 223, 223, 1)
+                                                color: $basecolor
+                                                font-weight: 700
+                                                &::after
+                                                    opacity: 1
+                                                    visibility: visible
+                                            &:not(.collapsed)
+                                                background: rgba(255, 223, 223, 1)
+                                                color: $basecolor
+                                                font-weight: 700
+                                                &::after
+                                                    opacity: 1
+                                                    visibility: visible
+                                            &::after
+                                                position: absolute
+                                                content: ''
+                                                top: 0
+                                                bottom: 0
+                                                background-image: none
+                                                background: url('../images/arrow.svg') no-repeat
+                                                right: 10px
+                                                margin: auto
+                                                display: block
+                                                width: 15px
+                                                height: 15px
+                                                transform: none
+                                                opacity: 0
+                                                visibility: hidden
+                                                transition: all 0.5s
+
+                            .rtbx
+                                width: 100%
+                                @media only screen and (min-width: 992px)
+                                    width: calc(100% - 200px)
+                                .accordion-header
+                                    @media only screen and (min-width: 992px)
+                                        display: none
+                                .accordion-collapse
+                                    .accordion-body
+                                        padding: 25px 30px
+                                        @media only screen and (min-width:1441px)
+                                            padding: 30px 45px
+                                        ul
+                                            li
+                                                &:not(:last-of-type)
+                                                    margin-bottom: 15px
+                                                .cmnLink
+                                                    display: block
+                                                    width: fit-content
+                                                    text-transform: uppercase
+                                                    font-size: 14px
+                                                    color: #1D1D1D
+                                                    transition: all 0.5s
+                                                    @media only screen and (min-width:1441px)
+                                                        font-size: 16px
+                                                    &:hover
+                                                        color: $basecolor
 
                 &:first-child
                     .accordion-header
@@ -505,3 +629,20 @@
     #Header
         #HeaderMain
             background: #000
+.cPop-open
+    #Header
+        #HeaderMain
+            .ritBx
+                .visitBtn
+                    @media only screen and (max-width:992px)
+                        display: none
+            .mainFlx
+                @media only screen and (max-width:992px)
+                    padding-top: 15px
+                .lftSd
+                    @media only screen and (max-width:992px)
+                        z-index: 9999
+                .rgtSd
+                    .topBar
+                        @media only screen and (max-width:992px)
+                            display: none

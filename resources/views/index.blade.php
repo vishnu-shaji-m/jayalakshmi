@@ -481,7 +481,7 @@
     <!-- bridal lounge -->
 
     <section id="bridal" class="jarallax" data-jarallax data-type="scroll">
-        <img src="{{asset('frontend/images/bridal.webp')}}" data-src="{{asset('frontend/images/bridal.webp')}}"
+        <img src="{{asset('frontend/images/bridals.jpg')}}" data-src="{{asset('frontend/images/bridals.jpg')}}"
             width="1920" height="478" class="lazy jarallax-img deskTop" loading="lazy" alt="bridalImg">
 
         <!-- mobile Image -->

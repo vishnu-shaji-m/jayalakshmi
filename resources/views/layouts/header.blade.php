@@ -77,8 +77,7 @@
                                         <div class="icon">
                                             <svg viewBox="0 0 14 14">
                                                 <path
-                                                    d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.8858 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33511C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32123 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z"
-                                                      />
+                                                    d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.8858 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33511C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32123 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z" />
                                             </svg>
 
                                         </div>
@@ -134,6 +133,7 @@
 
                     <div class="cNavWrap">
                         <div class="accordion" id="AccordMenu">
+                            <div class="menuTxt">menu</div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
                                     <a href="index" class="accordion-button" aria-label="menu_link">
@@ -141,14 +141,14 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="accordion-item">
+                            <div class="accordion-item dropBx">
                                 <div class="accordion-header">
                                     <a href="about" class="accordion-button" aria-label="menu_link">
                                         <span>About</span>
                                     </a>
                                 </div>
                             </div>
-                            <div class="accordion-item dropBx">
+                            <div class="accordion-item megaMenu">
                                 <div class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#megamenu1" aria-expanded="false" aria-controls="megamenu1">
@@ -158,17 +158,193 @@
                                 <div id="megamenu1" class="accordion-collapse collapse megMenu"
                                     data-bs-parent="#AccordMenu">
                                     <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                        </ul>
+                                        <div class="flxBx">
+                                            <div class="lftbX">
+                                                <ul>
+                                                    <li>
+                                                        <button class="accordion-button " type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#submenuAccord1"
+                                                            aria-expanded="true" aria-controls="submenuAccord1">
+                                                            Sarees
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#submenuAccord2"
+                                                            aria-expanded="true" aria-controls="submenuAccord2">
+                                                            Lehenga
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#submenuAccord3"
+                                                            aria-expanded="true" aria-controls="submenuAccord3">
+                                                            Gowns 
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#submenuAccord4"
+                                                            aria-expanded="true" aria-controls="submenuAccord4">
+                                                            Mens Wear
+                                                        </button>
+                                                    </li>
+                                                    <li>
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#submenuAccord5"
+                                                            aria-expanded="true" aria-controls="submenuAccord5">
+                                                            Kids Wear
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rtbx">
+                                                <div class="accordion" id="submenuAccord">
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord1" aria-expanded="true"
+                                                                aria-controls="submenuAccord1">
+                                                                Accordion Item #1
+                                                            </button>
+                                                        </h2>
+                                                        <div id="submenuAccord1"
+                                                            class="accordion-collapse collapse show"
+                                                            data-bs-parent="#submenuAccord">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Banarasi Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kanjeevaram Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Tussar Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kasavu Kada
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Silk Saree
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord2" aria-expanded="false"
+                                                                aria-controls="submenuAccord2">
+                                                                Accordion Item #2
+                                                            </button>
+                                                        </h2>
+                                                        <div id="submenuAccord2" class="accordion-collapse collapse"
+                                                            data-bs-parent="#submenuAccord">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Banarasi Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kanjeevaram Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Tussar Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kasavu Kada
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Silk Saree
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header">
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord3" aria-expanded="false"
+                                                                aria-controls="submenuAccord3">
+                                                                Accordion Item #3
+                                                            </button>
+                                                        </h2>
+                                                        <div id="submenuAccord3" class="accordion-collapse collapse"
+                                                            data-bs-parent="#submenuAccord">
+                                                            <div class="accordion-body">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Banarasi Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kanjeevaram Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Tussar Saree
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Kasavu Kada
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" class="cmnLink"
+                                                                            aria-label="cmnlink">
+                                                                            Silk Saree
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +387,24 @@
                                     <span></span>
                                     <span></span>
                                     <span></span>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_547_14230)">
+                                                <path
+                                                    d="M12.0034 5.05824e-07C9.62976 -0.000688557 7.3092 0.702648 5.33533 2.02092C3.36141 3.33925 1.82283 5.21335 0.914154 7.40619C0.00542789 9.59909 -0.232496 12.0121 0.230407 14.3402C0.693309 16.6683 1.83627 18.8069 3.51473 20.4853C5.19318 22.1637 7.33169 23.3066 9.65974 23.7696C11.9879 24.2324 14.4009 23.9945 16.5937 23.0859C18.7866 22.1771 20.6608 20.6386 21.9791 18.6646C23.2974 16.6908 24.0008 14.3702 24 11.9965C23.9964 8.81597 22.7313 5.76667 20.4823 3.51766C18.2333 1.26866 15.184 0.00359347 12.0034 5.05824e-07ZM17.4518 15.8922C17.5531 15.9931 17.6334 16.113 17.6884 16.2451C17.7432 16.3771 17.7714 16.5187 17.7714 16.6617C17.7714 16.8048 17.7432 16.9464 17.6884 17.0784C17.6334 17.2105 17.5531 17.3304 17.4518 17.4313C17.2449 17.634 16.9669 17.7476 16.6771 17.7476C16.3874 17.7476 16.1093 17.6341 15.9024 17.4313L12.0034 13.5357L8.10787 17.4313C7.90317 17.6342 7.62656 17.7481 7.33828 17.7481C7.05001 17.7481 6.7734 17.6342 6.5687 17.4313C6.46741 17.3304 6.38698 17.2105 6.33215 17.0784C6.27732 16.9464 6.24907 16.8048 6.24907 16.6617C6.24907 16.5187 6.27732 16.3771 6.33215 16.2451C6.38698 16.113 6.46741 15.9931 6.5687 15.8922L10.4643 11.9863L6.5687 8.09417C6.38088 7.88691 6.27998 7.61532 6.28687 7.33571C6.29376 7.0561 6.4079 6.78983 6.60571 6.59202C6.80352 6.39426 7.0698 6.28007 7.34941 6.27318C7.62902 6.26629 7.90061 6.36719 8.10787 6.555L12.0034 10.4472L15.8956 6.555C16.1016 6.3506 16.3801 6.23587 16.6703 6.23587C16.9605 6.23587 17.239 6.3506 17.445 6.555C17.5463 6.65595 17.6267 6.77585 17.6815 6.9079C17.7363 7.03996 17.7645 7.18156 17.7645 7.32459C17.7645 7.46757 17.7363 7.60917 17.6815 7.74122C17.6267 7.87328 17.5463 7.99322 17.445 8.09412L13.5528 11.9863L17.4518 15.8922Z"
+                                                    fill="#5E0B0B" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_547_14230">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
                                 </button>
+
                             </div>
                         </div>
                     </div>
@@ -328,6 +521,33 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.toggle('cPop-open');
         });
     });
+});
+
+$(document).ready(function() {
+    let currentTarget = null;
+
+    // Show the collapse on hover over the button
+    $(".lftbX .accordion-button").hover(
+        function() {
+            const target = $(this).data("bs-target");
+            currentTarget = target; // Track the active collapse
+            $(".rtbx .accordion-collapse").collapse("hide"); // Hide all others
+            $(target).collapse("show"); // Show the hovered item's target
+        }
+    );
+
+    // Prevent hiding when hovering over the collapse content
+    $(".rtbx .accordion-collapse").hover(
+        function() {
+            $(this).collapse("show"); // Keep it open
+        },
+        function() {
+            // Only hide if leaving the active collapse
+            if ($(this).attr("id") !== currentTarget) {
+                $(this).collapse("hide");
+            }
+        }
+    );
 });
 </script>
 
