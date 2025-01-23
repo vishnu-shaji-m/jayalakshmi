@@ -14,4 +14,15 @@ class FrontendController extends Controller
     {
         return view('index');
     }
+
+    /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function about()
+    {
+        return view('about');
+    }
 }
