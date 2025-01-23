@@ -375,10 +375,11 @@
                 border: none
                 background: none
                 position: relative
-                &:nth-child(1)
-                    .accordion-button
-                        @media only screen and (min-width: 992px)
-                            padding-left: 0
+                &:nth-child(2)
+                    .accordion-header
+                        .accordion-button
+                            @media only screen and (min-width: 992px)
+                                padding-left: 0 !important
                 &:has(.cmnBtn )
                     @media only screen and (max-width: 992px)
                         padding: 0 10px
@@ -551,7 +552,7 @@
                                                     &:hover
                                                         color: $basecolor
 
-                &:first-child
+                &:nth-child(1)
                     .accordion-header
                         .accordion-button
                             @media only screen and (min-width: 992px)
