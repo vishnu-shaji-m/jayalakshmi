@@ -100,7 +100,8 @@
                 <div class="lft">
                     <div class="flx">
                         <div class="logo">
-                            <img src="{{asset('frontend/images/founder-logo.webp')}}" width="121" height="441" class="lazy" loading="lazy" alt="logo">
+                            <img src="{{asset('frontend/images/founder-logo.webp')}}" width="121" height="441"
+                                class="lazy" loading="lazy" alt="logo">
                         </div>
                         <div class="infoSec">
                             <div class="mainHead">
@@ -135,6 +136,55 @@
                         <img src="{{ asset('frontend/images/founder.webp')}}"
                             data-src="{{ asset('frontend/images/founder.webp')}}" class="lazy" width="665" height="540"
                             loading="lazy" alt="abouImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="office">
+        <div class="container">
+            <div class="officeBx">
+                <div class="mainHead">
+                    <div class="mainTitle">Corporate Office & Store locations</div>
+                </div>
+                <div class="d_flx">
+                    <div class="item">
+                        <div class="title">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_683_29179)">
+                                        <path
+                                            d="M12 0C7.038 0 3 4.066 3 9.065C3 16.168 11.154 23.502 11.501 23.81C11.644 23.937 11.822 24 12 24C12.178 24 12.356 23.937 12.499 23.811C12.846 23.502 21 16.168 21 9.065C21 4.066 16.962 0 12 0ZM12 14C9.243 14 7 11.757 7 9C7 6.243 9.243 4 12 4C14.757 4 17 6.243 17 9C17 11.757 14.757 14 12 14Z"
+                                            fill="#EA2126" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_683_29179">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                Palarivattom <span>(Corporate Office)</span>
+                            </div>
+                        </div>
+                        <p>
+                            Palarivattom - Edappally Rd, Junction, Vennala, Kochi, Ernakulam, Kerala 682025
+                        </p>
+                        <span>Phone : </span> <a href="tel:04844299999" class="phn">
+                            0484 4299999
+                        </a>
+                        <a href="#" class="direction">
+                            <div class="icon">
+                                <img src="{{ asset('frontend/images/google-map.webp')}}" class="lazy" width="20"
+                                    height="20" loading="lazy" alt="google map">
+                            </div>
+                            <div class="text">
+                                Get Direction
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
