@@ -1,0 +1,242 @@
+.categoryListingPage
+    #style
+        padding: 40px 0px 40px
+        @media only screen and (min-width:1200px)
+            padding: 60px 0px 60px
+        @media only screen and (min-width:1551px)
+            padding: 80px 0px 80px
+        @media only screen and (min-width:1661px)
+            padding: 95px 0px 115px
+        .mainHead
+            max-width: 840px
+            margin-bottom: 60px
+            @media only screen and (min-width:1551px)
+                margin-bottom: 80px
+            @media only screen and (min-width:1661px)
+                margin-bottom: 100px
+        .d_flx
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            @media only screen and (min-width:500px)
+                margin: 0 -5px
+            @media only screen and (min-width:1200px)
+                margin: 0 -10px
+            @media only screen and (min-width:1661px)
+                margin: 0 -16px
+            .item
+                width: 100%
+                padding: 5px 0px
+                @media only screen and (min-width:500px)
+                    width: calc( 100% / 2 )
+                    padding: 5px 5px
+                @media only screen and (min-width:768px)
+                    width: calc( 100% / 3 )
+                @media only screen and (min-width:1200px)
+                    padding: 12px 10px
+                @media only screen and (min-width:1661px)
+                    padding: 17px 16px
+                .signatureBx
+                    display: block
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    overflow: hidden
+                    z-index: 0
+                    &::after
+                        position: absolute
+                        content: ''
+                        background: url('../images/styleIcon.svg') no-repeat
+                        height: 22px
+                        right: 15px
+                        bottom: 10px
+                        z-index: 1
+                        pointer-events: none
+                        width: 100px
+                        background-size: 100px
+                        @media only screen and (min-width:768px)
+                            bottom: 20px
+                            width: 140px
+                            background-size: 140px
+                        @media only screen and (min-width:1441px)
+                            width: 165px
+                            background-size: 165px
+                    &:hover
+                        .imgbx
+                            img
+                                transform: scale(1.1)
+
+                    .imgbx
+                        width: 100%
+                        height: 100%
+                        overflow: hidden
+                        position: relative
+                        z-index: 1
+                        aspect-ratio: 510/350
+                        &:after
+                            position: absolute
+                            content: ''
+                            left: 0
+                            bottom: 0
+                            width: 100%
+                            height: 150px
+                            z-index: 2
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+                            opacity: 0.6
+                        img
+                            transition: all 0.9s
+                            @include imgFit
+                    .info
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        padding: 20px
+                        width: 100%
+                        z-index: 4
+
+                        .mainTxt
+                            font-family: $fontstack2
+                            color: $white
+                            font-weight: 400
+                            text-transform: capitalize
+                            font-size: 20px
+                            @media only screen and (min-width:1441px)
+                                font-size: 24px
+    #collections
+        padding: 40px 0px 40px
+        @media only screen and (min-width:1200px)
+            padding: 60px 0px 60px
+        @media only screen and (min-width:1441px)
+            padding: 80px 0px 80px
+        @media only screen and (min-width:1661px)
+            padding: 95px 0px 115px
+        .mainHead
+            max-width: 840px
+            margin-bottom: 60px
+            @media only screen and (min-width:1551px)
+                margin-bottom: 80px
+            @media only screen and (min-width:1661px)
+                margin-bottom: 100px
+        .d_flx
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            @media only screen and (min-width:530px)
+                margin: 0 -5px
+            @media only screen and (min-width:1351px)
+                margin: 0 -12px
+            @media only screen and (min-width:1661px)
+                margin: 0 -18px
+            .item
+                width: 100%
+                padding: 5px 0px
+                @media only screen and (min-width:530px)
+                    width: calc( 100% / 2 )
+                    padding: 5px 5px
+                @media only screen and (min-width:1351px)
+                    padding: 15px 12px
+                @media only screen and (min-width:1661px)
+                    padding: 20px 18px
+                .sub_category
+                    .imgBx
+                        position: relative
+                        width: 100%
+                        aspect-ratio: 780 / 518
+                        overflow: hidden
+                        &::after
+                            content: ""
+                            position: absolute
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            height: 150px
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(40, 0, 0, 0.90) 99.61%)
+                            mix-blend-mode: multiply
+                        img
+                            @include imgFit
+                            transition: all 0.5s
+                        .info
+                            position: absolute
+                            left: 25px
+                            bottom: 25px
+                            z-index: 1
+                            @media only screen and (min-width:1351px)
+                                left: 45px
+                                bottom: 40px
+                            .popup_flx
+                                display: flex
+                                margin: 0 -10px
+                                padding-bottom: 8px
+                                position: relative
+                                margin-bottom: 8px
+                                transition: all 0.5s
+                                @media only screen and (min-width:580px)
+                                    opacity: 0
+                                    visibility: hidden
+                                @media only screen and (min-width:1351px)
+                                    margin: 0 -20px
+                                    margin-bottom: 10px
+                                    padding-bottom: 12px
+                                @media only screen and (min-width:1551px)
+                                    padding-bottom: 20px
+                                    margin: 0 -25px
+                                    margin-bottom: 15px
+                                &::after
+                                    content: ""
+                                    position: absolute
+                                    left: 10px
+                                    bottom: 0
+                                    width: 136px
+                                    height: 1px
+                                    background: linear-gradient(360deg, #EAAA56 0%, #846031 100%)
+                                    @media only screen and (min-width:580px)
+                                        width: 156px
+                                    @media only screen and (min-width:1351px)
+                                        left: 25px
+                                        width: 190px
+                                    @media only screen and (min-width:1551px)
+                                        width: 226px
+                                .view, .enq
+                                    font-size: 12px
+                                    font-weight: 500
+                                    color: #fff
+                                    text-transform: uppercase
+                                    display: block
+                                    padding: 0px 10px
+                                    @media only screen and (min-width:580px)
+                                        font-size: 14px
+                                    @media only screen and (min-width:1351px)
+                                        font-size: 16px
+                                        padding: 0px 20px
+                                    @media only screen and (min-width:1551px)
+                                        font-size: 18px
+                                        padding: 0px 25px
+                                .enq
+                                    position: relative
+                                    &::before
+                                        content: ""
+                                        position: absolute
+                                        top: 0
+                                        bottom: 0
+                                        margin: auto
+                                        left: 0px
+                                        width: 1px
+                                        background-color: #fff
+                                        height: 13px
+                            .name
+                                font-size: 18px
+                                font-family: $fontstack2
+                                color: #fff
+                                font-weight: 700
+                                @media only screen and (min-width:1351px)
+                                    font-size: 22px
+                                @media only screen and (min-width:1551px)
+                                    font-size: 28px
+                    &:hover
+                        .imgBx
+                            img
+                                transform: scale(1.1)
+                            .info
+                                .popup_flx
+                                    opacity: 1
+                                    visibility: visible
