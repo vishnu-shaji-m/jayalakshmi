@@ -25,4 +25,15 @@ class FrontendController extends Controller
     {
         return view('about');
     }
+
+      /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function categoryListing()
+    {
+        return view('categoryListing');
+    }
 }

@@ -1,6 +1,12 @@
 .aboutPage
     #about-sec
-        padding: 100px 0px 20px
+        padding: 40px 0px 20px
+        @media only screen and (min-width:992px)
+            padding: 60px 0px 20px
+        @media only screen and (min-width:1441px)
+            padding: 80px 0px 20px
+        @media only screen and (min-width:1661px)
+            padding: 100px 0px 20px
         .flxBx
             .lefBx
                 width: 100%
@@ -14,7 +20,7 @@
                     .imgWrp
                         z-index: 1
                         @media only screen and (min-width:992px)
-                            width: 540px
+                            width: 400px
                             position: relative
                             display: block
                             float: left
@@ -22,14 +28,15 @@
                             margin-bottom: 20px
                             padding-right: 40px
                         @media only screen and (min-width:1351px)
-                            width: 600px
+                            width: 450
                             height: 470px
                         @media only screen and (min-width:1441px)
-                            width: 680px
+                            width: 450px
                             height: 510px
-                            padding-right: 66px
+                            padding-right: 40px
                         @media only screen and (min-width:1551px)
                             width: 506px
+                            padding-right: 66px
                         @media only screen and (max-width:992px)
                             max-width: 540px
                             margin: auto
@@ -37,15 +44,25 @@
                         .imgBx
                             position: relative
                             width: 100%
-                            height: 100%
+                            height: auto
+                            @media only screen and (min-width:992px)
+                                height: 100%
                             .about-logo
                                 position: absolute
                                 bottom: 20px
                                 right: 20px
-                                max-width: 273px
+                                max-width: 200px
+                                @media only screen and (min-width:1351px)
+                                    max-width: 240px
+                                @media only screen and (min-width:1551px)
+                                    max-width: 273px
 
                             img
-                                @include imgFit
+                                width: 100%
+                                height: auto
+                                object-fit: cover
+                                @media only screen and (min-width:992px)
+                                    height: 100%
                     .infoSec
                         width: 100%
                         padding-left: 0px
@@ -54,8 +71,14 @@
                                 display: none
                         p
                             strong
-                                font-size: 20px
+                                font-size: 14px
                                 font-style: italic
+                                @media only screen and (min-width:540px)
+                                    font-size: 16px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 18px
+                                @media only screen and (min-width:1551px)
+                                    font-size: 20px
                     h1, h2, h3, h4, h5, h6
                         line-height: 1.1
                         color: $text
@@ -91,53 +114,128 @@
             bottom: 0
             left: 0
             right: 0
-            max-width: 521px
+            max-width: 300px
             margin: auto
+            @media only screen and (min-width:1441px)
+                max-width: 400px
+            @media only screen and (min-width:1551px)
+                max-width: 521px
         .flxBx
             display: flex
             flex-wrap: wrap
-            margin: 0 -23px
+            @media only screen and (min-width:992px)
+                margin: 0 -15px
+            @media only screen and (min-width:1441px)
+                margin: 0 -23px
             .lft
-                width: calc( 100% - 495px )
-                padding: 10px 23px
+                width: 100%
+                padding: 10px 0px
+                @media only screen and (min-width:992px)
+                    width: calc( 100% - 350px )
+                    padding: 10px 15px
+                @media only screen and (min-width:1441px)
+                    width: calc( 100% - 420px )
+                    padding: 10px 23px
+                @media only screen and (min-width:1551px)
+                    width: calc( 100% - 495px )
                 .flx
                     display: flex
-                    margin: 0 -30px
+                    margin: 0 -10px
+                    @media only screen and (min-width:1441px)
+                        margin: 0 -20px
+                    @media only screen and (min-width:1551px)
+                        margin: 0 -30px
                     .logo
-                        width: 150px
-                        padding: 0px 30px
+                        display: none
+                        @media only screen and (min-width:540px)
+                            width: 60px
+                            padding: 0px 10px
+                            display: block
+                        @media only screen and (min-width:768px)
+                            width: 100px
+                        @media only screen and (min-width:1441px)
+                            width: 130px
+                            padding: 0px 20px
+                        @media only screen and (min-width:1551px)
+                            width: 150px
+                            padding: 0px 30px
                         img
                             width: 100%
                             height: 100%
                             object-fit: contain
                     .infoSec
-                        width: calc( 100% - 150px )
-                        padding: 0px 30px
+                        width: 100%
+                        @media only screen and (min-width:540px)
+                            width: calc( 100% - 60px )
+                            padding: 0px 10px
+                        @media only screen and (min-width:768px)
+                            width: calc( 100% - 100px )
+                        @media only screen and (min-width:1441px)
+                            width: calc( 100% - 130px )
+                            padding: 0px 20px
+                        @media only screen and (min-width:1551px)
+                            width: calc( 100% - 150px )
+                            padding: 0px 30px
+                        .mainHead
+                            &::after
+                                display: none
             .rgt
-                width: 495px
-                padding: 10px 23px
+                width: 350px
+                padding: 10px 0px
+                margin: auto
+                @media only screen and (min-width:992px)
+                    padding: 10px 15px
+                @media only screen and (min-width:1441px)
+                    width: 420px
+                    padding: 10px 23px
+                @media only screen and (min-width:1551px)
+                    width: 495px
                 .imgBx
                     position: relative
-                    max-width: 380px
+                    max-width: 260px
                     margin: auto
+                    @media only screen and (min-width:1441px)
+                        max-width: 320px
+                    @media only screen and (min-width:1551px)
+                        max-width: 380px
                     img
                         @include imgFit
                     &::after
                         content: ""
                         position: absolute
                         background-image: url(../images/round.webp)
-                        width: 430px
-                        height: 430px
-                        background-size: 430px
-                        left: -25px
+                        width: 280px
+                        height: 280px
+                        background-size: 280px
+                        left: -15px
                         right: 0
-                        bottom: -25px
+                        bottom: -15px
                         z-index: -1
+                        @media only screen and (min-width:1441px)
+                            width: 360px
+                            height: 360px
+                            background-size: 360px
+                            left: -20px
+                            bottom: -20px
+                        @media only screen and (min-width:1551px)
+                            width: 430px
+                            height: 430px
+                            background-size: 430px
+                            left: -25px
+                            bottom: -25px
     #office
-        padding: 30px 0px 90px
+        padding: 10px 0px 30px
+        @media only screen and (min-width:1441px)
+            padding: 30px 0px 60px
+        @media only screen and (min-width:1661px)
+            padding: 30px 0px 90px
         .officeBx
             background-color: #FFEDED
-            padding: 45px 55px 70px 60px
+            padding: 25px 25px 30px 30px
+            @media only screen and (min-width:992px)
+                padding: 45px 55px 70px 60px
+            @media only screen and (min-width:1551px)
+                padding: 45px 55px 70px 60px
             .mainHead
                 margin-bottom: 40px
                 &::after
@@ -151,70 +249,206 @@
                         right: 0px
                         height: 1px
                         background-color: #BE965D
-                        width: 52%
+                        width: 13%
                         top: 15px
                         bottom: 0
                         margin: auto
                         z-index: 0
+                        @media only screen and (min-width:440px)
+                            width: 20%
+                        @media only screen and (min-width:510px)
+                            width: 35%
+                        @media only screen and (min-width:630px)
+                            width: 40%
+                        @media only screen and (min-width:768px)
+                            width: 52%
+                        @media only screen and (min-width:992px)
+                            width: 60%
+                        @media only screen and (min-width:1441px)
+                            width: 52%
             .d_flx
                 display: flex
                 flex-wrap: wrap
                 // margin: 0 -55px
                 .item
-                    width: calc( 100% / 3 )
+                    width: 100%
                     // padding: 10px 55px
                     border-right: 1px solid rgba(0, 0, 0, .39)
                     border-right-style: dashed
                     border-bottom: 1px solid rgba(0, 0, 0, .39)
                     border-bottom-style: dashed
+                    @media only screen and (min-width:540px)
+                        width: calc( 100% / 2 )
+                    @media only screen and (min-width:768px)
+                        width: calc( 100% / 3 )
+                    @media only screen and (max-width:540px)
+                        border-right: none !important
+                        border-bottom: 1px solid rgba(0, 0, 0, .39) !important
+                        border-bottom-style: dashed !important
                     .itemBx
-                        padding: 40px 95px 65px 90px
+                        padding: 15px 0px 
+                        @media only screen and (min-width:540px)
+                            padding: 20px 15px 15px 15px
+                        @media only screen and (min-width:992px)
+                            padding: 30px 30px 30px 30px
+                        @media only screen and (min-width:1441px)
+                            padding: 40px 50px 40px 50px
+                        @media only screen and (min-width:1551px)
+                            padding: 40px 95px 65px 90px
                         .title
                             display: flex
                             align-items: center
                             margin-bottom: 15px
                             .icon
-                                width: 34px
+                                width: 20px
                                 padding-right: 10px
+                                @media only screen and (min-width:992px)
+                                    width: 34px
                             .text
-                                font-size: 18px
+                                font-size: 14px
                                 font-weight: 700
                                 color: #111111
-                                width: calc( 100% - 34px )
+                                width: calc( 100% - 20px )
+                                @media only screen and (min-width:992px)
+                                    width: calc( 100% - 34px )
+                                @media only screen and (min-width:1200px)
+                                    font-size: 16px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 18px
                                 span
                                     color: #5E0B0B
                         p
                             margin-bottom: 15px
                             a
-                                font-size: 18px
+                                font-size: 14px
                                 font-weight: 500
                                 color: #111111
+                                @media only screen and (min-width:1200px)
+                                    font-size: 16px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 18px
                             &:hover
                                 a
                                     color: $basecolor
                         .direction
                             display: flex
+                            align-items: center
                             .icon
                                 width: 30px
                                 padding-right: 10px
+                                img
+                                    @include imgFit
                             .text
                                 width: fit-content
-                                font-size: 18px
+                                font-size: 14px
                                 color: #111111
                                 border-bottom: 1px solid #111
                                 padding-bottom: 3px
+                                @media only screen and (min-width:1200px)
+                                    font-size: 16px
+                                @media only screen and (min-width:1441px)
+                                    font-size: 18px
                             &:hover
                                 .text
                                     color: $basecolor
                     &:nth-child(4), &:nth-child(5), &:nth-child(6)
-                        border-bottom: none
+                        @media only screen and (min-width:768px)
+                            border-bottom: none
                         .itemBx
-                            padding-bottom: 0px
+                            @media only screen and (min-width:768px)
+                                padding-bottom: 0px
                     &:nth-child(3), &:nth-child(6)
-                        border-right: none
+                        @media only screen and (min-width:768px)
+                            border-right: none
                     &:nth-child(1), &:nth-child(4)
                         .itemBx
-                            padding-left: 0px
+                            @media only screen and (min-width:768px)
+                                padding-left: 0px
                     &:nth-child(1), &:nth-child(2), &:nth-child(3)
                         .itemBx
-                            padding-top: 0px
+                            @media only screen and (min-width:768px)
+                                padding-top: 0px
+                    &:nth-child(5), &:nth-child(6)
+                        @media only screen and (max-width:768px)
+                            border-bottom: none
+                    &:nth-child(2), &:nth-child(4), &:nth-child(6)
+                        @media only screen and (max-width:768px)
+                            border-right: none
+    #instafeed
+        background-color: #EFEFEF
+        padding: 40px 0px 40px
+        @media only screen and (min-width:1200px)
+            padding: 60px 0px 60px
+        @media only screen and (min-width:1551px)
+            padding: 95px 0px 80px
+        .he_sec
+            text-align: center
+            max-width: 948px
+            margin: auto
+            position: relative
+            margin-bottom: 80px
+            @media only screen and (min-width:1441px)
+                margin-bottom: 100px
+            .title
+                display: flex
+                align-items: center
+                justify-content: center
+                .icon
+                    width: 35px
+                .text
+                    font-size: 24px
+                    font-family: $fontstack2
+                    color: #000
+                    @media only screen and (min-width:992px)
+                        font-size: 28px
+                    @media only screen and (min-width:1200px)
+                        font-size: 32px
+                    @media only screen and (min-width:1441px)
+                        font-size: 38px
+                    @media only screen and (min-width:1551px)
+                        font-size: 42px
+            &::after
+                position: absolute
+                content: ''
+                left: 0
+                bottom: -40px
+                right: 0
+                background: url('../images/iconLog.svg') no-repeat
+                width: 110px
+                background-size: 110px
+                height: 30px
+                margin: auto
+        .swiper-wrapper
+            height: auto !important
+        .bridalimBx
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            &:hover
+                .imgBx
+                    img
+                        transform: scale(1.1)
+            .imgBx
+                width: 100%
+                overflow: hidden
+                aspect-ratio: 245 / 245
+                position: relative
+                img
+                    transition: all 0.5s
+                    @include imgFit
+                .icon
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    margin: auto
+                    text-align: center
+                    width: 24px
+                    height: 24px
+        .cmnBtn
+            margin: auto
+            margin-top: 30px
+            @media only screen and (min-width:1441px)
+                margin-top: 50px
