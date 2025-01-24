@@ -28,6 +28,10 @@
         padding-bottom: 5px
         box-shadow: 0 5px 10px rgba(0,0,0,.1)
         #HeaderMain
+            #AccordMenu
+                @media only screen and (max-width: 992px)
+                    top: 75px
+                    height: calc(100vh - 75px)
             .mainFlx
                 .lftSd
                     padding: 0 0 10px
@@ -500,12 +504,18 @@
                             position: absolute
                             content: ''
                             top: 0
-                            bottom: 0
-                            right: 0
+                            bottom: 0px
+                            right: 0px
                             display: block
                             background: url('../images/arrows.svg') no-repeat
                             width: 12px
                             height: 12px
+                            @media only screen and (min-width:992px)
+                                bottom: -5px
+                                right: -10px
+                            @media only screen and (min-width:1441px)
+                                bottom: -5px
+                                right: 0px
 
                     &:hover
                         .megMenu

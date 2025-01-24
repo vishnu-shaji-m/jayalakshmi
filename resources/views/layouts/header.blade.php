@@ -381,6 +381,102 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord4"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord4">
+                                                                    Mens Wear
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord4" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord5"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord5">
+                                                                    Kids Wear
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord5" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
