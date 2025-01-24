@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Home')
+@section('title', 'jayalakshmi silks')
 
 @push('css')
 {{-- Placeholder for pushing CSS files specific to this page into the stack --}}
@@ -421,7 +421,7 @@
                             </div>
                         </a>
                     </div>
-                    <!-- <div class="swiper-slide">
+                    <div class="swiper-slide">
                         <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
                             <div class="imgbx">
                                 <img src="{{asset('frontend/images/fashion5.webp')}}" width="300" height="420"
@@ -431,7 +431,8 @@
                                 <div class="mainTxt">Pastel Blue Printed Art
                                     Silk Saree</div>
                             </div>
-                        </a> -->
+                        </a>
+                    </div>
                 </div>
 
                 <div class="btnBx">
@@ -789,10 +790,11 @@
         <div class="container-fluid">
             <div class="sliderBx">
                 <div class="item">
-                    <div class="bridalSlider bridalSlider1 ">
+                    <div class="bridalSlider bridalSlider1">
                         <div class="swiper-wrapper">
                             @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
-                                <a href="javascript:void(0)" class="bridalimBx" aria-label="bridaLink">
+                                <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
+                                    aria-label="bridaLink" data-fancybox="gallery">
                                     <div class="imgBx">
                                         <img src="{{ asset('frontend/images/br' . $i . '.webp') }}" width="245"
                                             height="245" alt="Bridal Image {{ $i }}">
@@ -804,10 +806,11 @@
                 </div>
             </div>
             <div class="item">
-                <div class="bridalSlider bridalSlider2 ">
+                <div class="bridalSlider bridalSlider2">
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
-                            <a href="javascript:void(0)" class="bridalimBx" aria-label="bridaLink">
+                            <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
+                                aria-label="bridaLink" data-fancybox="gallery">
                                 <div class="imgBx">
                                     <img src="{{ asset('frontend/images/br' . $i . '.webp') }}" width="245" height="245"
                                         alt="Bridal Image {{ $i }}">
@@ -818,6 +821,8 @@
                 </div>
             </div>
         </div>
+</div>
+
 </div>
 
 </div>

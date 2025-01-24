@@ -32,7 +32,7 @@
                 .lftSd
                     padding: 0 0 10px
                     .logo
-                        max-width: 110px
+                        max-width: 210px
                         padding-top: 10px
 
     #HeaderMain
@@ -330,11 +330,41 @@
                 font-weight: 500
                 color: $black
                 font-size: 22px
-                margin-bottom: 10px
-                padding: 15px
+                margin-bottom: 15px
                 text-transform: capitalize
                 display: none
                 background: $white
+            .footerSec
+                padding-top: 80px
+                @media only screen and (min-width: 992px)
+                    display: none
+                .socialLinks
+                    display: flex
+                    align-items: center
+                    margin-bottom: 25px
+                    li
+                        &:not(:last-of-type)
+                            margin-right: 20px
+                    .socialIcon
+                        display: flex
+                        &:hover
+                            .icon
+                                svg
+                                    fill: $basecolor
+                        .icon
+                            width: 19px
+                            height: 19px
+                            display: flex
+                            svg
+                                transition: all 0.5s
+                                fill: #6C6C6C
+                                @include imgFit
+                                &#fb
+                                    width: 9px
+                p
+                    color: #444444
+                    font-size: 13px
+                    font-weight: 400
 
         #AccordMenu
             height: 100%
@@ -357,25 +387,37 @@
             @media only screen and (max-width:992px)
                 position: absolute
                 display: block !important
-                background: #DDB17A
-                height: 100vh
+                background: $white
+                height: calc(100vh - 90px)
                 max-width: 100%
                 opacity: 0
                 visibility: hidden
                 right: 0
-                top: 0
+                top: 90px
                 width: 100%
-                // padding-top: 20px
                 backdrop-filter: blur(20px)
                 --webkit-backdrop-filter: blur(20px)
-                margin-top: 80px
-
+                padding: 10px 25px 0
+                overflow: auto
+            .menuSecBx
+                background: #ddb17a
+                padding: 30px 20px
+                @media only screen and (min-width: 992px)
+                    display: flex
+                    width: 100%
+                    background: transparent
+                    justify-content: space-between
+                    padding: 0
             .accordion-item
                 border-radius: 0
                 border: none
                 background: none
                 position: relative
-                &:nth-child(2)
+                margin-bottom: 15px
+                @media only screen and (min-width: 992px)
+                    margin-bottom: 0
+
+                &:nth-child(1)
                     .accordion-header
                         .accordion-button
                             @media only screen and (min-width: 992px)
@@ -411,8 +453,8 @@
                             height: fit-content
                             background-image: none
 
-                        span
-                            margin-right: 15px
+                        // span
+                        //     margin-right: 15px
                 .dropBxMenu
                     background: #626e7899
                     @media only screen and (min-width: 992px)
@@ -453,9 +495,22 @@
                                     background: $basecolor
                                     color: $white
                 &:has(.megMenu)
+                    .accordion-button
+                        &::after
+                            position: absolute
+                            content: ''
+                            top: 0
+                            bottom: 0
+                            right: 0
+                            display: block
+                            background: url('../images/arrows.svg') no-repeat
+                            width: 12px
+                            height: 12px
+
                     &:hover
                         .megMenu
-                            display: block
+                            @media only screen and (min-width: 992px)
+                                display: block
                     .megMenu
                         @media only screen and (min-width: 992px)
                             position: absolute
@@ -467,7 +522,16 @@
                         @media only screen and (min-width:1441px)
                             min-width: 540px
                         .accordion-body
-                            padding: 0
+                            padding: 15px 0 0
+                            @media only screen and (min-width: 992px)
+                                padding: 0
+                            .accordion-button
+                                @media only screen and (max-width: 992px)
+                                    font-size: 14px
+                                    padding-left: 25px
+                            .accordion-body
+                                @media only screen and (max-width: 992px)
+                                    padding: 15px 25px !important
                         .flxBx
                             display: flex
                             .lftbX
@@ -571,21 +635,23 @@
                         @include defaultValue
                         font-size: 16px
                         line-height: 1
-                        font-weight: 700
+                        font-weight: 500
                         position: relative
                         display: flex
                         text-align: start
                         transition: color .4s ease
-                        padding: 15px 15px
+                        padding: 0px
                         margin: 0
                         width: 100%
-                        border-bottom: 1px solid #ebebeb6e
                         color: $black
+                        letter-spacing: 0.4px
                         text-transform: uppercase
                         @media only screen and (min-width: 992px)
+                            font-weight: 700
                             border: 0
                             width: fit-content
                             font-size: 14px
+                            letter-spacing: 0.2px
                             padding: 20px 10px
                         @media only screen and (min-width: 1200px)
                             padding: 15px 10px
@@ -598,12 +664,27 @@
                         @media only screen and (min-width: 1661px)
                             font-size: 16px
                             padding: 15px 30px
+                        &:has(.icon)
+                            .icon
+                                width: 22px
+                                height: 22px
+                                display: flex
+                                margin-right: 10px
+                                @media only screen and (min-width: 992px)
+                                    display: none
+                                svg
+                                    @include imgFit
 
                         &[aria-expanded="true"], &:hover
                             color: $basecolor
                             &::after
                                 color: $basecolor
-
+                        span
+                            @media only screen and (max-width: 992px)
+                                padding-top: 12px
+                                padding-bottom: 15px
+                                width: 100%
+                                border-bottom: 1px solid rgba($black, 0.16)
                         &.active
                             color: $basecolor
                             &::after
@@ -611,20 +692,36 @@
                         &.visitBtn
                             background: $basecolor
                             color: $white
-                            height: 35px
-                            min-width: 105px
+                            height: 40px
+                            width: 105px
+                            font-size: 16px
+                            font-weight: 400
+                            margin: 0px
+                            margin-top: 15px
+                            text-align: center
                             @include center
+                            margin-bottom: 40px
+                            @media only screen and (min-width: 992px)
+                                min-width: 105px
+                                height: 45px
+                                margin: 0
+                                width: 100%
                             @media only screen and (min-width: 1200px)
                                 font-size: 16px
                                 height: 100%
                                 min-width: 130px
                             @media only screen and (min-width: 1351px)
                                 min-width: 150px
-                            @media only screen and (max-width: 992px)
-                                display: none
 
                         &::after
                             display: none
+            .logoBx
+                display: flex
+                width: 100%
+                @media only screen and (min-width: 992px)
+                    display: none
+                img
+                    @include imgFit
 
 .noBanner
     #Header
