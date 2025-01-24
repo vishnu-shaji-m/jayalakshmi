@@ -25,4 +25,16 @@ class FrontendController extends Controller
     {
         return view('about');
     }
+
+    /**
+     * Display the brides page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    
+    public function brides()
+    {
+        return view('brides');
+    }
 }

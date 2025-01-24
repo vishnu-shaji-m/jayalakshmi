@@ -891,7 +891,7 @@ document.addEventListener("DOMContentLoaded", function() {
         script.id = 'FancyboxJs';
 
         document.head.appendChild(script);
-    }, 3000);
+    }, 100);
 });
 </script>
 
