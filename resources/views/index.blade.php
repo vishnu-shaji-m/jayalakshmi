@@ -161,7 +161,7 @@
         <div class="container">
             <div class="abtLx">
                 <div class="alx">
-                    <div class="contentBx">
+                    <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainHeads">
                             <h1 class="subT">About us</h1>
                             <div class="mainTitle">Jayalakshmi Silks:<br>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="arlx">
                     <div class="flxBx">
-                        <div class="imgWrap">
+                        <div class="imgWrap wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="imgBx">
                                 <img src="{{asset('frontend/images/about.webp')}}"
                                     data-src="{{asset('frontend/images/about.webp')}}" class="lazy" loading="lazy"
@@ -238,12 +238,12 @@
 
     <section id="saree">
         <div class="container">
-            <div class="mainHead center">
+            <div class="mainHead center wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainTitle">Saree <span>Collections</span></div>
                 <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with love and
                     adorned with intricate details.</p>
             </div>
-            <div class="sareeSlider">
+            <div class="sareeSlider wow animate__fadeInLeft" data-wow-duration="1s">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="javascript:void(0)" class="sareeBx" aria-label="collectionLink">
@@ -305,7 +305,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 leftbx">
-                    <div class="contentBx">
+                    <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainHead white">
                             <div class="mainTitle">Celebrate life's <span>special</span> <br>
                                 moments in <span>style</span></div>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="sliderBx">
-                        <div class="momentSlider">
+                        <div class="momentSlider wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="javascript:void(0)" class="momentBx" aria-label="momentLink">
@@ -357,12 +357,12 @@
 
     <section id="fashion">
         <div class="container">
-            <div class="mainHead center">
+            <div class="mainHead center wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainTitle">Fashion <span>Forward</span></div>
                 <p>Immerse yourself in a world of exquisite silks, rich fabrics, and stunning designs, perfect for every
                     occasion.</p>
             </div>
-            <div class="fashionSlider">
+            <div class="fashionSlider wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
@@ -491,7 +491,7 @@
 
 
         <div class="container">
-            <div class="contentBx">
+            <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainHead white">
                     <div class="mainTitle">Bridal <span>lounge</span></div>
                 </div>
@@ -517,14 +517,14 @@
     <section id="signature">
         <div class="container">
             <div class="mobheading">
-                <div class="mainHead">
+                <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="mainTitle">Signature <span>Styles</span></div>
                     <p>Explore our diverse collection of sarees, salwar kameez, lehengas, western wear, and more. Our
                         product categories cater to all your style needs, offering a wide range of options for women,
                         men, and kids. Find the perfect outfit for every occasion, from casual to formal.</p>
                 </div>
             </div>
-            <div class="signatureSlider">
+            <div class="signatureSlider wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="mainHead">
@@ -590,7 +590,7 @@
                 </div>
             </div>
 
-            <a href="javascript:void(0)" class="cmnBtn hoveranim mobBtn" aria-label="cmnLink">
+            <a href="javascript:void(0)" class="cmnBtn hoveranim mobBtn wow animate__fadeInUp" data-wow-duration="1s" aria-label="cmnLink">
                 <span>VIEW ALL </span>
             </a>
         </div>
@@ -607,7 +607,7 @@
             data-src="{{asset('frontend/images/consult-mobile.webp')}}" width="1920" height="478"
             class="lazy jarallax-img mobileImage" loading="lazy" alt="consaltImg">
         <div class="container">
-            <div class="contentBx">
+            <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainHead white">
                     <div class="mainTitle">Consult A <span>Stylist</span></div>
                 </div>
@@ -633,7 +633,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mainHead mobileContent">
+                    <div class="mainHead mobileContent wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainTitle">
                             <span>#Forevermore</span>
                         </div>
@@ -657,7 +657,7 @@
                 </div>
                 <div class="col-lg-8 flBx">
                     <div class="contentBx">
-                        <div class="flx">
+                        <div class="flx wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="lft">
                                 <div class="mainHead">
                                     <div class="mainTitle">
@@ -724,7 +724,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="foreveSlider">
+                    <div class="foreveSlider wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <a href="javascript:void(0)" class="foreverBx" aria-label="signatureLink">

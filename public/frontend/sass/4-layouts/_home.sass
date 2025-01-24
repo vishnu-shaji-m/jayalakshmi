@@ -124,6 +124,7 @@
                             width: 100%
                             height: 100%
                             overflow: hidden
+                            aspect-ratio: 515 / 510
                             img
                                 @include imgFit
                         .tptxt
@@ -331,6 +332,7 @@
                 overflow: hidden
                 position: relative
                 z-index: 1
+                aspect-ratio: 400 / 490
                 &:after
                     position: absolute
                     content: ''
@@ -413,6 +415,8 @@
                 &::after
                     display: none
                 p
+                    @include clamp
+                    --lines: 3
                     font-weight: 300
             .cmnBtn
                 min-width: 215px
@@ -445,6 +449,7 @@
             width: 100%
             height: 100%
             overflow: hidden
+            aspect-ratio: 250 / 350
             img
                 transition: all 0.5s
                 @include imgFit
@@ -514,11 +519,15 @@
             width: 100%
             height: 50%
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
-
+        &:hover
+            .imgbx
+                img
+                    transform: scale(1.1)
         .imgbx
             width: 100%
             height: 100%
             overflow: hidden
+            aspect-ratio: 300 / 420
             img
                 transition: all 0.5s
                 @include imgFit
@@ -974,6 +983,10 @@
                     width: calc(100% - 120px)
                     @media only screen and (max-width:992px)
                         display: none
+                    .mainHead
+                        p
+                            @include clamp
+                            --lines: 3
                 .rtbx
                     width: 120px
             .mainHead
