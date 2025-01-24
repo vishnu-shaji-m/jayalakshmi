@@ -36,4 +36,16 @@ class FrontendController extends Controller
     {
         return view('categoryListing');
     }
+
+    
+      /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function subCategoryListing()
+    {
+        return view('subCategoryListing');
+    }
 }

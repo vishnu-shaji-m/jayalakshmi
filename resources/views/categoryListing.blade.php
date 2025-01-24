@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'About')
+@section('title', 'category')
 @push('css')
 {{-- Placeholder for pushing CSS files specific to this page into the stack --}}
 @endpush
@@ -33,7 +33,7 @@
 
     <section id="style">
         <div class="container">
-            <div class="mainHead">
+            <div class="mainHead center wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainTitle">Explore Our Signature <span>Styles</span></div>
                 <p>
                     Explore our diverse collection of sarees, salwar kameez, lehengas, western wear, and more. Our
@@ -42,13 +42,53 @@
                 </p>
             </div>
             <div class="d_flx">
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style1.webp')}}" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style1.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Saree</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
+                        <div class="imgbx">
+                            <img src="{{asset('frontend/images/style2.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="mainTxt">Lehenga</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
+                        <div class="imgbx">
+                            <img src="{{asset('frontend/images/style3.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="mainTxt">Gown</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
+                        <div class="imgbx">
+                            <img src="{{asset('frontend/images/style4.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="mainTxt">Mens Wear</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
+                    <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
+                        <div class="imgbx">
+                            <img src="{{asset('frontend/images/style5.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="mainTxt">Kids Wear</div>
                         </div>
                     </a>
                 </div>

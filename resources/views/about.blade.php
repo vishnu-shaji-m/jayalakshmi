@@ -19,7 +19,7 @@
                 <div id="Breadcrumb">
                     <ul>
                         <li>
-                            <a href="index1.php" aria-label="links">Home</a>
+                            <a href="index" aria-label="links">Home</a>
                         </li>
                         <li>
                             <a href="#!" class="current" aria-label="links">About Us</a>
