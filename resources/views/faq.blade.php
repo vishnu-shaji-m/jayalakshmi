@@ -8,6 +8,15 @@
 
 <div id="pageWrapper" class="faqPage">
 
+<section id="faq">
+    <div class="container">
+        <div class="mainHead">
+            <div class="mainTitle">FAQ ( frequently asked questions)</div>
+        </div>
+        <div class="faqBx"></div>
+    </div>
+</section>
+
 </div>
 
 
