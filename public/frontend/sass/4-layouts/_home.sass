@@ -294,35 +294,36 @@
             &::before, &::after
                 position: absolute
                 content: ""
-                left: -20px
-                width: 100%
                 background: url(../images/sareTicon.svg) no-repeat
-                top: -15px
                 z-index: 3
-                @media only screen and (min-width:1351px)
-                    background-size: 220px
-                    height: 220px
+                top: 10px
+                left: 10px
+                width: 180px
+                height: 180px
+                background-size: 180px
+                @media only screen and (min-width:1200px)
+                    top: 15px
+                    left: 15px
+                    width: 210px
+                    height: 210px
+                    background-size: 210px
                 @media only screen and (min-width:1441px)
+                    width: 265px
                     background-size: 265px
                     height: 265px
-                @media only screen and (min-width:1551px)
-                    background-size: 307px
-                    height: 307px
 
             &::after
                 background: url(../images/sareBicon.svg) no-repeat
                 top: unset
                 left: unset
-                bottom: -5px
-                right: -90px
-                background-size: 220px
+                bottom: 15px
+                right: 10px
+                background-size: 180px
+                @media only screen and (min-width:1200px)
+                    right: 15px
+                    background-size: 210px
                 @media only screen and (min-width:1441px)
-                    bottom: -15px
                     background-size: 265px
-                    right: -70px
-                @media only screen and (min-width:1551px)
-                    background-size: 307px
-                    right: -90px
 
             .imgbx
                 width: 100%
@@ -354,15 +355,32 @@
                     color: $white
                     text-transform: capitalize
                     font-size: 20px
-                    @media only screen and (min-width:992px)
+                    @media only screen and (min-width:1441px)
                         font-size: 24px
 #moments
     position: relative
     padding: 160px 0 30px
-    @media only screen and (min-width:678px)
-        padding: 160px 0 60px
     @media only screen and (min-width:992px)
+        padding: 80px 0
+    @media only screen and (min-width:1441px)
         padding: 160px 0
+    .deskTop
+        @media only screen and (max-width:992px)
+            display: none
+    .mobileImage
+        @media only screen and (min-width:992px)
+            display: none
+    &::before
+        @media only screen and (max-width:992px)
+            position: absolute
+            content: ''
+            left: 0
+            width: 100%
+            height: 100%
+            top: 0
+            z-index: -1
+            transition: all 0.5s
+            background: rgba(0, 0, 0, 0)
     &::after
         position: absolute
         content: ''
@@ -449,6 +467,8 @@
                 opacity: 0
                 visibility: hidden
     .btnBx
+        &:has(.swiper-button-lock)
+            display: none
         @media only screen and (max-width:992px)
             display: flex
             align-items: center
@@ -520,3 +540,583 @@
                     font-size: 17px
                 @media only screen and (min-width:1551px)
                     font-size: 18px
+#bridal
+    position: relative
+    padding: 325px 0 40px
+    @media only screen and (min-width:992px)
+        padding: 90px 0
+    .deskTop
+        @media only screen and (max-width:992px)
+            display: none
+    .mobileImage
+        @media only screen and (min-width:992px)
+            display: none
+    &::after
+        position: absolute
+        content: ''
+        left: 0
+        width: 100%
+        height: 100%
+        top: 0
+        z-index: -1
+        transition: all 0.5s
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #2C0000 99.61%)
+        @media only screen and (min-width: 992px)
+            width: 70%
+            background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #3D0000 99.61%)
+
+    .contentBx
+        max-width: 660px
+        width: 100%
+        .mainHead
+            margin-bottom: 15px
+            @media only screen and (min-width: 678px)
+                margin-bottom: 20px
+            .mainTitle
+                padding-bottom: 5px
+                border-bottom: 1px solid #EAAA56
+                width: fit-content
+            &::after
+                display: none
+        .subT
+            font-weight: 500
+            color: $white
+            margin-bottom: 20px
+            font-size: 14px
+            @media only screen and (min-width: 678px)
+                font-size: 16px
+            @media only screen and (min-width: 1200px)
+                font-size: 18px
+            @media only screen and (min-width: 1551px)
+                font-size: 20px
+
+        p
+            font-weight: 300
+            color: $white
+            margin-bottom: 15px
+            @include clamp
+            --lines: 5
+            @media only screen and (min-width: 678px)
+                margin-bottom: 25px
+        ul
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 30px
+            >*
+                width: calc(100% / 2)
+            li
+                position: relative
+                font-size: 13px
+                font-weight: 300
+                margin-bottom: 15px
+                padding-left: 25px
+                color: $white
+                @media only screen and (min-width: 768px)
+                    font-size: 14px
+                    margin-bottom: 20px
+                @media only screen and (min-width: 1441px)
+                    font-size: 16px
+                    margin-bottom: 25px
+                @media only screen and (min-width: 1551px)
+                    font-size: 18px
+                &::before
+                    position: absolute
+                    content: ''
+                    left: 0
+                    top: 5px
+                    background: url('../images/ulicon.svg') no-repeat
+                    width: 14px
+                    height: 14px
+                    background-size: 14px
+        .cmnBtn
+            font-weight: 300
+            min-width: 120px
+            @media only screen and (min-width: 678px)
+                min-width: 215px
+#signature
+    position: relative
+    background: #FFEDED
+    padding: 40px 0
+    @media only screen and (min-width:1200px)
+        padding: 50px 0
+    @media only screen and (min-width:1551px)
+        padding: 100px 0 110px
+    .mainHead
+        margin-bottom: 55px
+        &::after
+            right: unset
+    .mobheading
+        margin-bottom: 30px
+        @media only screen and (min-width: 992px)
+            display: none
+    .mobBtn
+        @media only screen and (min-width: 992px)
+            display: none
+
+    .signatureSlider
+        overflow: hidden
+        @media only screen and (max-width: 992px)
+            margin-bottom: 30px
+        .swiper-slide
+            &:has(.mainHead)
+                @media only screen and (max-width: 992px)
+                    display: none
+        .swiper-wrapper
+            @media only screen and (min-width: 992px)
+                display: flex
+                flex-wrap: wrap
+                margin: -8px
+            @media only screen and (min-width: 1441px)
+                margin: -15px
+            >*
+                @media only screen and (min-width: 992px)
+                    width: calc(100% / 3)
+                    padding: 8px
+                    height: auto
+                @media only screen and (min-width: 1441px)
+                    padding: 15px
+    .signatureBx
+        display: block
+        width: 100%
+        height: 100%
+        position: relative
+        overflow: hidden
+        z-index: 0
+        &::after
+            position: absolute
+            content: ''
+            background: url('../images/styleIcon.svg') no-repeat
+            height: 22px
+            right: 15px
+            bottom: 10px
+            z-index: 1
+            pointer-events: none
+            width: 100px
+            background-size: 100px
+            @media only screen and (min-width:768px)
+                bottom: 20px
+                width: 140px
+                background-size: 140px
+            @media only screen and (min-width:1441px)
+                width: 165px
+                background-size: 165px
+        &:hover
+            .imgbx
+                img
+                    transform: scale(1.1)
+
+        .imgbx
+            width: 100%
+            height: 100%
+            overflow: hidden
+            position: relative
+            z-index: 1
+            aspect-ratio: 510/350
+            &:after
+                position: absolute
+                content: ''
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 150px
+                z-index: 2
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+                opacity: 0.6
+            img
+                transition: all 0.9s
+                @include imgFit
+        .info
+            position: absolute
+            bottom: 0
+            left: 0
+            padding: 20px
+            width: 100%
+            z-index: 4
+
+            .mainTxt
+                font-family: $fontstack2
+                color: $white
+                font-weight: 400
+                text-transform: capitalize
+                font-size: 20px
+                @media only screen and (min-width:1441px)
+                    font-size: 24px
+#consult
+    position: relative
+    padding: 400px 0 40px
+    @media only screen and (min-width:992px)
+        padding: 100px 0
+    .deskTop
+        @media only screen and (max-width:992px)
+            display: none
+    .mobileImage
+        @media only screen and (min-width:992px)
+            display: none
+    &::before
+        position: absolute
+        content: ''
+        left: 0
+        width: 100%
+        height: 100%
+        top: 0
+        z-index: -1
+        transition: all 0.5s
+        background: rgba(0, 0, 0, 0)
+
+    &::after
+        position: absolute
+        content: ''
+        left: 0
+        height: 100%
+        top: 0
+        z-index: -1
+        transition: all 0.5s
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #2C0000 99.61%)
+        width: 100%
+        @media only screen and (min-width: 678px)
+            width: 70%
+            background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #320505 100%)
+
+    .contentBx
+        max-width: 460px
+        width: 100%
+        .mainHead
+            margin-bottom: 15px
+            @media only screen and (min-width: 678px)
+                margin-bottom: 20px
+            .mainTitle
+                padding-bottom: 5px
+                border-bottom: 1px solid #EAAA56
+                width: fit-content
+            &::after
+                display: none
+        .subT
+            font-weight: 500
+            color: $white
+            margin-bottom: 20px
+            font-size: 14px
+            @media only screen and (min-width: 678px)
+                font-size: 16px
+            @media only screen and (min-width: 1200px)
+                font-size: 18px
+            @media only screen and (min-width: 1551px)
+                font-size: 20px
+
+        p
+            font-weight: 300
+            color: $white
+            margin-bottom: 15px
+            @include clamp
+            --lines: 5
+            @media only screen and (min-width: 678px)
+                margin-bottom: 25px
+        ul
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 30px
+            >*
+                width: calc(100% / 2)
+            li
+                position: relative
+                font-size: 13px
+                font-weight: 300
+                margin-bottom: 15px
+                padding-left: 25px
+                color: $white
+                @media only screen and (min-width: 768px)
+                    font-size: 14px
+                    margin-bottom: 20px
+                @media only screen and (min-width: 1441px)
+                    font-size: 16px
+                    margin-bottom: 25px
+                @media only screen and (min-width: 1551px)
+                    font-size: 18px
+                &::before
+                    position: absolute
+                    content: ''
+                    left: 0
+                    top: 5px
+                    background: url('../images/ulicon.svg') no-repeat
+                    width: 14px
+                    height: 14px
+                    background-size: 14px
+        .cmnBtn
+            font-weight: 300
+            min-width: 120px
+            @media only screen and (min-width: 678px)
+                min-width: 215px
+#foreever
+    position: relative
+    padding: 40px 0
+    @media only screen and (min-width:1200px)
+        padding: 50px 0
+    @media only screen and (min-width:1551px)
+        padding: 110px 0 130px
+    .row
+        margin: -8px
+        >*
+            padding: 8px
+        .mainHead
+            &::after
+                display: none
+        .mobileContent
+            @media only screen and (min-width:992px)
+                display: none
+
+    .imgWrpBx
+        width: 100%
+        overflow: hidden
+        position: relative
+        @media only screen and (min-width:992px)
+            height: 100%
+        &:hover
+            .imgBx
+                img
+                    transform: scale(1.1)
+            .info
+                .txt
+                    transform: translateY(-50px)
+        &::before, &::after
+            position: absolute
+            content: ""
+            background: url(../images/sareTicon.svg) no-repeat
+            z-index: 3
+            top: 10px
+            left: 10px
+            width: 180px
+            height: 180px
+            background-size: 180px
+            @media only screen and (min-width:1200px)
+                top: 15px
+                left: 15px
+                width: 210px
+                height: 210px
+                background-size: 210px
+            @media only screen and (min-width:1441px)
+                width: 265px
+                background-size: 265px
+                height: 265px
+
+        &::after
+            background: url(../images/sareBicon.svg) no-repeat
+            top: unset
+            left: unset
+            bottom: 15px
+            right: 10px
+            background-size: 180px
+            @media only screen and (min-width:1200px)
+                right: 15px
+                background-size: 210px
+            @media only screen and (min-width:1441px)
+                background-size: 265px
+        .imgBx
+            width: 100%
+            height: 100%
+            overflow: hidden
+            aspect-ratio: 400 / 370
+            @media only screen and (min-width:992px)
+                aspect-ratio: 500 / 620
+            img
+                transition: all 0.5s
+                @include imgFit
+        .info
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            padding: 15px
+            transition: all 0.5s
+            .txt
+                font-weight: 400
+                transition: all 0.5s
+                font-family: $fontstack2
+                line-height: 1.2
+                max-width: 160px
+                color: $white
+                font-size: 24px
+                @media only screen and (min-width:578px)
+                    max-width: 270px
+                    font-size: 26px
+                @media only screen and (min-width:768px)
+                    font-size: 28px
+                @media only screen and (min-width:1200px)
+                    font-size: 30px
+                @media only screen and (min-width:1441px)
+                    font-size: 36px
+                @media only screen and (min-width:1441px)
+                    font-size: 42px
+
+    .flBx
+        @media only screen and (min-width:1200px)
+            padding-left: 30px
+        @media only screen and (min-width:1351px)
+            padding-left: 40px
+        @media only screen and (max-width:992px)
+            display: flex
+            flex-direction: column-reverse
+
+        .contentBx
+            .flx
+                display: flex
+                flex-wrap: wrap
+                align-items: flex-end
+                justify-content: space-between
+                margin-top: 20px
+                @media only screen and (min-width:992px)
+                    margin-bottom: 20px
+                @media only screen and (min-width:1200px)
+                    margin-bottom: 35px
+                >*
+                    flex-grow: 1
+                    @media only screen and (max-width:578px)
+                        width: 100% !important
+                .lft
+                    width: calc(100% - 120px)
+                    @media only screen and (max-width:992px)
+                        display: none
+                .rtbx
+                    width: 120px
+            .mainHead
+                margin-bottom: 0
+                max-width: 840px
+                .mainTitle
+                    font-weight: 700
+                &::after
+                    display: none
+            .btnBx
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                max-width: 100px
+                width: 100%
+                margin: -6px auto
+                @media only screen and (min-width:992px)
+                    margin: -6px
+                    margin-left: auto
+                &:has(.swiper-button-lock)
+                    display: none
+                >*
+                    padding: 6px
+                .swiper-button-next, .swiper-button-prev
+                    border-radius: 50%
+                    background: $white
+                    border: 1px solid #EAAA56
+                    position: relative
+                    left: 0
+                    top: 0
+                    margin: 0
+                    width: 35px
+                    height: 35px
+                    @include center
+                    @media only screen and (min-width:1441px)
+                        width: 45px
+                        height: 45px
+                    .icon
+                        display: flex
+                        max-width: 14px
+        .foreverBx
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            overflow: hidden
+            z-index: 0
+            &:hover
+                .imgbx
+                    img
+                        transform: scale(1.1)
+
+            .imgbx
+                width: 100%
+                height: 100%
+                overflow: hidden
+                position: relative
+                z-index: 1
+                &:after
+                    position: absolute
+                    content: ''
+                    left: 0
+                    bottom: 0
+                    width: 100%
+                    height: 150px
+                    z-index: 2
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+                    opacity: 0.6
+                img
+                    transition: all 0.9s
+                    aspect-ratio: 330 / 500
+                    @include imgFit
+            .info
+                position: absolute
+                bottom: 0
+                left: 0
+                padding: 20px
+                width: 100%
+                z-index: 4
+
+                .mainTxt
+                    color: $white
+                    font-weight: 500
+                    text-transform: capitalize
+                    font-size: 16px
+                    @media only screen and (min-width:1441px)
+                        font-size: 18px
+        .foreveSlider
+            overflow: hidden
+            .swiper-slide
+                height: auto
+#brides
+    position: relative
+    background: #FFEDED
+    padding: 40px 0 0
+    @media only screen and (min-width:992px)
+        padding: 60px 0 0
+    @media only screen and (min-width:1441px)
+        padding: 75px 0 0
+    .mainHead
+        max-width: 950px
+        margin-bottom: 60px
+        @media only screen and (min-width:992px)
+            margin-bottom: 85px
+    .container-fluid
+        width: 100%
+        max-width: 100%
+        padding: 0
+        .bridalimBx
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            &:hover
+                .imgBx
+                    img
+                        transform: scale(1.1)
+            .imgBx
+                width: 100%
+                height: 100%
+                overflow: hidden
+                aspect-ratio: 245 / 245
+                img
+                    transition: all 0.5s
+                    @include imgFit
+    .sliderBx
+        height: 210px
+        @media only screen and (min-width:578px)
+            height: 250px
+        @media only screen and (min-width:768px)
+            height: 300px
+        @media only screen and (min-width:992px)
+            height: 350px
+        @media only screen and (min-width:1441px)
+            height: 400px
+        @media only screen and (min-width:1551px)
+            height: 500px
+        >*
+            height: calc(100% / 2)
+            >*
+                height: 100%
+    .bridalSlider2
+        direction: rtl
+.swiper-button-prev, .swiper-button-next
+    &:hover
+        background: #DDB17A !important

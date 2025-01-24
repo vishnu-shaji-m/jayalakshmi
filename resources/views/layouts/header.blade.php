@@ -77,8 +77,7 @@
                                         <div class="icon">
                                             <svg viewBox="0 0 14 14">
                                                 <path
-                                                    d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.8858 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33511C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32123 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z"
-                                                      />
+                                                    d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.8858 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33511C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32123 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z" />
                                             </svg>
 
                                         </div>
@@ -134,71 +133,524 @@
 
                     <div class="cNavWrap">
                         <div class="accordion" id="AccordMenu">
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="index" class="accordion-button" aria-label="menu_link">
-                                        <span>Home</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="about" class="accordion-button" aria-label="menu_link">
-                                        <span>About</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item dropBx">
-                                <div class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#megamenu1" aria-expanded="false" aria-controls="megamenu1">
-                                        <span>collections </span>
-                                    </button>
-                                </div>
-                                <div id="megamenu1" class="accordion-collapse collapse megMenu"
-                                    data-bs-parent="#AccordMenu">
-                                    <div class="accordion-body">
-                                        <ul>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                            <li>
-                                                <a href="product" class="cmnLinks">Products</a>
-                                            </li>
-                                        </ul>
+                            <div class="menuTxt">menu</div>
+                            <div class="menuSecBx">
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="index" class="accordion-button" aria-label="menu_link">
+                                            <div class="icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.70833 16.0417C8.4552 16.0417 8.25 16.2469 8.25 16.5C8.25 16.7531 8.4552 16.9583 8.70833 16.9583H13.2917C13.5448 16.9583 13.75 16.7531 13.75 16.5C13.75 16.2469 13.5448 16.0417 13.2917 16.0417H8.70833Z"
+                                                        fill="#5E0B0B" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M12.9882 2.36055C11.8226 1.44032 10.1777 1.44032 9.01213 2.36055L3.0538 7.0645C2.28313 7.67292 1.8335 8.60076 1.8335 9.58265V16.9583C1.8335 18.7303 3.26991 20.1667 5.04183 20.1667H16.9585C18.7304 20.1667 20.1668 18.7303 20.1668 16.9583V9.58265C20.1668 8.60076 19.7172 7.67292 18.9466 7.0645L12.9882 2.36055ZM9.58015 3.08002C10.4128 2.42272 11.5876 2.42272 12.4202 3.08002L18.3785 7.78397C18.929 8.21856 19.2502 8.8813 19.2502 9.58265V16.9583C19.2502 18.224 18.2241 19.25 16.9585 19.25H5.04183C3.77618 19.25 2.75016 18.224 2.75016 16.9583V9.58265C2.75016 8.8813 3.07133 8.21856 3.62181 7.78397L9.58015 3.08002Z"
+                                                        fill="#5E0B0B" />
+                                                </svg>
+                                            </div>
+                                            <span>Home</span>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="researchDevelopment" class="accordion-button" aria-label="menu_link">
-                                        <span>our brides</span>
-                                    </a>
+                                <div class="accordion-item dropBx">
+                                    <div class="accordion-header">
+                                        <a href="about" class="accordion-button" aria-label="menu_link">
+                                            <div class="icon">
+                                                <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M19.5652 0.740781C19.5652 0.740781 19.6177 0.678781 19.6744 0.590962C19.754 0.467488 19.6448 0.424457 19.6448 0.424457C19.6448 0.424457 19.1972 0.343839 19.0157 0.315385C13.3196 -0.576857 9.57347 0.631007 8.36474 1.38081C7.81152 1.724 7.81152 2.71899 7.81152 2.71899C7.81152 2.71899 11.5079 0.111996 19.0455 0.693535C19.1922 0.704775 19.565 0.740781 19.565 0.740781H19.5652Z"
+                                                        fill="#5E0B0B" />
+                                                    <path
+                                                        d="M14.5426 1.18896C14.3771 1.08323 13.6577 1.25289 13.6577 1.25289C13.6577 1.25289 14.7695 9.73359 9.56276 12.7294C7.64158 13.8347 4.58807 14.1562 2.83844 12.5981C0.305124 10.342 0.872625 6.81729 0.872625 6.81729L0.315121 7.56147C-0.319502 9.1661 0.141426 10.7908 0.504526 11.4722C1.74057 13.7928 4.43062 14.3576 6.66813 14.0982C8.4083 13.8964 11.2401 13.2063 13.0229 10.1859C14.4202 7.81878 14.8797 5.4164 14.6951 1.78806C14.6872 1.63438 14.6872 1.28135 14.5426 1.18896Z"
+                                                        fill="#5E0B0B" />
+                                                </svg>
+                                            </div>
+                                            <span>About</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item megaMenu">
+                                    <div class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#megamenu1" aria-expanded="false"
+                                            aria-controls="megamenu1">
+                                            <div class="icon">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M20.8644 20.7639C20.6688 20.7639 20.5098 20.9228 20.5098 21.1184V24.4759C20.5098 24.7599 20.2787 24.9911 19.9946 24.9911H18.7212C18.4369 24.9911 18.2057 24.7599 18.2057 24.4759V21.1184C18.2057 20.9228 18.0468 20.7639 17.8512 20.7639H16.106L17.5393 17.513C17.5589 17.4681 17.5691 17.4195 17.5691 17.3703V15.1384C17.5691 14.8123 17.792 14.5371 18.1113 14.4692C18.9312 14.294 19.7706 14.2952 20.6039 14.4723C20.9235 14.5399 21.1461 14.8155 21.1461 15.1418V17.3703C21.1461 17.4195 21.1566 17.4681 21.1765 17.513L22.6098 20.7639H20.8644ZM19.3578 11.771C19.8699 11.771 20.2867 12.1875 20.2867 12.7001C20.2867 13.2119 19.8699 13.6284 19.3578 13.6284C18.846 13.6284 18.4289 13.2119 18.4289 12.7001C18.4289 12.1875 18.846 11.771 19.3578 11.771ZM23.4778 20.9757L21.8552 17.2955V15.1418C21.8552 14.4771 21.4015 13.917 20.7515 13.7788C20.7052 13.7688 20.6588 13.76 20.6125 13.751C20.8516 13.4664 20.9957 13.0996 20.9957 12.7001C20.9957 11.7966 20.2608 11.0622 19.3578 11.0622C18.4545 11.0622 17.7199 11.7966 17.7199 12.7001C17.7199 13.0982 17.8632 13.4641 18.1003 13.7481C18.0545 13.7566 18.0087 13.7657 17.9632 13.7754C17.3139 13.9135 16.8598 14.4742 16.8598 15.1384V17.2955L15.2375 20.9757C15.1346 21.2086 15.3076 21.473 15.5622 21.473H17.4967V24.476C17.4967 25.1509 18.046 25.7002 18.7212 25.7002H19.9947C20.6697 25.7002 21.219 25.1509 21.219 24.476V21.473H23.1534C23.4077 21.473 23.5812 21.2079 23.4778 20.9757ZM13.9049 11.4167V24.9371C13.9049 25.133 13.7459 25.2919 13.5503 25.2919C13.3547 25.2919 13.1958 25.133 13.1958 24.9371V11.4167C13.1958 11.2205 13.3547 11.0622 13.5503 11.0622C13.7459 11.0622 13.9049 11.2205 13.9049 11.4167ZM10.2847 17.7248C10.2847 18.5758 10.1744 19.1157 9.61284 19.3571C9.16988 19.5471 8.89492 19.9644 8.89492 20.4469V24.4759C8.89492 24.7599 8.66376 24.9911 8.37944 24.9911H7.106C6.82197 24.9911 6.5908 24.7599 6.5908 24.4759V20.4469C6.5908 19.9644 6.31556 19.547 5.8726 19.3571C5.31109 19.1157 5.20077 18.5758 5.20077 17.7248V15.6479C5.20077 15.1427 5.51465 14.7275 6.00028 14.5897C7.16038 14.2601 8.33123 14.2534 9.48656 14.5834C9.9713 14.7219 10.2846 15.137 10.2846 15.6408V17.7248H10.2847ZM7.74284 11.771C8.25462 11.771 8.67171 12.1875 8.67171 12.7001C8.67171 13.2119 8.25462 13.6284 7.74284 13.6284C7.23077 13.6284 6.81368 13.2119 6.81368 12.7001C6.81374 12.1875 7.23083 11.771 7.74284 11.771ZM9.68133 13.9013C9.45644 13.8374 9.23042 13.785 9.00407 13.7435C9.23893 13.4598 9.38078 13.0962 9.38078 12.7001C9.38078 11.7965 8.64612 11.0621 7.74284 11.0621C6.83928 11.0621 6.10461 11.7965 6.10461 12.7001C6.10461 13.0987 6.24848 13.4643 6.48586 13.7486C6.25928 13.7907 6.03293 13.843 5.80635 13.9075C5.02023 14.131 4.4917 14.8301 4.4917 15.6478V17.7248C4.4917 18.3577 4.4917 19.5359 5.59316 20.0084C5.77371 20.086 5.88173 20.2501 5.88173 20.4468V24.4759C5.88173 25.1508 6.43104 25.7001 7.106 25.7001H8.37944C9.05469 25.7001 9.604 25.1508 9.604 24.4759V20.4468C9.604 20.2501 9.71174 20.086 9.89228 20.0084C10.9937 19.5359 10.9937 18.3577 10.9937 17.7248V15.6408C10.9937 14.8251 10.4666 14.1259 9.68133 13.9013ZM7.00761 8.71001C7.00761 8.51496 7.12191 8.35289 7.30587 8.28721L13.5503 6.05191L19.7945 8.28721C19.9784 8.35289 20.093 8.51496 20.093 8.71001V8.79104C20.093 9.03867 19.8911 9.24055 19.6432 9.24055H7.45712C7.20949 9.24055 7.00761 9.03867 7.00761 8.79104V8.71001ZM7.45712 9.94962H19.6432C20.2821 9.94962 20.8021 9.42961 20.8021 8.79104V8.71001C20.8021 8.21474 20.5004 7.78657 20.0339 7.61963L13.9049 5.42555C13.9049 5.17092 13.8791 4.93152 14.169 4.77646C14.5989 4.5473 14.8659 4.10233 14.8659 3.61558C14.8659 2.89026 14.2759 2.29974 13.5504 2.29974C12.8248 2.29974 12.2348 2.89026 12.2348 3.61558C12.2348 3.81118 12.3935 3.97011 12.5894 3.97011C12.785 3.97011 12.9439 3.81118 12.9439 3.61558C12.9439 3.2812 13.2157 3.00915 13.5503 3.00915C13.8844 3.00915 14.1567 3.28126 14.1567 3.61558C14.1567 3.84019 14.0334 4.04515 13.8355 4.15122C13.4348 4.36474 13.1957 4.76363 13.1957 5.2174V5.4255L7.06669 7.61958C6.60016 7.78646 6.29848 8.21463 6.29848 8.70995V8.79098C6.29854 9.42961 6.81856 9.94962 7.45712 9.94962Z"
+                                                        fill="#5E0B0B" />
+                                                </svg>
+                                            </div>
+                                            <span>collections </span>
+                                        </button>
+                                    </div>
+                                    <div id="megamenu1" class="accordion-collapse collapse megMenu"
+                                        data-bs-parent="#AccordMenu">
+                                        <div class="accordion-body">
+                                            <div class="flxBx">
+                                                <div class="lftbX">
+                                                    <ul>
+                                                        <li>
+                                                            <button class="accordion-button " type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord1" aria-expanded="true"
+                                                                aria-controls="submenuAccord1">
+                                                                Sarees
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord2" aria-expanded="true"
+                                                                aria-controls="submenuAccord2">
+                                                                Lehenga
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord3" aria-expanded="true"
+                                                                aria-controls="submenuAccord3">
+                                                                Gowns 
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord4" aria-expanded="true"
+                                                                aria-controls="submenuAccord4">
+                                                                Mens Wear
+                                                            </button>
+                                                        </li>
+                                                        <li>
+                                                            <button class="accordion-button collapsed" type="button"
+                                                                data-bs-toggle="collapse"
+                                                                data-bs-target="#submenuAccord5" aria-expanded="true"
+                                                                aria-controls="submenuAccord5">
+                                                                Kids Wear
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="rtbx">
+                                                    <div class="accordion" id="submenuAccord">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord1"
+                                                                    aria-expanded="true" aria-controls="submenuAccord1">
+                                                                    Sarees
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord1"
+                                                                class="accordion-collapse collapse show"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord2"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord2">
+                                                                    Lehenga
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord2" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord3"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord3">
+                                                                    Gowns 
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord3" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord4"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord4">
+                                                                    Mens Wear
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord4" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#submenuAccord5"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="submenuAccord5">
+                                                                    Kids Wear
+                                                                </button>
+                                                            </h2>
+                                                            <div id="submenuAccord5" class="accordion-collapse collapse"
+                                                                data-bs-parent="#submenuAccord">
+                                                                <div class="accordion-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Banarasi Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kanjeevaram Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Tussar Saree
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Kasavu Kada
+                                                                            </a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="javascript:void(0)" class="cmnLink"
+                                                                                aria-label="cmnlink">
+                                                                                Silk Saree
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="researchDevelopment" class="accordion-button" aria-label="menu_link">
+                                            <div class="icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_547_14281)">
+                                                        <path
+                                                            d="M14.6598 9.25967C13.3327 9.25967 12.074 9.66087 10.9992 10.4187C10.2615 9.89905 9.40898 9.53184 8.48789 9.3635L10.9771 7.73373C11.1297 7.63385 11.1928 7.44177 11.1292 7.27076L10.3893 5.28202C10.3324 5.12903 10.1864 5.02765 10.0233 5.02765H4.68551C4.52238 5.02765 4.37637 5.12903 4.31951 5.28202L3.57942 7.27076C3.51584 7.44161 3.57895 7.63385 3.73152 7.73373L6.21427 9.35923C3.23674 9.89228 0.969727 12.5012 0.969727 15.6297C0.969727 19.1423 3.82738 22 7.33989 22C8.6654 22 9.92682 21.5997 11.0021 20.8416C12.038 21.5708 13.2996 22 14.6598 22C18.1723 22 21.03 19.1423 21.03 15.6297C21.03 12.1173 18.1723 9.25967 14.6598 9.25967ZM1.75079 15.6297C1.75079 12.5478 4.25801 10.0407 7.33989 10.0407C10.4218 10.0407 12.929 12.5478 12.929 15.6297C12.929 16.6401 12.6598 17.6174 12.1491 18.4775C11.8783 18.2384 11.6427 17.9608 11.4486 17.6545C11.7574 17.0279 11.9201 16.3329 11.9201 15.6297C11.9201 13.1041 9.86543 11.0496 7.33989 11.0496C4.81434 11.0496 2.75967 13.1041 2.75967 15.6297C2.75967 18.1552 4.81434 20.21 7.33989 20.21C8.16532 20.21 8.96138 19.992 9.66376 19.5771C9.87689 19.8463 10.1115 20.0976 10.3644 20.3291C9.4635 20.9117 8.4265 21.2189 7.33989 21.2189C4.25801 21.2189 1.75079 18.7116 1.75079 15.6297ZM7.33989 19.429C5.24507 19.429 3.54073 17.7246 3.54073 15.6297C3.54073 13.5349 5.24502 11.8307 7.33989 11.8307C8.02077 11.8307 8.65983 12.0116 9.21309 12.3265C8.60833 13.3207 8.28971 14.4538 8.28971 15.6297C8.28971 16.8387 8.62823 17.9698 9.21538 18.9339C8.64577 19.2583 8.00447 19.429 7.33989 19.429ZM11.0001 14.6111C11.0905 14.9354 11.139 15.2769 11.139 15.6298C11.139 15.975 11.0909 16.3174 10.9993 16.6473C10.9091 16.3234 10.8607 15.9822 10.8607 15.6298C10.8607 15.2841 10.9084 14.9412 11.0001 14.6111ZM12.7843 12.3261C13.354 12.0015 13.9953 11.8307 14.6599 11.8307C16.7547 11.8307 18.459 13.5349 18.459 15.6297C18.459 17.7245 16.7547 19.429 14.6599 19.429C13.9789 19.429 13.3398 19.2479 12.7866 18.933C13.3911 17.9386 13.71 16.8037 13.71 15.6297C13.71 14.4209 13.3714 13.2899 12.7843 12.3261ZM9.32202 7.01645H5.39295L7.36248 5.87037L9.32202 7.01645ZM9.75181 5.80877L10.0154 6.51724L8.80417 5.80877H9.75181ZM4.95691 5.80877H5.91538L4.69197 6.52068L4.95691 5.80877ZM5.25491 7.79751H9.45376L7.35436 9.17208L5.25491 7.79751ZM14.6598 21.2189C11.5779 21.2189 9.07072 18.7116 9.07072 15.6297C9.07072 14.6177 9.33993 13.642 9.85085 12.7822C10.1216 13.0212 10.3571 13.2987 10.5511 13.605C10.2423 14.2316 10.0795 14.9265 10.0795 15.6297C10.0795 18.1553 12.1342 20.21 14.6598 20.21C17.1853 20.21 19.24 18.1553 19.24 15.6297C19.24 13.1042 17.1853 11.0496 14.6598 11.0496C13.8343 11.0496 13.0382 11.2676 12.3357 11.6825C12.1227 11.4135 11.8883 11.1623 11.6355 10.9309C12.5359 10.3482 13.5716 10.0407 14.6598 10.0407C17.7416 10.0407 20.2489 12.5478 20.2489 15.6297C20.2489 18.7116 17.7417 21.2189 14.6598 21.2189Z"
+                                                            fill="#5E0B0B" />
+                                                        <path
+                                                            d="M7.3544 2.56663C7.57013 2.56663 7.74493 2.39183 7.74493 2.1761V0.390533C7.74493 0.174802 7.57013 0 7.3544 0C7.13867 0 6.96387 0.174802 6.96387 0.390533V2.1761C6.96387 2.39183 7.13872 2.56663 7.3544 2.56663Z"
+                                                            fill="#5E0B0B" />
+                                                        <path
+                                                            d="M3.01801 4.19811C3.09429 4.27439 3.19422 4.31251 3.29419 4.31251C3.39412 4.31251 3.49409 4.27439 3.57032 4.19811C3.72289 4.04564 3.72289 3.79831 3.57038 3.6459L2.30781 2.38328C2.1553 2.23081 1.90801 2.23071 1.75555 2.38328C1.60298 2.53574 1.60298 2.78308 1.75549 2.93549L3.01801 4.19811Z"
+                                                            fill="#5E0B0B" />
+                                                        <path
+                                                            d="M11.4144 4.31251C11.5144 4.31251 11.6143 4.27439 11.6906 4.19811L12.9531 2.93549C13.1057 2.78303 13.1057 2.53569 12.9531 2.38328C12.8006 2.23081 12.5533 2.23071 12.4008 2.38328L11.1383 3.6459C10.9858 3.79836 10.9858 4.0457 11.1384 4.19811C11.2145 4.27439 11.3145 4.31251 11.4144 4.31251Z"
+                                                            fill="#5E0B0B" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_547_14281">
+                                                            <rect width="22" height="22" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+
+                                            </div>
+                                            <span>our brides</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="news" class="accordion-button " aria-label="menu_link">
+                                            <div class="icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <mask id="mask0_547_14266" style="mask-type:luminance"
+                                                        maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                                        <path d="M0 0H20V20H0V0Z" fill="white" />
+                                                    </mask>
+                                                    <g mask="url(#mask0_547_14266)">
+                                                        <path
+                                                            d="M11.7628 5.07812H18.0469C18.9098 5.07812 19.6094 5.7777 19.6094 6.64062V17.2656C19.6094 18.1286 18.9098 18.8281 18.0469 18.8281H1.95313C1.0902 18.8281 0.390625 18.1286 0.390625 17.2656V6.64062C0.390625 5.7777 1.0902 5.07812 1.95313 5.07812H8.24715"
+                                                            stroke="#5E0B0B" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path
+                                                            d="M15 5.07812V2.73438C15 1.87145 14.3004 1.17188 13.4375 1.17188H6.5625C5.69957 1.17188 5 1.87145 5 2.73438V5.07812"
+                                                            stroke="#5E0B0B" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M5.19531 2.89062H15" stroke="#5E0B0B"
+                                                            stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M19.6093 9.96762L9.99992 12.8775L0.390625 9.96766"
+                                                            stroke="#5E0B0B" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M11.875 9.6875H8.125V7.8125H11.875V9.6875Z"
+                                                            stroke="#5E0B0B" stroke-miterlimit="10"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </g>
+                                                </svg>
+
+                                            </div>
+                                            <span>career</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="news" class="accordion-button " aria-label="menu_link">
+                                            <div class="icon">
+                                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M8.06465 6.06245H19.531L13.2674 10.9812C13.1347 11.0853 12.9768 11.1361 12.8335 11.1501C12.6893 11.1359 12.5309 11.0851 12.3967 10.9812L7.92042 7.46483C7.873 7.4267 7.81947 7.39761 7.76056 7.37952C7.97127 7.08228 8.09153 6.7227 8.08518 6.33525C8.08396 6.24652 8.07613 6.1551 8.06465 6.06245ZM5.14867 2.8991C5.16309 2.90154 5.1868 2.91059 5.23838 2.93454C5.34031 2.98294 5.50238 3.10761 5.66102 3.28141C5.98051 3.6295 6.29976 4.15676 6.46549 4.50485C6.47062 4.51512 6.476 4.52636 6.48089 4.53785C6.9512 5.34476 7.15409 5.96199 7.1602 6.34919C7.1668 6.7381 7.06242 6.90554 6.73267 7.09499L5.882 7.58534C5.32785 7.90434 5.06605 8.4761 5.00102 9.00948C4.93576 9.5431 5.03182 10.0616 5.26918 10.4715L7.36896 14.0905C7.6068 14.5002 8.01282 14.8429 8.50929 15.0534C9.00625 15.2643 9.63471 15.324 10.1889 15.0057L11.0395 14.5163C11.369 14.3274 11.5683 14.3235 11.9029 14.5224C12.2385 14.7219 12.6744 15.2037 13.1427 16.0111C13.1493 16.0231 13.1557 16.0331 13.1633 16.0446C13.3828 16.3611 13.6817 16.8982 13.826 17.348C13.8976 17.5714 13.9257 17.7733 13.9166 17.885C13.9066 17.9972 13.9042 17.9857 13.8746 18.0033L13.2273 18.3744C11.6013 19.0796 10.1109 18.9205 8.77891 18.2297C7.44449 17.5359 6.2846 16.2832 5.47598 14.8123C5.47329 14.8094 5.47207 14.8057 5.46987 14.8038L3.69862 11.7512C3.69569 11.7482 3.69447 11.7455 3.69202 11.7416C2.81569 10.3092 2.30505 8.6829 2.36909 7.18665C2.43313 5.69261 3.03936 4.33056 4.4674 3.28263L5.11493 2.91279C5.12985 2.90423 5.13473 2.89763 5.14867 2.8991ZM5.15527 1.98952C4.98391 1.98683 4.80913 2.02276 4.65196 2.11394L3.96727 2.50774C3.95187 2.51654 3.93769 2.52559 3.92376 2.53439C2.27645 3.73999 1.51793 5.41834 1.44387 7.14828C1.3698 8.87748 1.94718 10.6622 2.901 12.2225L4.66638 15.2646L4.66222 15.2555C5.54345 16.8569 6.80624 18.2461 8.34942 19.0464C9.89333 19.8479 11.7325 20.0337 13.606 19.2167C13.6214 19.2101 13.637 19.2028 13.6509 19.1943L14.3366 18.8005C14.6536 18.6201 14.813 18.269 14.8389 17.9625C14.8656 17.6569 14.8032 17.3595 14.7086 17.0664C14.5234 16.4868 14.2002 15.9238 13.9333 15.5376C13.429 14.6701 12.942 14.068 12.3793 13.7314C11.8122 13.3933 11.1314 13.3982 10.5761 13.7175L9.7254 14.2078C9.47411 14.3525 9.18029 14.3357 8.87107 14.2049C8.56331 14.0741 8.27829 13.8126 8.17245 13.6292L6.07267 10.0105C5.96658 9.82616 5.8798 9.45021 5.92087 9.11874C5.96047 8.78825 6.09467 8.52939 6.3462 8.38443L7.17267 7.90923C7.19418 8.01996 7.25676 8.12043 7.34745 8.1879L11.824 11.705C12.1151 11.9338 12.46 12.0611 12.8074 12.0812C12.825 12.0821 12.843 12.0821 12.8609 12.0812C13.2085 12.0611 13.5517 11.9335 13.8431 11.705L20.0084 6.86154V14.8632C20.0084 14.9849 19.8696 15.1453 19.5973 15.1453H15.329C15.0721 15.1438 14.8641 15.3511 14.8641 15.6065C14.8641 15.8615 15.0724 16.0688 15.329 16.0673H19.5973C20.2949 16.0673 20.9361 15.563 20.9361 14.8632V6.34454C20.9361 5.64421 20.2949 5.14016 19.5973 5.14016H7.81067C7.68013 4.81383 7.5078 4.46794 7.29073 4.09199C7.0876 3.6691 6.75809 3.11005 6.34571 2.66052C6.13745 2.4327 5.9128 2.23079 5.63193 2.10025V2.10148C5.49236 2.03548 5.32638 1.99319 5.15527 1.98952Z"
+                                                        fill="#5E0B0B" />
+                                                </svg>
+
+                                            </div>
+                                            <span>Contact us</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <a href="news" class="accordion-button hoveranim visitBtn"
+                                            aria-label="menu_link">
+
+                                            <span>ViSIT US</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="logoBx">
+                                    <img src="{{asset('frontend/images/logoTxt.png')}}" width="355" height="105"
+                                        alt="logo">
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="news" class="accordion-button " aria-label="menu_link">
-                                        <span>career</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="news" class="accordion-button " aria-label="menu_link">
-                                        <span>Contact us</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <a href="news" class="accordion-button hoveranim visitBtn" aria-label="menu_link">
-                                        <span>ViSIT US</span>
-                                    </a>
-                                </div>
+
+                            <div class="footerSec">
+                                <ul class="socialLinks">
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg id="fb" viewBox="0 0 8 16">
+                                                    <path
+                                                        d="M5.17975 15.4455V8.43654H7.5314L7.88422 5.70423H5.17975V3.96005C5.17975 3.16923 5.39845 2.6303 6.53377 2.6303L7.97941 2.6297V0.185832C7.7294 0.153343 6.87123 0.0788574 5.87241 0.0788574C3.7867 0.0788574 2.35879 1.35195 2.35879 3.68945V5.70423H0V8.43654H2.35879V15.4455H5.17975Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 18 13" id="youT">
+                                                    <path
+                                                        d="M9.15648 12.0973C9.1551 12.0973 9.15361 12.0973 9.15211 12.0973C8.65867 12.0939 4.29638 12.0541 3.06046 11.7199C2.19671 11.4877 1.51487 10.8066 1.28206 9.94271C0.958666 8.72862 0.979252 6.39115 0.981498 6.2045C0.979377 6.01873 0.958541 3.66192 1.28106 2.43785C1.28143 2.43672 1.28168 2.43548 1.28206 2.43435C1.51225 1.58034 2.20944 0.878158 3.05834 0.645347C3.06046 0.644723 3.0627 0.644224 3.06482 0.6436C4.28677 0.322455 8.65767 0.283154 9.15211 0.279785H9.16097C9.65566 0.283154 14.0296 0.322954 15.2541 0.657698C16.1156 0.889262 16.797 1.56948 17.0304 2.43223C17.3659 3.65717 17.3348 6.0191 17.3315 6.21848C17.3338 6.41486 17.3534 8.73137 17.0319 9.95157C17.0316 9.95282 17.0313 9.95394 17.031 9.95506C16.7981 10.8189 16.1164 11.5 15.2516 11.7325C15.2505 11.7328 15.2493 11.7331 15.2481 11.7335C14.0263 12.0545 9.65529 12.0938 9.16097 12.0973C9.15947 12.0973 9.15797 12.0973 9.15648 12.0973ZM2.51598 2.76548C2.23202 3.84594 2.25884 6.17269 2.25909 6.19614V6.21299C2.25061 6.85827 2.28043 8.727 2.51611 9.61209C2.63039 10.0359 2.96663 10.3717 3.39308 10.4863C4.30499 10.733 7.85792 10.8106 9.15648 10.8197C10.4584 10.8106 14.0166 10.7351 14.9217 10.4983C15.3468 10.3833 15.6819 10.0486 15.797 9.62431C16.0329 8.72625 16.0625 6.86663 16.0539 6.22546C16.0539 6.21873 16.0539 6.21199 16.054 6.20525C16.0657 5.55223 16.0426 3.66167 15.7981 2.76947C15.7978 2.7686 15.7976 2.76772 15.7975 2.76685C15.6827 2.34115 15.3463 2.00541 14.9199 1.89075C14.0168 1.64384 10.4582 1.56649 9.15648 1.55738C7.85543 1.56649 4.30075 1.64185 3.39283 1.8784C2.97449 1.99443 2.63064 2.34215 2.51598 2.76548ZM7.52817 8.77554V3.6014L11.9997 6.18853L7.52817 8.77554Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 17 16">
+                                                    <path
+                                                        d="M8.59539 15.8759C8.54448 15.8759 8.49356 15.8759 8.4423 15.8756C7.23703 15.8786 6.12338 15.8479 5.04035 15.782C4.04742 15.7216 3.14106 15.3785 2.41912 14.7898C1.72252 14.2218 1.24681 13.4537 1.00527 12.5072C0.795042 11.6832 0.783897 10.8744 0.773222 10.092C0.765479 9.53066 0.757502 8.8655 0.755859 8.18908C0.757502 7.50984 0.765479 6.84467 0.773222 6.28333C0.783897 5.50109 0.795042 4.69222 1.00527 3.8681C1.24681 2.92162 1.72252 2.15358 2.41912 1.58555C3.14106 0.996874 4.04742 0.653735 5.04047 0.593319C6.1235 0.527506 7.23738 0.49677 8.44523 0.499703C9.65085 0.497122 10.7641 0.527506 11.8472 0.593319C12.8401 0.653735 13.7465 0.996874 14.4684 1.58555C15.1651 2.15358 15.6407 2.92162 15.8823 3.8681C16.0925 4.6921 16.1036 5.50109 16.1143 6.28333C16.122 6.84467 16.1301 7.50984 16.1317 8.18626V8.18908C16.1301 8.8655 16.122 9.53066 16.1143 10.092C16.1036 10.8742 16.0926 11.6831 15.8823 12.5072C15.6407 13.4537 15.1651 14.2218 14.4684 14.7898C13.7465 15.3785 12.8401 15.7216 11.8472 15.782C10.81 15.8451 9.74459 15.8759 8.59539 15.8759ZM8.4423 14.6744C9.62798 14.6772 10.7166 14.6473 11.7742 14.583C12.525 14.5373 13.176 14.2937 13.7093 13.8588C14.2022 13.4568 14.5417 12.9021 14.7183 12.2102C14.8933 11.5243 14.9034 10.7878 14.9131 10.0756C14.9208 9.51799 14.9287 8.85752 14.9304 8.18767C14.9287 7.5177 14.9208 6.85734 14.9131 6.29976C14.9034 5.58755 14.8933 4.85106 14.7183 4.16502C14.5417 3.47311 14.2022 2.91845 13.7093 2.51642C13.176 2.08166 12.525 1.83801 11.7742 1.79237C10.7166 1.72797 9.62798 1.69829 8.44511 1.70087C7.25967 1.69805 6.17089 1.72797 5.11332 1.79237C4.36252 1.83801 3.71155 2.08166 3.17825 2.51642C2.6853 2.91845 2.3458 3.47311 2.16924 4.16502C1.99421 4.85106 1.98412 5.58743 1.97439 6.29976C1.96676 6.85781 1.95878 7.51863 1.95714 8.18908C1.95878 8.85658 1.96676 9.51752 1.97439 10.0756C1.98412 10.7878 1.99421 11.5243 2.16924 12.2102C2.3458 12.9021 2.6853 13.4568 3.17825 13.8588C3.71155 14.2936 4.36252 14.5372 5.11332 14.5828C6.17089 14.6473 7.2599 14.6773 8.4423 14.6744ZM8.41367 11.9417C6.34381 11.9417 4.65967 10.2576 4.65967 8.18767C4.65967 6.11769 6.34381 4.43366 8.41367 4.43366C10.4837 4.43366 12.1677 6.11769 12.1677 8.18767C12.1677 10.2576 10.4837 11.9417 8.41367 11.9417ZM8.41367 5.63495C7.00616 5.63495 5.86095 6.78015 5.86095 8.18767C5.86095 9.59518 7.00616 10.7404 8.41367 10.7404C9.82131 10.7404 10.9664 9.59518 10.9664 8.18767C10.9664 6.78015 9.82131 5.63495 8.41367 5.63495ZM12.5881 3.23238C12.0906 3.23238 11.6872 3.6357 11.6872 4.13334C11.6872 4.63098 12.0906 5.0343 12.5881 5.0343C13.0858 5.0343 13.4891 4.63098 13.4891 4.13334C13.4891 3.6357 13.0858 3.23238 12.5881 3.23238Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 16 15">
+                                                    <path
+                                                        d="M2.54172 0.153564C1.44535 0.153564 0.728516 0.873499 0.728516 1.81975C0.728516 2.74511 1.42399 3.48558 2.49965 3.48558H2.52046C3.63828 3.48558 4.33394 2.74511 4.33394 1.81975C4.31304 0.873499 3.63828 0.153564 2.54172 0.153564Z" />
+                                                    <path d="M0.917969 4.80347H4.12313V14.4463H0.917969V4.80347Z" />
+                                                    <path
+                                                        d="M11.9922 4.57544C10.2631 4.57544 9.10369 6.2002 9.10369 6.2002V4.80176H5.89844V14.4446H9.10351V9.05968C9.10351 8.77139 9.12441 8.48356 9.2091 8.27741C9.4408 7.70176 9.96809 7.10539 10.8536 7.10539C12.0134 7.10539 12.4772 7.98968 12.4772 9.286V14.4446H15.6821V8.91558C15.6821 5.95371 14.1008 4.57544 11.9922 4.57544Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 13 13">
+                                                    <path
+                                                        d="M8.10374 5.40997L12.6059 0.176514H11.5391L7.6298 4.72065L4.50748 0.176514H0.90625L5.62781 7.04805L0.90625 12.5361H1.97319L6.10148 7.73737L9.39888 12.5361H13.0001L8.10348 5.40997H8.10374ZM6.64242 7.10859L6.16402 6.42434L2.35762 0.979687H3.99638L7.06819 5.3737L7.54658 6.05795L11.5396 11.7695H9.90081L6.64242 7.10885V7.10859Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="socialIcon" aria-label="socialLinks">
+                                            <div class="icon">
+                                                <svg viewBox="0 0 14 14">
+                                                    <path
+                                                        d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.8858 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33511C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32123 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z" />
+                                                </svg>
+
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p>© 2025 Jayalakshmi Silks | All rights reserved</p>
                             </div>
 
                         </div>
@@ -211,6 +663,22 @@
                                     <span></span>
                                     <span></span>
                                     <span></span>
+                                    <div class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_547_14230)">
+                                                <path
+                                                    d="M12.0034 5.05824e-07C9.62976 -0.000688557 7.3092 0.702648 5.33533 2.02092C3.36141 3.33925 1.82283 5.21335 0.914154 7.40619C0.00542789 9.59909 -0.232496 12.0121 0.230407 14.3402C0.693309 16.6683 1.83627 18.8069 3.51473 20.4853C5.19318 22.1637 7.33169 23.3066 9.65974 23.7696C11.9879 24.2324 14.4009 23.9945 16.5937 23.0859C18.7866 22.1771 20.6608 20.6386 21.9791 18.6646C23.2974 16.6908 24.0008 14.3702 24 11.9965C23.9964 8.81597 22.7313 5.76667 20.4823 3.51766C18.2333 1.26866 15.184 0.00359347 12.0034 5.05824e-07ZM17.4518 15.8922C17.5531 15.9931 17.6334 16.113 17.6884 16.2451C17.7432 16.3771 17.7714 16.5187 17.7714 16.6617C17.7714 16.8048 17.7432 16.9464 17.6884 17.0784C17.6334 17.2105 17.5531 17.3304 17.4518 17.4313C17.2449 17.634 16.9669 17.7476 16.6771 17.7476C16.3874 17.7476 16.1093 17.6341 15.9024 17.4313L12.0034 13.5357L8.10787 17.4313C7.90317 17.6342 7.62656 17.7481 7.33828 17.7481C7.05001 17.7481 6.7734 17.6342 6.5687 17.4313C6.46741 17.3304 6.38698 17.2105 6.33215 17.0784C6.27732 16.9464 6.24907 16.8048 6.24907 16.6617C6.24907 16.5187 6.27732 16.3771 6.33215 16.2451C6.38698 16.113 6.46741 15.9931 6.5687 15.8922L10.4643 11.9863L6.5687 8.09417C6.38088 7.88691 6.27998 7.61532 6.28687 7.33571C6.29376 7.0561 6.4079 6.78983 6.60571 6.59202C6.80352 6.39426 7.0698 6.28007 7.34941 6.27318C7.62902 6.26629 7.90061 6.36719 8.10787 6.555L12.0034 10.4472L15.8956 6.555C16.1016 6.3506 16.3801 6.23587 16.6703 6.23587C16.9605 6.23587 17.239 6.3506 17.445 6.555C17.5463 6.65595 17.6267 6.77585 17.6815 6.9079C17.7363 7.03996 17.7645 7.18156 17.7645 7.32459C17.7645 7.46757 17.7363 7.60917 17.6815 7.74122C17.6267 7.87328 17.5463 7.99322 17.445 8.09412L13.5528 11.9863L17.4518 15.8922Z"
+                                                    fill="#5E0B0B" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_547_14230">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </div>
                                 </button>
                             </div>
                         </div>
@@ -229,23 +697,35 @@
     <li>
         <a href="javascript:void(0)" class="socialBtn">
             <div class="icon">
-                <svg viewBox="0 0 18.571 18.571">
-                    <path id="Path_1427" data-name="Path 1427"
-                        d="M20.168,16.167c-.58-.486-3.979-2.639-4.545-2.54-.265.047-.468.273-1.011.921a7.751,7.751,0,0,1-.825.893,7.134,7.134,0,0,1-1.575-.584,9.75,9.75,0,0,1-4.5-4.5A7.134,7.134,0,0,1,7.13,8.782a7.751,7.751,0,0,1,.893-.825c.647-.543.874-.745.921-1.011.1-.566-2.056-3.965-2.54-4.545-.2-.24-.387-.4-.623-.4C5.1,2,2,5.828,2,6.324c0,.04.066,4.026,5.1,9.147,5.121,5.033,9.106,5.1,9.147,5.1.5,0,4.324-3.1,4.324-3.78C20.571,16.554,20.41,16.37,20.168,16.167Z"
-                        transform="translate(-2 -2)" fill="#fff" />
-                    <path id="Path_1428" data-name="Path 1428"
-                        d="M20.979,12.306h1.326A5.312,5.312,0,0,0,17,7V8.326A3.983,3.983,0,0,1,20.979,12.306Z"
-                        transform="translate(-7.051 -3.684)" fill="#fff" />
-                    <path id="Path_1429" data-name="Path 1429"
-                        d="M24.3,10.622h1.326A8.632,8.632,0,0,0,17,2V3.326A7.3,7.3,0,0,1,24.3,10.622Z"
-                        transform="translate(-7.051 -2)" fill="#fff" />
-                </svg>
-
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_621_25226)">
+                        <path
+                            d="M1.39386 60C1.05695 60 0.729188 59.8668 0.486115 59.621C0.16568 59.2969 0.0420843 58.8263 0.162476 58.3864L4.06308 44.1426C1.63464 39.7513 0.354279 34.7836 0.35611 29.7409C0.362977 13.3415 13.7086 0 30.1066 0C38.0603 0.00320435 45.5337 3.10135 51.1509 8.72269C56.7672 14.3445 59.859 21.8175 59.8567 29.7647C59.8494 46.1646 46.5037 59.507 30.1066 59.507C30.1066 59.507 30.0943 59.507 30.0938 59.507C25.3042 59.5052 20.5558 58.3379 16.3279 56.1269L1.7175 59.9583C1.61038 59.9863 1.50143 60 1.39386 60Z"
+                            fill="#E5E5E5" />
+                        <path
+                            d="M1.39453 58.7239L5.43384 43.9734C2.94223 39.6563 1.63165 34.7591 1.63348 29.742C1.63989 14.0467 14.4124 1.27734 30.1073 1.27734C37.7236 1.28055 44.8725 4.24503 50.2484 9.62558C55.624 15.0061 58.5834 22.1582 58.5807 29.7649C58.5738 45.4598 45.7994 58.2309 30.1073 58.2309C30.1064 58.2309 30.1078 58.2309 30.1073 58.2309H30.0949C25.3296 58.2291 20.6476 57.0339 16.4888 54.7657L1.39453 58.7239ZM17.1878 49.6126L18.0526 50.1249C21.6854 52.2809 25.8506 53.4212 30.0981 53.4235H30.1073C43.1508 53.4235 53.7673 42.8089 53.7728 29.7631C53.7751 23.4409 51.3159 17.4959 46.8477 13.024C42.379 8.55212 36.4377 6.08798 30.116 6.08524C17.062 6.08524 6.44595 16.6985 6.44092 29.7438C6.43909 34.2144 7.6897 38.5677 10.0591 42.3351L10.6221 43.2305L8.23077 51.9609L17.1878 49.6126Z"
+                            fill="white" />
+                        <path
+                            d="M2.38477 57.7296L6.28445 43.489C3.87845 39.3215 2.61365 34.5933 2.61502 29.7506C2.62097 14.5986 14.9518 2.27148 30.1024 2.27148C37.4559 2.27469 44.3576 5.13663 49.5463 10.3309C54.7365 15.5251 57.5929 22.4296 57.5902 29.7721C57.5837 44.9245 45.2525 57.253 30.1037 57.253C30.1024 57.253 30.1042 57.253 30.1037 57.253H30.0914C25.4913 57.2512 20.9709 56.0967 16.9563 53.9086L2.38477 57.7296Z"
+                            fill="#64B161" />
+                        <path
+                            d="M1.39453 58.7239L5.43384 43.9734C2.94223 39.6563 1.63165 34.7591 1.63348 29.742C1.63989 14.0467 14.4124 1.27734 30.1073 1.27734C37.7236 1.28055 44.8725 4.24503 50.2484 9.62558C55.624 15.0061 58.5834 22.1582 58.5807 29.7649C58.5738 45.4598 45.7994 58.2309 30.1073 58.2309C30.1064 58.2309 30.1078 58.2309 30.1073 58.2309H30.0949C25.3296 58.2291 20.6476 57.0339 16.4888 54.7657L1.39453 58.7239ZM17.1878 49.6126L18.0526 50.1249C21.6854 52.2809 25.8506 53.4212 30.0981 53.4235H30.1073C43.1508 53.4235 53.7673 42.8089 53.7728 29.7631C53.7751 23.4409 51.3159 17.4959 46.8477 13.024C42.379 8.55212 36.4377 6.08798 30.116 6.08524C17.062 6.08524 6.44595 16.6985 6.44092 29.7438C6.43909 34.2144 7.6897 38.5677 10.0591 42.3351L10.6221 43.2305L8.23077 51.9609L17.1878 49.6126Z"
+                            fill="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22.9908 17.842C22.458 16.6573 21.8968 16.6335 21.3896 16.6129C20.9748 16.595 20.5001 16.596 20.0263 16.596C19.5521 16.596 18.7812 16.7745 18.1294 17.4863C17.4771 18.1981 15.6387 19.9193 15.6387 23.4198C15.6387 26.9208 18.1884 30.3032 18.5441 30.7784C18.8998 31.2531 23.466 38.6661 30.6973 41.518C36.7072 43.8883 37.9299 43.4168 39.2346 43.2982C40.5392 43.1797 43.4437 41.577 44.0365 39.9158C44.6298 38.2546 44.6298 36.8309 44.4517 36.5329C44.2736 36.2368 43.7994 36.0587 43.088 35.703C42.3766 35.3473 38.8789 33.6257 38.2266 33.3886C37.5742 33.151 37.1 33.0329 36.6258 33.7452C36.1511 34.4565 34.7888 36.0587 34.3736 36.5329C33.9584 37.0086 33.5432 37.0681 32.8318 36.7119C32.1205 36.3553 29.8289 35.6046 27.1107 33.1807C24.9958 31.2952 23.5676 28.9661 23.1524 28.2538C22.7377 27.5425 23.1455 27.1909 23.4651 26.8023C24.0405 26.1023 25.0059 24.8439 25.243 24.3697C25.4801 23.8945 25.3616 23.4793 25.184 23.1232C25.0059 22.7675 23.623 19.2492 22.9908 17.842Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_621_25226">
+                            <rect width="60" height="60" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg> 
             </div>
         </a>
     </li>
 
-    <li>
+    <!-- <li>
         <a href="javascript:void(0)" class="socialBtn">
             <div class="icon">
                 <svg viewBox="0 0 20.205 14.886">
@@ -283,7 +763,7 @@
 
             </div>
         </a>
-    </li>
+    </li> -->
 
 </ul>
 

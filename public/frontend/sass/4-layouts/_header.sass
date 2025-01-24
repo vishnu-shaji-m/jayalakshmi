@@ -22,16 +22,21 @@
         animation-name: fadeInDown
         animation-duration: .8s
         animation-fill-mode: both
-        // background: rgba( $basecolor, 0.4)
+        background: $white
         -webkit-backdrop-filter: blur(10px)
         backdrop-filter: blur(10px)
+        padding-bottom: 5px
         box-shadow: 0 5px 10px rgba(0,0,0,.1)
         #HeaderMain
+            #AccordMenu
+                @media only screen and (max-width: 992px)
+                    top: 75px
+                    height: calc(100vh - 75px)
             .mainFlx
                 .lftSd
                     padding: 0 0 10px
                     .logo
-                        max-width: 110px
+                        max-width: 210px
                         padding-top: 10px
 
     #HeaderMain
@@ -238,9 +243,12 @@
                         width: calc(var(--btn-w) / 7 )
             &.open
                 --btn-w: 25px
+                .icon
+                    display: flex
                 span
                     width: 100% !important
                     margin: 0
+                    display: none
                     &:nth-child(1)
                         transform: rotate(45deg) translate(0, 0)
                     &:nth-child(2)
@@ -267,6 +275,13 @@
                     width: 85%
                 &:nth-child(3)
                     width: 55%
+            .icon
+                width: 24px
+                height: 24px
+                display: none
+
+                svg
+                    @include imgFit
         .cNacBtnWrap
             display: flex
             transition: transform .4s ease
@@ -315,10 +330,49 @@
                 justify-content: space-between
         .cNavWrap
             width: 100%
+            .menuTxt
+                font-weight: 500
+                color: $black
+                font-size: 22px
+                margin-bottom: 15px
+                text-transform: capitalize
+                display: none
+                background: $white
+            .footerSec
+                padding-top: 80px
+                @media only screen and (min-width: 992px)
+                    display: none
+                .socialLinks
+                    display: flex
+                    align-items: center
+                    margin-bottom: 25px
+                    li
+                        &:not(:last-of-type)
+                            margin-right: 20px
+                    .socialIcon
+                        display: flex
+                        &:hover
+                            .icon
+                                svg
+                                    fill: $basecolor
+                        .icon
+                            width: 19px
+                            height: 19px
+                            display: flex
+                            svg
+                                transition: all 0.5s
+                                fill: #6C6C6C
+                                @include imgFit
+                                &#fb
+                                    width: 9px
+                p
+                    color: #444444
+                    font-size: 13px
+                    font-weight: 400
 
         #AccordMenu
             height: 100%
-            transition: all 1s
+            transition: all 0.2s
             @media only screen and (min-width: 992px)
                 padding: 0
                 align-items: center
@@ -332,28 +386,46 @@
                 opacity: 1
                 visibility: visible
                 right: 0
+                .menuTxt
+                    display: block
             @media only screen and (max-width:992px)
                 position: absolute
                 display: block !important
-                background: $basecolor1
-                height: 100vh
-                max-width: 350px
+                background: $white
+                height: calc(100vh - 90px)
+                max-width: 100%
                 opacity: 0
                 visibility: hidden
                 right: 0
-                top: 0
+                top: 90px
                 width: 100%
-                padding-top: 20px
                 backdrop-filter: blur(20px)
                 --webkit-backdrop-filter: blur(20px)
+                padding: 10px 25px 0
+                overflow: auto
+            .menuSecBx
+                background: #ddb17a
+                padding: 30px 20px
+                @media only screen and (min-width: 992px)
+                    display: flex
+                    width: 100%
+                    background: transparent
+                    justify-content: space-between
+                    padding: 0
             .accordion-item
                 border-radius: 0
                 border: none
                 background: none
                 position: relative
+                margin-bottom: 15px
+                @media only screen and (min-width: 992px)
+                    margin-bottom: 0
+
                 &:nth-child(1)
-                    .accordion-button
-                        padding-left: 0
+                    .accordion-header
+                        .accordion-button
+                            @media only screen and (min-width: 992px)
+                                padding-left: 0 !important
                 &:has(.cmnBtn )
                     @media only screen and (max-width: 992px)
                         padding: 0 10px
@@ -361,9 +433,10 @@
                         @media only screen and (max-width: 992px)
                             margin: 10px 0
                             width: 100%
+
                 &:has(.accordion-collapse)
                     &:hover
-                        .accordion-collapse
+                        .dropBxMenu
                             @media only screen and (min-width: 992px)
                                 display: block !important
                                 opacity: 1
@@ -384,9 +457,9 @@
                             height: fit-content
                             background-image: none
 
-                        span
-                            margin-right: 15px
-                .accordion-collapse
+                        // span
+                        //     margin-right: 15px
+                .dropBxMenu
                     background: #626e7899
                     @media only screen and (min-width: 992px)
                         position: absolute
@@ -425,8 +498,135 @@
                                 &:hover, &.active
                                     background: $basecolor
                                     color: $white
+                &:has(.megMenu)
+                    .accordion-button
+                        &::after
+                            position: absolute
+                            content: ''
+                            top: 0
+                            bottom: 0px
+                            right: 0px
+                            display: block
+                            background: url('../images/arrows.svg') no-repeat
+                            width: 12px
+                            height: 12px
+                            @media only screen and (min-width:992px)
+                                bottom: -5px
+                                right: -10px
+                            @media only screen and (min-width:1441px)
+                                bottom: -5px
+                                right: 0px
 
-                &:first-child
+                    &:hover
+                        .megMenu
+                            @media only screen and (min-width: 992px)
+                                display: block
+                    .megMenu
+                        @media only screen and (min-width: 992px)
+                            position: absolute
+                            top: 100%
+                            left: unset
+                            background: $white
+                            padding: 0
+                            min-width: 450px
+                        @media only screen and (min-width:1441px)
+                            min-width: 540px
+                        .accordion-body
+                            padding: 15px 0 0
+                            @media only screen and (min-width: 992px)
+                                padding: 0
+                            .accordion-button
+                                @media only screen and (max-width: 992px)
+                                    font-size: 14px
+                                    padding-left: 25px
+                            .accordion-body
+                                @media only screen and (max-width: 992px)
+                                    padding: 15px 25px !important
+                        .flxBx
+                            display: flex
+                            .lftbX
+                                width: 200px
+                                background: #F5F5F5
+                                box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08) inset
+                                padding: 20px 0
+                                @media only screen and (min-width:1441px)
+                                    padding: 25px 0
+                                @media only screen and (max-width: 992px)
+                                    display: none
+                                ul
+                                    li
+                                        position: relative
+                                        .accordion-button
+                                            box-shadow: none
+                                            border: 0
+                                            outline: 0
+                                            background: transparent
+                                            font-size: 16px
+                                            font-weight: 400
+                                            padding: 10px 30px
+                                            color: #1D1D1D
+                                            transition: all 0.5s
+                                            position: relative
+                                            &:hover
+                                                background: rgba(255, 223, 223, 1)
+                                                color: $basecolor
+                                                font-weight: 700
+                                                &::after
+                                                    opacity: 1
+                                                    visibility: visible
+                                            &:not(.collapsed)
+                                                background: rgba(255, 223, 223, 1)
+                                                color: $basecolor
+                                                font-weight: 700
+                                                &::after
+                                                    opacity: 1
+                                                    visibility: visible
+                                            &::after
+                                                position: absolute
+                                                content: ''
+                                                top: 0
+                                                bottom: 0
+                                                background-image: none
+                                                background: url('../images/arrow.svg') no-repeat
+                                                right: 10px
+                                                margin: auto
+                                                display: block
+                                                width: 15px
+                                                height: 15px
+                                                transform: none
+                                                opacity: 0
+                                                visibility: hidden
+                                                transition: all 0.5s
+
+                            .rtbx
+                                width: 100%
+                                @media only screen and (min-width: 992px)
+                                    width: calc(100% - 200px)
+                                .accordion-header
+                                    @media only screen and (min-width: 992px)
+                                        display: none
+                                .accordion-collapse
+                                    .accordion-body
+                                        padding: 25px 30px
+                                        @media only screen and (min-width:1441px)
+                                            padding: 30px 45px
+                                        ul
+                                            li
+                                                &:not(:last-of-type)
+                                                    margin-bottom: 15px
+                                                .cmnLink
+                                                    display: block
+                                                    width: fit-content
+                                                    text-transform: uppercase
+                                                    font-size: 14px
+                                                    color: #1D1D1D
+                                                    transition: all 0.5s
+                                                    @media only screen and (min-width:1441px)
+                                                        font-size: 16px
+                                                    &:hover
+                                                        color: $basecolor
+
+                &:nth-child(1)
                     .accordion-header
                         .accordion-button
                             @media only screen and (min-width: 992px)
@@ -445,21 +645,23 @@
                         @include defaultValue
                         font-size: 16px
                         line-height: 1
-                        font-weight: 700
+                        font-weight: 500
                         position: relative
                         display: flex
                         text-align: start
                         transition: color .4s ease
-                        padding: 15px 15px
+                        padding: 0px
                         margin: 0
                         width: 100%
-                        border-bottom: 1px solid #ebebeb6e
                         color: $black
+                        letter-spacing: 0.4px
                         text-transform: uppercase
                         @media only screen and (min-width: 992px)
+                            font-weight: 700
                             border: 0
                             width: fit-content
                             font-size: 14px
+                            letter-spacing: 0.2px
                             padding: 20px 10px
                         @media only screen and (min-width: 1200px)
                             padding: 15px 10px
@@ -472,12 +674,27 @@
                         @media only screen and (min-width: 1661px)
                             font-size: 16px
                             padding: 15px 30px
+                        &:has(.icon)
+                            .icon
+                                width: 22px
+                                height: 22px
+                                display: flex
+                                margin-right: 10px
+                                @media only screen and (min-width: 992px)
+                                    display: none
+                                svg
+                                    @include imgFit
 
                         &[aria-expanded="true"], &:hover
                             color: $basecolor
                             &::after
                                 color: $basecolor
-
+                        span
+                            @media only screen and (max-width: 992px)
+                                padding-top: 12px
+                                padding-bottom: 15px
+                                width: 100%
+                                border-bottom: 1px solid rgba($black, 0.16)
                         &.active
                             color: $basecolor
                             &::after
@@ -485,22 +702,55 @@
                         &.visitBtn
                             background: $basecolor
                             color: $white
-                            height: 35px
-                            min-width: 105px
+                            height: 40px
+                            width: 105px
+                            font-size: 16px
+                            font-weight: 400
+                            margin: 0px
+                            margin-top: 15px
+                            text-align: center
                             @include center
+                            margin-bottom: 40px
+                            @media only screen and (min-width: 992px)
+                                min-width: 105px
+                                height: 45px
+                                margin: 0
+                                width: 100%
                             @media only screen and (min-width: 1200px)
                                 font-size: 16px
                                 height: 100%
                                 min-width: 130px
                             @media only screen and (min-width: 1351px)
                                 min-width: 150px
-                            @media only screen and (max-width: 992px)
-                                display: none
 
                         &::after
                             display: none
+            .logoBx
+                display: flex
+                width: 100%
+                @media only screen and (min-width: 992px)
+                    display: none
+                img
+                    @include imgFit
 
 .noBanner
     #Header
         #HeaderMain
             background: #000
+.cPop-open
+    #Header
+        #HeaderMain
+            .ritBx
+                .visitBtn
+                    @media only screen and (max-width:992px)
+                        display: none
+            .mainFlx
+                @media only screen and (max-width:992px)
+                    padding-top: 15px
+                .lftSd
+                    @media only screen and (max-width:992px)
+                        z-index: 9999
+                .rgtSd
+                    .topBar
+                        @media only screen and (max-width:992px)
+                            display: none
