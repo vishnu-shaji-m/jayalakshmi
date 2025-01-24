@@ -83,7 +83,7 @@
                             list-style: disc
                             position: relative
     #founder
-        padding: 20px 0px 60px
+        padding: 20px 0px 30px
         position: relative
         .bg
             position: absolute
@@ -133,3 +133,88 @@
                         right: 0
                         bottom: -25px
                         z-index: -1
+    #office
+        padding: 30px 0px 90px
+        .officeBx
+            background-color: #FFEDED
+            padding: 45px 55px 70px 60px
+            .mainHead
+                margin-bottom: 40px
+                &::after
+                    display: none
+                .mainTitle
+                    position: relative
+                    margin-bottom: 0px
+                    &::after
+                        content: ""
+                        position: absolute
+                        right: 0px
+                        height: 1px
+                        background-color: #BE965D
+                        width: 52%
+                        top: 15px
+                        bottom: 0
+                        margin: auto
+                        z-index: 0
+            .d_flx
+                display: flex
+                flex-wrap: wrap
+                // margin: 0 -55px
+                .item
+                    width: calc( 100% / 3 )
+                    // padding: 10px 55px
+                    border-right: 1px solid rgba(0, 0, 0, .39)
+                    border-right-style: dashed
+                    border-bottom: 1px solid rgba(0, 0, 0, .39)
+                    border-bottom-style: dashed
+                    .itemBx
+                        padding: 40px 95px 65px 90px
+                        .title
+                            display: flex
+                            align-items: center
+                            margin-bottom: 15px
+                            .icon
+                                width: 34px
+                                padding-right: 10px
+                            .text
+                                font-size: 18px
+                                font-weight: 700
+                                color: #111111
+                                width: calc( 100% - 34px )
+                                span
+                                    color: #5E0B0B
+                        p
+                            margin-bottom: 15px
+                            a
+                                font-size: 18px
+                                font-weight: 500
+                                color: #111111
+                            &:hover
+                                a
+                                    color: $basecolor
+                        .direction
+                            display: flex
+                            .icon
+                                width: 30px
+                                padding-right: 10px
+                            .text
+                                width: fit-content
+                                font-size: 18px
+                                color: #111111
+                                border-bottom: 1px solid #111
+                                padding-bottom: 3px
+                            &:hover
+                                .text
+                                    color: $basecolor
+                    &:nth-child(4), &:nth-child(5), &:nth-child(6)
+                        border-bottom: none
+                        .itemBx
+                            padding-bottom: 0px
+                    &:nth-child(3), &:nth-child(6)
+                        border-right: none
+                    &:nth-child(1), &:nth-child(4)
+                        .itemBx
+                            padding-left: 0px
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                        .itemBx
+                            padding-top: 0px
