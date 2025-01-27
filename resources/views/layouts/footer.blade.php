@@ -495,7 +495,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         document.head.appendChild(script);
-    }, 100);
+    },);
 });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>

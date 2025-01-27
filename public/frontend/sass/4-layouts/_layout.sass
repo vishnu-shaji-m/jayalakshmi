@@ -2,8 +2,11 @@
 #pageWrapper
     overflow: hidden
     padding-top: 105px
-    // &:has(#topBanner, #InnerBanner, .thankyouPage, .homepage)
-    //     padding-top: 0
+body
+    &:has(#InnerBanner)
+        #Header
+            border: 0 !important
+            padding-bottom: 0
 
 // BUTTON STYLE
 .hoveranim
@@ -17,7 +20,7 @@
         position: absolute
         z-index: 0
         top: 0
-        bottom: 0 
+        bottom: 0
         width: 100%
         background: #DDB17A
         -webkit-transform: scaleX(0)
@@ -57,17 +60,26 @@
         content: ''
         left: 0
         bottom: -40px
-        right: 0
         background: url('../images/iconLog.svg') no-repeat
         width: 110px
         background-size: 110px
         height: 30px
-        margin: auto
     &.center
         text-align: center
         max-width: 650px
         margin: auto
         margin-bottom: 25px
+        &::after
+            position: absolute
+            content: ''
+            left: 0
+            bottom: -40px
+            right: 0
+            background: url('../images/iconLog.svg') no-repeat
+            width: 110px
+            background-size: 110px
+            height: 30px
+            margin: auto
         .subT, h1
             margin: auto
             margin-bottom: 15px

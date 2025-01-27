@@ -168,7 +168,7 @@
                                     </svg>
                                 </div>
                                 <div class="text">
-                                    Palarivattom <span>(Corporate Office)</span>
+                                    Bypass Kochi <span>(Corporate Office)</span>
                                 </div>
                             </div>
                             <p>

@@ -49,4 +49,15 @@ class FrontendController extends Controller
     {
         return view('faq');
     }
+
+      /**
+     * Display the contact page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function contact()
+    {
+        return view('contact');
+    }
 }
