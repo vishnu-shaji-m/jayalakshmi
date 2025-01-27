@@ -58,7 +58,24 @@
                         display: block !important
                         @media only screen and (min-width:992px)
                             padding-left: 0px
-
+    form
+        @media only screen and (min-width:992px)
+            padding-right: 130px
+            max-width: 100%
+        .form-group
+            position: relative
+            display: flex
+            .form-control
+                border: none
+                border-radius: 0px
+                &::placeholder
+                    font-size: 18px
+                    color: #ACACAC
+                    font-weight: 400
+        button
+            display: block
+            background-color: #fff
+            padding-right: 25px
     .cmnLink
         display: flex
         align-items: center
@@ -121,21 +138,6 @@
                 font-size: 18px
             @media only screen and (min-width:1661px)
                 font-size: 20px
-    .flxBx
-        display: flex
-        align-items: center
-        .social
-            display: flex
-            align-items: center
-            margin: 0 -12px
-            li
-                padding: 0px 12px
-                a
-                    svg
-                        fill: #6C6C6C
-                    &:hover
-                        svg
-                            fill: $basecolor
     .accordion
         .accordion-item
             box-shadow: none
@@ -285,14 +287,15 @@
         color: $white
         font-size: 14px
         white-space-collapse: break-spaces
-
         @media only screen and (min-width:1441px)
             font-size: 16px
         &:hover
             .icon
                 svg
                     fill: $basecolor1
-
+        .icon
+            overflow: hidden
+            @include center
         &:has(.icon)
             align-items: flex-start
             span
@@ -321,9 +324,22 @@
                 font-size: 14px
             @media only screen and (max-width:330px)
                 font-size: 13px
-            span
-                color: #A8A8A8
-                padding: 0px 15px
+        .flxBx
+            display: flex
+            align-items: center
+            .social
+                display: flex
+                align-items: center
+                margin: 0 -12px
+                li
+                    padding: 0px 12px
+                    a
+                        svg
+                            fill: #6C6C6C
+                        &:hover
+                            svg
+                                fill: $basecolor
+
         .ftTxt
             color: #444444
             font-weight: 400

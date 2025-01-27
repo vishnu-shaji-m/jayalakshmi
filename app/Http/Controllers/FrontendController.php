@@ -48,4 +48,15 @@ class FrontendController extends Controller
     {
         return view('subCategoryListing');
     }
+
+         /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function privacy()
+    {
+        return view('privacy');
+    }
 }
