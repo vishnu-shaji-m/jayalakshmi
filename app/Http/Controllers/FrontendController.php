@@ -71,4 +71,15 @@ class FrontendController extends Controller
     {
         return view('privacy');
     }
+
+         /**
+     * Display the productList page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function productList()
+    {
+        return view('productList');
+    }
 }

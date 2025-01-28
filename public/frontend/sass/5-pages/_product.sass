@@ -239,4 +239,323 @@
                             .info
                                 .popup_flx
                                     opacity: 1
+
                                     visibility: visible
+.productPage
+    #story
+        position: relative
+        padding: 95px 0 35px
+        .storyBx
+            position: relative
+            width: 100%
+            background: #FFECD4
+            padding: 68px 105px 0
+            overflow: hidden
+            height: 720px
+            &::before, &::after
+                position: absolute
+                content: ''
+                left: 10px
+                height: 100%
+                width: 50px
+                top: 0
+                background: url('../images/storyBodr.svg') no-repeat
+                background-size: cover
+            &::after
+                right: 10px
+                left: unset
+
+            .storyCard
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                height: 100%
+                margin: -8px
+                position: relative
+                .boderDot
+                    position: absolute
+                    top: 0
+                    left: 0
+                    height: calc(100% - 20px)
+                    width: 25px
+                    bottom: 0
+                    margin: auto
+                    transition: all 0.5s
+                    overflow: hidden
+                    .line
+                        position: absolute
+                        content: ''
+                        width: 1px
+                        height: 100%
+                        left: 12px
+                        top: 0
+                        background: #DDB17A
+                        bottom: 0
+                        margin: auto
+
+                    &::before
+                        position: absolute
+                        content: ''
+                        background: #976F40
+                        width: 12px
+                        height: 12px
+                        border-radius: 50%
+                        left: 0
+                        z-index: 1
+                        right: 0
+                        margin: auto
+                        top: 0
+
+                    &::after
+                        position: absolute
+                        content: ''
+                        right: 0
+                        margin: auto
+                        z-index: 1
+                        left: 0
+                        bottom: 0
+                        width: 18px
+                        height: 18px
+                        background: url('../images/dot.svg') no-repeat
+                        background-size: 18px
+
+                >*
+                    width: calc(100% / 3)
+                    padding: 8px
+                .contentBx
+                    padding-left: 40px
+                    width: 250px
+                    @media only screen and (min-width:1351px)
+                        width: 300px
+                    @media only screen and (min-width:1551px)
+                        padding-left: 60px
+                        width: 350px
+                    .Title
+                        font-weight: 700
+                        font-family: $fontstack2
+                        color: $black
+                        font-size: 22px
+                        @media only screen and (min-width:1441px)
+                            font-size: 25px
+                        @media only screen and (min-width:1551px)
+                            font-size: 30px
+
+                .imWrap
+                    width: 400px
+                    @media only screen and (min-width:1351px)
+                        width: 450px
+                    @media only screen and (min-width:1551px)
+                        width: 520px
+                    .imgbx
+                        width: 100%
+                        height: 100%
+                        overflow: hidden
+                        &:hover
+                            img
+                                transform: scale(1.1)
+                        img, video
+                            transition: all 0.5s
+                            @include imgFit
+                .infoBx
+                    display: flex
+                    align-items: center
+                    padding-left: 45px
+                    width: calc(100% - (250px + 400px))
+                    @media only screen and (min-width:1351px)
+                        width: calc(100% - (300px + 450px))
+                    @media only screen and (min-width:1551px)
+                        width: calc(100% - (350px + 520px))
+                        padding-left: 65px
+                    .contents
+                        width: 100%
+                        .mainHead
+                            margin-bottom: 60px
+
+            .storySlider
+                width: 100%
+                height: 100%
+                .swiper-slide
+                    &:nth-child(even)
+                        .storyCard
+                            .boderDot
+                                &::before
+                                    bottom: 0
+                                    top: unset
+
+                                &::after
+                                    bottom: unset
+                                    top: 0
+
+    #products
+        position: relative
+        padding: 35px 0 40px
+        @media only screen and (min-width:1200px)
+            padding: 35px 0 50px
+        @media only screen and (min-width:1551px)
+            padding: 35px 0 100px
+        .mainHead
+            margin-bottom: 30px
+            @media only screen and (min-width:1551px)
+                margin-bottom: 40px
+            &::after
+                display: none
+            .mainTitle
+                background: $white
+                position: relative
+                padding-right: 20px
+                overflow: hidden
+                z-index: 0
+                line-height: 1.4
+                &::after
+                    position: absolute
+                    content: ''
+                    top: 10px
+                    bottom: 0
+                    margin: auto
+                    height: 1px
+                    width: 100%
+                    background: #BE965D
+                    margin-left: 20px
+        .productListItem
+            display: flex
+            flex-wrap: wrap
+            margin: -5px
+            @media only screen and (min-width:1351px)
+                margin: -10px
+            >*
+                // flex-grow: 1
+                padding: 5px
+                width: 100%
+                @media only screen and (min-width:368px)
+                    width: calc(100% / 2 )
+                @media only screen and (min-width:578px)
+                    width: calc(100% / 3 )
+                @media only screen and (min-width:768px)
+                    width: calc(100% / 4 )
+                @media only screen and (min-width:1200px)
+                    width: calc(100% / 5 )
+                @media only screen and (min-width:1351px)
+                    padding: 10px
+
+        .productBx
+            display: block
+            width: 100%
+            height: 100%
+            position: relative
+            overflow: hidden
+            z-index: 0
+            &:hover
+                .imgbx
+                    img
+                        transform: scale(1.1)
+                .info
+                    .btnSec
+                        opacity: 1
+                        visibility: visible
+                        &::after
+                            width: calc(100% - 10px)
+                        >*
+                            transform: translateY(0px)
+
+            .imgbx
+                width: 100%
+                height: 100%
+                overflow: hidden
+                position: relative
+                z-index: 1
+                aspect-ratio: 300 / 420
+                &:after
+                    position: absolute
+                    content: ''
+                    left: 0
+                    bottom: 0
+                    width: 100%
+                    height: 150px
+                    z-index: 2
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
+                    opacity: 0.5
+
+                img, video, frame
+                    transition: all 0.9s
+                    @include imgFit
+
+            .info
+                position: absolute
+                bottom: 0
+                left: 0
+                padding: 25px 10px
+                width: 100%
+                z-index: 4
+                @media only screen and (min-width:768px)
+                    padding: 25px 15px
+                .btnSec
+                    display: flex
+                    flex-wrap: wrap
+                    margin: 0 -10px
+                    margin-bottom: 10px
+                    position: relative
+                    transition: all 0.5s
+                    overflow: hidden
+                    opacity: 0
+                    visibility: visible
+                    padding-bottom: 15px
+                    @media only screen and (min-width:1551px)
+                        padding-bottom: 25px
+
+                    &::after
+                        position: absolute
+                        content: ''
+                        left: 10px
+                        width: 0
+                        transition: all 1s
+                        height: 1px
+                        background: #EAAA56
+                        transition-delay: 0.1s
+                        bottom: 0
+
+                    >*
+                        padding: 0 10px
+                        position: relative
+                        transform: translateY(50px)
+                        transition: all 0.5s
+
+                        &:not(:last-of-type)
+                            &::after
+                                position: absolute
+                                content: ''
+                                top: 0
+                                right: 0
+                                height: 80%
+                                bottom: 0
+                                margin: auto
+                                background: $white
+                                width: 1px
+
+                    .viewBtn
+                        display: block
+                        width: fit-content
+                        color: $white
+                        text-transform: uppercase
+                        font-weight: 500
+                        transition: all 0.5s
+                        line-height: 1
+                        font-size: 12px
+                        @media only screen and (min-width:768px)
+                            font-size: 14px
+                        @media only screen and (min-width:1441px)
+                            font-size: 16px
+                        @media only screen and (min-width:1551px)
+                            font-size: 18px
+                        &:hover
+                            color: $basecolor
+                .mainTxt
+                    color: $white
+                    font-weight: 500
+                    text-transform: capitalize
+                    font-size: 14px
+                    @include clamp
+                    --lines: 2
+                    @media only screen and (min-width:768px)
+                        font-size: 16px
+                    @media only screen and (min-width:1441px)
+                        font-size: 18px
