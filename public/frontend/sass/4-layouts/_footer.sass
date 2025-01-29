@@ -69,9 +69,13 @@
                 border: none
                 border-radius: 0px
                 &::placeholder
-                    font-size: 18px
+                    font-size: 14px
                     color: #ACACAC
                     font-weight: 400
+                    @media only screen and (min-width:1200px)
+                        font-size: 16px
+                    @media only screen and (min-width:1441px)
+                        font-size: 18px
         button
             display: block
             background-color: #fff

@@ -73,13 +73,34 @@ class FrontendController extends Controller
     }
 
          /**
+<<<<<<< HEAD
      * Display the productList page.
+=======
+     * Display the index page.
+>>>>>>> 2e82ad5b758bd02c4d65bb24f265a3176732cbdc
      *
      * @author [Your Name Here]
      * @return \Illuminate\View\View
      */
+<<<<<<< HEAD
     public function productList()
     {
         return view('productList');
+=======
+    public function career()
+    {
+        return view('career');
+    }
+
+            /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function bookSlot()
+    {
+        return view('bookSlot');
+>>>>>>> 2e82ad5b758bd02c4d65bb24f265a3176732cbdc
     }
 }

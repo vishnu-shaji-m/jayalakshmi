@@ -45,7 +45,7 @@
                 <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style1.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style1.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="product ">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Saree</div>
@@ -55,7 +55,7 @@
                 <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style2.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style2.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="product  ">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Lehenga</div>
@@ -65,7 +65,7 @@
                 <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style3.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style3.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="product ">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Gown</div>
@@ -75,7 +75,7 @@
                 <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style4.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style4.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="product ">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Mens Wear</div>
@@ -85,7 +85,7 @@
                 <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <a href="javascript:void(0)" class="signatureBx" aria-label="signatureLink">
                         <div class="imgbx">
-                            <img src="{{asset('frontend/images/style5.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="">
+                            <img src="{{asset('frontend/images/style5.webp')}}" loading="lazy" class="lazy" width="510" height="350" alt="product ">
                         </div>
                         <div class="info">
                             <div class="mainTxt">Kids Wear</div>
