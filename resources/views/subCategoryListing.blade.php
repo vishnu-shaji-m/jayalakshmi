@@ -54,7 +54,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -75,7 +75,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                    <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -96,7 +96,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -117,7 +117,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -138,7 +138,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>

@@ -692,6 +692,7 @@
 
 
 
+
 <ul class="fixredRit">
 
     <li>
@@ -720,7 +721,7 @@
                             <rect width="60" height="60" fill="white" />
                         </clipPath>
                     </defs>
-                </svg> 
+                </svg>
             </div>
         </a>
     </li>
@@ -766,6 +767,8 @@
     </li> -->
 
 </ul>
+
+
 
 
 

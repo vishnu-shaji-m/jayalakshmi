@@ -590,7 +590,8 @@
                 </div>
             </div>
 
-            <a href="javascript:void(0)" class="cmnBtn hoveranim mobBtn wow animate__fadeInUp" data-wow-duration="1s" aria-label="cmnLink">
+            <a href="javascript:void(0)" class="cmnBtn hoveranim mobBtn wow animate__fadeInUp" data-wow-duration="1s"
+                aria-label="cmnLink">
                 <span>VIEW ALL </span>
             </a>
         </div>
@@ -1349,7 +1350,7 @@ $(document).ready(function() {
         loop: true,
         watchSlidesProgress: true,
         spaceBetween: 0,
-        speed: 7000, // Transition speed in milliseconds (smooth transition)
+        speed: 5000, // Transition speed in milliseconds (smooth transition)
         autoplay: {
             delay: 1,
             disableOnInteraction: false,

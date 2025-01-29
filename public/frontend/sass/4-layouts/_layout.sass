@@ -3,7 +3,7 @@
     overflow: hidden
     padding-top: 105px
 body
-    &:has(#InnerBanner)
+    &:has(#InnerBanner, #MainBanner)
         #Header
             border: 0 !important
             padding-bottom: 0
@@ -36,9 +36,10 @@ body
         transform-origin: right
     span
         position: relative
+        transition: 0.1s
         z-index: 1
     &:hover
-        color: $white
+
         &::before
             -webkit-transform-origin: left
             -ms-transform-origin: left
@@ -47,7 +48,7 @@ body
             -ms-transform: scaleX(1)
             transform: scaleX(1)
         span
-            color: $white
+            color: $black
             svg
                 fill: $white
 .upper
@@ -101,11 +102,11 @@ body
             font-size: 30px
         @media only screen and (min-width:1200px)
             font-size: 34px
-        @media only screen and (min-width:1351px)
-            font-size: 38px
         @media only screen and (min-width:1441px)
-            font-size: 44px
+            font-size: 38px
         @media only screen and (min-width:1551px)
+            font-size: 44px
+        @media only screen and (min-width:1661px)
             font-size: 56px
         span
             font-style: italic

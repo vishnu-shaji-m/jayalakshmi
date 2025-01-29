@@ -244,26 +244,50 @@
 .productPage
     #story
         position: relative
-        padding: 95px 0 35px
+        padding: 35px 0 15px
+        @media only screen and (min-width:1200px)
+            padding: 60px 0 15px
+        @media only screen and (min-width:1441px)
+            padding: 95px 0 35px
         .storyBx
             position: relative
             width: 100%
             background: #FFECD4
-            padding: 68px 105px 0
             overflow: hidden
-            height: 720px
+            padding: 20px 25px
+            @media only screen and (min-width:578px)
+                padding: 40px 50px
+            @media only screen and (min-width:768px)
+                padding: 50px 70px 0
+                height: 430px
+            @media only screen and (min-width:992px)
+                height: 500px
+            @media only screen and (min-width:1351px)
+                padding: 68px 105px 0
+                height: 550px
+            @media only screen and (min-width:1441px)
+                height: 600px
+            @media only screen and (min-width:1551px)
+                height: 720px
             &::before, &::after
                 position: absolute
                 content: ''
-                left: 10px
                 height: 100%
-                width: 50px
                 top: 0
                 background: url('../images/storyBodr.svg') no-repeat
                 background-size: cover
+                width: 25px
+                left: 0px
+                @media only screen and (min-width:578px)
+                    width: 35px
+                @media only screen and (min-width:1200px)
+                    left: 10px
+                    width: 50px
             &::after
-                right: 10px
+                right: 0px
                 left: unset
+                @media only screen and (min-width:1200px)
+                    right: 10px
 
             .storyCard
                 display: flex
@@ -272,26 +296,31 @@
                 height: 100%
                 margin: -8px
                 position: relative
+                padding-left: 20px
+                @media only screen and (max-width:768px)
+                    padding-left: 40px
                 .boderDot
                     position: absolute
                     top: 0
-                    left: 0
                     height: calc(100% - 20px)
                     width: 25px
                     bottom: 0
                     margin: auto
                     transition: all 0.5s
                     overflow: hidden
+                    left: 15px
+                    @media only screen and (min-width:768px)
+                        left: 10px
                     .line
                         position: absolute
                         content: ''
-                        width: 1px
-                        height: 100%
+                        width: 1.5px
+                        height: 0%
                         left: 12px
                         top: 0
                         background: #DDB17A
-                        bottom: 0
                         margin: auto
+                        transition: all 2s
 
                     &::before
                         position: absolute
@@ -320,12 +349,20 @@
                         background-size: 18px
 
                 >*
-                    width: calc(100% / 3)
+                    width: 100%
                     padding: 8px
+                    @media only screen and (min-width: 768px)
+                        width: calc(100% / 3)
                 .contentBx
-                    padding-left: 40px
-                    width: 250px
-                    @media only screen and (min-width:1351px)
+                    @media only screen and (min-width: 768px)
+                        width: 180px
+                        padding-left: 30px
+                    @media only screen and (min-width: 992px)
+                        width: 220px
+                    @media only screen and (min-width:1200px)
+                        padding-left: 40px
+                        width: 250px
+                    @media only screen and (min-width:1441px)
                         width: 300px
                     @media only screen and (min-width:1551px)
                         padding-left: 60px
@@ -334,22 +371,33 @@
                         font-weight: 700
                         font-family: $fontstack2
                         color: $black
-                        font-size: 22px
+                        font-size: 17px
+                        @media only screen and (min-width:768px)
+                            font-size: 18px
+                        @media only screen and (min-width:992px)
+                            font-size: 22px
                         @media only screen and (min-width:1441px)
                             font-size: 25px
                         @media only screen and (min-width:1551px)
                             font-size: 30px
 
                 .imWrap
-                    width: 400px
-                    @media only screen and (min-width:1351px)
+                    @media only screen and (min-width: 768px)
+                        width: 250px
+                    @media only screen and (min-width:992px)
+                        width: 350px
+                    @media only screen and (min-width:1200px)
+                        width: 400px
+                    @media only screen and (min-width:1441px)
                         width: 450px
                     @media only screen and (min-width:1551px)
                         width: 520px
                     .imgbx
                         width: 100%
-                        height: 100%
                         overflow: hidden
+                        aspect-ratio: 530 / 330
+                        @media only screen and (min-width: 768px)
+                            height: 100%
                         &:hover
                             img
                                 transform: scale(1.1)
@@ -359,22 +407,46 @@
                 .infoBx
                     display: flex
                     align-items: center
-                    padding-left: 45px
-                    width: calc(100% - (250px + 400px))
-                    @media only screen and (min-width:1351px)
+                    @media only screen and (min-width: 768px)
+                        padding-left: 30px
+                        width: calc(100% - (180px + 250px))
+                    @media only screen and (min-width:992px)
+                        padding-left: 45px
+                        width: calc(100% - (220px + 350px))
+                    @media only screen and (min-width:1200px)
+                        width: calc(100% - (250px + 400px))
+                    @media only screen and (min-width:1441px)
                         width: calc(100% - (300px + 450px))
                     @media only screen and (min-width:1551px)
                         width: calc(100% - (350px + 520px))
                         padding-left: 65px
                     .contents
                         width: 100%
+                        max-height: 280px
+                        padding-right: 10px
+                        overflow: auto
                         .mainHead
                             margin-bottom: 60px
 
             .storySlider
                 width: 100%
                 height: 100%
+                overflow: hidden
                 .swiper-slide
+                    &.swiper-slide-active
+                        .storyCard
+                            .contentBx
+                                .Title
+                                    color: #976F40
+                            .infoBx
+                                .contents
+                                    .mainHead
+                                        .mainTitle
+                                            color: #976F40
+
+                            .boderDot
+                                .line
+                                    height: 100%
                     &:nth-child(even)
                         .storyCard
                             .boderDot
@@ -388,9 +460,9 @@
 
     #products
         position: relative
-        padding: 35px 0 40px
+        padding: 15px 0 40px
         @media only screen and (min-width:1200px)
-            padding: 35px 0 50px
+            padding: 15px 0 50px
         @media only screen and (min-width:1551px)
             padding: 35px 0 100px
         .mainHead
@@ -453,7 +525,7 @@
                         opacity: 1
                         visibility: visible
                         &::after
-                            width: calc(100% - 10px)
+                            width: calc(100% - 20px)
                         >*
                             transform: translateY(0px)
 
@@ -470,7 +542,7 @@
                     left: 0
                     bottom: 0
                     width: 100%
-                    height: 150px
+                    height: 350px
                     z-index: 2
                     background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, #280000 99.61%)
                     opacity: 0.5
@@ -556,6 +628,6 @@
                     @include clamp
                     --lines: 2
                     @media only screen and (min-width:768px)
-                        font-size: 16px
+                        font-size: 15px
                     @media only screen and (min-width:1441px)
                         font-size: 18px

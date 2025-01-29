@@ -71,24 +71,23 @@
                         <div class="swiper-slide">
                             <a href="javascript:void(0)" class="storyCard" aria-label="story-link">
                                 <div class="contentBx">
-                                    <div class="Title">4th Century CE</div>
+                                    <div class="Title">Chola Dynasty
+                                        (9th–13th Century CE)</div>
                                 </div>
                                 <div class="imWrap">
                                     <div class="imgbx">
-                                        <img src="{{asset('frontend/images/story1.webp')}}" width="520" height="330"
+                                        <img src="{{asset('frontend/images/story2.webp')}}" width="520" height="330"
                                             alt="story_link">
                                     </div>
                                 </div>
                                 <div class="infoBx">
                                     <div class="contents">
                                         <div class="mainHead">
-                                            <div class="mainTitle">A Regal Beginning</div>
+                                            <div class="mainTitle">The Silk Renaissance  </div>
                                         </div>
                                         <p>
-                                            The rich tradition of Kanjivaram weaving began during the Pallava dynasty in
-                                            Kanchipuram, Tamil Nadu, where artisans created intricate designs inspired
-                                            by
-                                            temple art.
+                                            The Cholas nurtured the art of silk weaving, making Kanchipuram the heart of
+                                            high-quality silk sarees, woven with pure mulberry silk.
                                         </p>
                                     </div>
                                 </div>
@@ -129,24 +128,23 @@
                         <div class="swiper-slide">
                             <a href="javascript:void(0)" class="storyCard" aria-label="story-link">
                                 <div class="contentBx">
-                                    <div class="Title">4th Century CE</div>
+                                    <div class="Title">Chola Dynasty
+                                        (9th–13th Century CE)</div>
                                 </div>
                                 <div class="imWrap">
                                     <div class="imgbx">
-                                        <img src="{{asset('frontend/images/story1.webp')}}" width="520" height="330"
+                                        <img src="{{asset('frontend/images/story2.webp')}}" width="520" height="330"
                                             alt="story_link">
                                     </div>
                                 </div>
                                 <div class="infoBx">
                                     <div class="contents">
                                         <div class="mainHead">
-                                            <div class="mainTitle">A Regal Beginning</div>
+                                            <div class="mainTitle">The Silk Renaissance  </div>
                                         </div>
                                         <p>
-                                            The rich tradition of Kanjivaram weaving began during the Pallava dynasty in
-                                            Kanchipuram, Tamil Nadu, where artisans created intricate designs inspired
-                                            by
-                                            temple art.
+                                            The Cholas nurtured the art of silk weaving, making Kanchipuram the heart of
+                                            high-quality silk sarees, woven with pure mulberry silk.
                                         </p>
                                     </div>
                                 </div>
@@ -155,6 +153,7 @@
                                 </div>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -287,8 +286,18 @@
                     </div>
                 </div>
             </div>
+            <ul class="pagination">
+                <li class="prev disabled"><span></span> </li>
+                <li><a href="javascript:void(0)" aria-label="links" data-page="0">01</a></li>
+                <li><a href="javascript:void(0)" aria-label="links" data-page="1">02</a></li>
+                <li><a href="javascript:void(0)" aria-label="links" data-page="2">..</a></li>
+                <li><a href="javascript:void(0)" aria-label="links" data-page="3">03</a></li>
+                <li><a href="javascript:void(0)" aria-label="links" data-page="4">04</a></li>
+                <li class="next active"><a href="javascript:void(0)" aria-label="links" data-page="1"></a></li>
+            </ul>
         </div>
-    </section>
+</div>
+</section>
 
 </div>
 
@@ -301,54 +310,62 @@
 
 <script>
 $(document).ready(function() {
-
-    new Swiper('.storySlider', {
+    var storySlider = new Swiper('.storySlider', {
         lazy: true,
         preloadImages: true,
         slidesPerView: 2,
         paginationClickable: true,
         loop: true,
         watchSlidesProgress: true,
-        direction: "vertical",
+        direction: getDirection(), // Dynamically set direction based on screen width
         spaceBetween: 35,
+        speed: 200,
         autoplay: {
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
         },
 
+        on: {
+            resize: function() {
+                this.changeDirection(getDirection()); // Correct reference to Swiper instance
+            },
+        },
 
         breakpoints: {
             1661: {
                 slidesPerView: 1.5,
-                spaceBetween: 15
+                spaceBetween: 90
             },
             1551: {
                 slidesPerView: 1.5,
-                spaceBetween: 10
+                spaceBetween: 80
             },
             1200: {
                 slidesPerView: 1.6,
-                spaceBetween: 10
+                spaceBetween: 65
             },
-            578: {
-                slidesPerView: 4,
-                spaceBetween: 10
+            992: {
+                slidesPerView: 1.5,
+                spaceBetween: 40
             },
-
-            480: {
-                slidesPerView: 3.7,
-                spaceBetween: 10
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 30
             },
             360: {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 spaceBetween: 10
             },
             0: {
-                slidesPerView: 2.5,
+                slidesPerView: 1,
                 spaceBetween: 10
             }
         }
     });
+
+    function getDirection() {
+        return window.innerWidth <= 768 ? 'horizontal' : 'vertical';
+    }
 });
 </script>
 
