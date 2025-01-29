@@ -1,0 +1,82 @@
+.bookslotPage
+    #elegance
+        padding: 95px 0px 55px
+        .mainHead
+            margin-bottom: 55px
+            &::after
+                background-image: url(../images/elegance-hd.webp)
+                width: 250px
+                background-size: 250px
+                height: 34px
+        .text
+            font-size: 24px
+            font-weight: 700
+            font-style: italic
+            margin-bottom: 25px
+        .eleganceBx
+            background-color: #FFE7E7
+            padding: 35px 25px 0px 25px
+            overflow: hidden
+            margin-bottom: 25px
+            .d_flx
+                display: flex
+                flex-wrap: wrap
+                margin: 0 -10px
+                .lft
+                    width: calc( 100% - 436px )
+                    padding: 0px 10px
+                    .imgBx
+                        width: 100%
+                        aspect-ratio: 1098 / 636
+                        position: relative
+                        margin-bottom: 33px
+                        &::after
+                            content: ""
+                            position: absolute
+                            bottom: 0
+                            left: 0
+                            right: 0
+                            width: 100%
+                            height: 151px
+                            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(40, 0, 0, 0.90) 99.61%)
+                        img
+                            @include imgFit
+                        .bg
+                            max-width: 273px
+                            position: absolute
+                            top: 25px
+                            left: 25px
+                        .info
+                            font-size: 36px
+                            font-weight: 700
+                            font-family: $fontstack2
+                            position: absolute
+                            bottom: 33px
+                            left: 0px
+                            right: 0px
+                            color: #fff
+                            z-index: 1
+                            width: 100%
+                            padding-left: 35px
+                            &::after
+                                content: ""
+                                position: absolute
+                                top: 8px
+                                bottom: 0px
+                                margin: auto
+                                width: 50%
+                                height: 1px
+                                right: 30px
+                                background: linear-gradient(270deg, #EAAA56 0%, #846031 100%)
+                .rgt
+                    width: 436px
+                    padding: 0px 10px
+                    .pro_slider
+                        .imgBx
+                            width: 100%
+                            aspect-ratio: 426 / 253
+                    .slick-vertical .slick-slide
+                        margin-bottom: 20px
+        ul
+            li
+                list-style: disc           

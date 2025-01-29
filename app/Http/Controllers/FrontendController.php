@@ -71,4 +71,26 @@ class FrontendController extends Controller
     {
         return view('privacy');
     }
+
+         /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function career()
+    {
+        return view('career');
+    }
+
+            /**
+     * Display the index page.
+     *
+     * @author [Your Name Here]
+     * @return \Illuminate\View\View
+     */
+    public function bookSlot()
+    {
+        return view('bookSlot');
+    }
 }
