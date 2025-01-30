@@ -73,11 +73,12 @@
                     left: 0
                     bottom: 0
                     width: 100%
-                    opacity: 0
-                    visibility: hidden
                     transition: all 0.5s
-                    transform: translateY(50px)
                     z-index: 1
+                    @media only screen and (min-width:992px)
+                        visibility: hidden
+                        opacity: 0
+                        transform: translateY(50px)
                     &::before
                         position: absolute
                         content: ''

@@ -73,18 +73,18 @@ class FrontendController extends Controller
     }
 
          /**
-     * Display the index page.
+     * Display the productList page. 
      *
      * @author [Your Name Here]
      * @return \Illuminate\View\View
      */
-    public function career()
+    public function productList()
     {
-        return view('career');
+        return view('productList');
+  
     }
-
             /**
-     * Display the index page.
+     * Display the bookSlot page.
      *
      * @author [Your Name Here]
      * @return \Illuminate\View\View
@@ -92,5 +92,41 @@ class FrontendController extends Controller
     public function bookSlot()
     {
         return view('bookSlot');
+    }
+
+         /**
+    * Display the career page.
+    *
+    * @author [Your Name Here]
+    * @return \Illuminate\View\View
+        */
+
+    public function career()
+    {
+        return view('career');
+    }
+
+           /**
+    * Display the categoryListing page.
+    *
+    * @author [Your Name Here]
+    * @return \Illuminate\View\View
+        */
+
+    public function categoryListing()
+    {
+        return view('categoryListing');
+    }
+
+           /**
+    * Display the subCategoryListing page.
+    *
+    * @author [Your Name Here]
+    * @return \Illuminate\View\View
+        */
+
+    public function subCategoryListing()
+    {
+        return view('subCategoryListing');
     }
 }

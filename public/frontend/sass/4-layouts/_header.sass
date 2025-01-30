@@ -33,13 +33,19 @@
         #HeaderMain
             #AccordMenu
                 @media only screen and (max-width: 992px)
-                    top: 75px
-                    height: calc(100vh - 75px)
+                    top: 73px
+                    height: calc(100vh - 73px)
+
             .mainFlx
                 @media only screen and (max-width: 992px)
                     padding-top: 0
                 .lftSd
                     padding: 0 0 10px
+                    .captionTxt
+                        @media only screen and (min-width: 1200px)
+                            margin-left: 15px
+                        @media only screen and (min-width: 1441px)
+                            margin-left: 30px
                     .logo
                         max-width: 210px
                         padding-top: 10px
@@ -129,7 +135,7 @@
                     width: calc(100% - 175px)
                     padding-left: 80px
                 @media only screen and (min-width: 1200px)
-                    padding-left: 00px
+                    padding-left: 0px
                     width: calc(100% - 400px)
                 @media only screen and (min-width: 1351px)
                     width: calc(100% - 450px)
@@ -517,12 +523,20 @@
                     .accordion-button
                         @media only screen and (min-width: 992px)
                             padding-right: 20px
+                            // padding-bottom: 25px
+                        &:not(.collapsed)
+                            &::before
+                                opacity: 1
+                                visibility: visible
+                            &::after
+                                bottom: 5px
                         &::after
                             position: absolute
                             content: ''
                             top: 0
                             bottom: 0px
                             right: 0px
+                            // transform: none
                             display: block
                             background: url('../images/arrows.svg') no-repeat
                             width: 12px
@@ -531,13 +545,13 @@
                                 bottom: -5px
                                 right: -10px
                             @media only screen and (min-width:1441px)
-                                bottom: -5px
+
                                 right: 0px
                         &::before
                             @media only screen and (min-width: 992px)
                                 position: absolute
                                 content: ''
-                                bottom: -3px
+                                bottom: 0px
                                 left: 0
                                 width: 100%
                                 height: 4px
@@ -547,6 +561,9 @@
 
                     &:hover
                         .accordion-button
+                            &::after
+                                bottom: 5px
+                                transform: rotate(180deg)
                             &::before
                                 opacity: 1
                                 visibility: visible
@@ -556,12 +573,13 @@
                     .megMenu
                         @media only screen and (min-width: 992px)
                             position: absolute
-                            top: calc(100% + 3px)
                             left: unset
                             background: $white
                             padding: 0
                             min-width: 450px
+                            top: 100%
                         @media only screen and (min-width:1441px)
+                            // top: calc(100% + 3px)
                             min-width: 540px
                         .accordion-body
                             padding: 15px 0 0
@@ -698,16 +716,15 @@
                             letter-spacing: 0.2px
                             padding: 20px 0px
                         @media only screen and (min-width: 1200px)
-                            padding: 15px 0px
-                            font-size: 14px
+                            padding: 17px 0px
+                            font-size: 12px
                         @media only screen and (min-width: 1351px)
-                            padding: 15px 0px
+                            padding: 17px 0px
+                            font-size: 13px
                         @media only screen and (min-width: 1551px)
-                            font-size: 16px
-                            padding: 15px 0px
+                            font-size: 15px
                         @media only screen and (min-width: 1661px)
                             font-size: 16px
-                            padding: 15px 0px
                         &:has(.icon)
                             .icon
                                 width: 22px
@@ -747,14 +764,14 @@
                             margin-bottom: 40px
                             @media only screen and (min-width: 992px)
                                 min-width: 105px
-                                height: 45px
                                 margin: 0
+                                height: 40px
                                 width: 100%
                             @media only screen and (min-width: 1200px)
                                 font-size: 16px
-                                height: 100%
                                 min-width: 130px
                             @media only screen and (min-width: 1351px)
+                                height: 45px
                                 min-width: 150px
 
                         &::after

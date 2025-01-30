@@ -41,10 +41,10 @@
                                 <img src="{{ asset('frontend/images/about-sec.webp')}}"
                                     data-src="{{ asset('frontend/images/about-sec.webp')}}" class="lazy" width="506"
                                     height="511" loading="lazy" alt="abouImg">
-                                <div class="about-logo">
+                                <!-- <div class="about-logo">
                                     <img src="{{ asset('frontend/images/about-logo.webp')}}" class="lazy" width="273"
                                         height="75" loading="lazy" alt="logo">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="infoSec">
@@ -105,7 +105,7 @@
                         </div>
                         <div class="infoSec">
                             <div class="mainHead">
-                                <div class="mainTitle">About Our <span>founder</span></div>
+                                <div class="mainTitle">Our <span>founder</span></div>
                             </div>
                             <div class="contentBx">
                                 <p>Late Mr. Narasimha Kamath, the visionary founder of Jayalakshmi Stores, was born in a
@@ -147,7 +147,7 @@
             <div class="officeBx">
                 <div class="mainHead">
                     <div class="mainTitle">Corporate Office & Store locations</div>
-                </div>
+                </div> 
                 <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="item">
                         <div class="itemBx">
@@ -426,7 +426,8 @@
         <div class="container-fluid">
             <div class="bridalSlider wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
+                    @for ($i = 1; $i <= 17; $i++) 
+                    <div class="swiper-slide">
                         <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
                             aria-label="bridaLink" data-fancybox="gallery">
                             <div class="imgBx">
@@ -457,7 +458,7 @@
 @endsection
 @push('js')
 {{-- Placeholder for pushing JavaScript files specific to this page into the stack --}}
-@endpush
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -538,3 +539,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+@endpush

@@ -1,9 +1,11 @@
 
 #pageWrapper
     overflow: hidden
-    padding-top: 105px
+    padding-top: 100px
+    @media only screen and (min-width: 1441px)
+        padding-top: 105px
 body
-    &:has(#InnerBanner)
+    &:has(#InnerBanner, #MainBanner)
         #Header
             border: 0 !important
             padding-bottom: 0
@@ -36,9 +38,10 @@ body
         transform-origin: right
     span
         position: relative
+        transition: 0.1s
         z-index: 1
     &:hover
-        color: $white
+
         &::before
             -webkit-transform-origin: left
             -ms-transform-origin: left
@@ -47,7 +50,7 @@ body
             -ms-transform: scaleX(1)
             transform: scaleX(1)
         span
-            color: $white
+            color: $black
             svg
                 fill: $white
 .upper
@@ -76,10 +79,13 @@ body
             bottom: -40px
             right: 0
             background: url('../images/iconLog.svg') no-repeat
-            width: 110px
-            background-size: 110px
+            width: 95px
+            background-size: 95px
             height: 30px
             margin: auto
+            @media only screen and (min-width:1551px)
+                width: 110px
+                background-size: 110px
         .subT, h1
             margin: auto
             margin-bottom: 15px
@@ -101,11 +107,11 @@ body
             font-size: 30px
         @media only screen and (min-width:1200px)
             font-size: 34px
-        @media only screen and (min-width:1351px)
-            font-size: 38px
         @media only screen and (min-width:1441px)
-            font-size: 44px
+            font-size: 38px
         @media only screen and (min-width:1551px)
+            font-size: 44px
+        @media only screen and (min-width:1661px)
             font-size: 56px
         span
             font-style: italic
@@ -116,10 +122,10 @@ body
         font-weight: 400
         margin-bottom: 15px
         position: relative
-        font-size: 14px
+        font-size: 13px
         @media only screen and (min-width:768px)
-            font-size: 16px
-        @media only screen and (min-width:1200px)
+            font-size: 14px
+        @media only screen and (min-width:1441px)
             font-size: 18px
 
 .cmnBtn

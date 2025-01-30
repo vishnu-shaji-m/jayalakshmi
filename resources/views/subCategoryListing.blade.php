@@ -44,7 +44,7 @@
                 </p>
             </div>
             <div class="d_flx">
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="sub_category">
                         <div class="imgBx">
                             <img src="{{asset('frontend/images/s1.webp')}}" loading="lazy" class="lazy" width="780"
@@ -54,7 +54,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="sub_category">
                         <div class="imgBx">
                             <img src="{{asset('frontend/images/s2.webp')}}" loading="lazy" class="lazy" width="780"
@@ -75,7 +75,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                    <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="sub_category">
                         <div class="imgBx">
                             <img src="{{asset('frontend/images/s3.webp')}}" loading="lazy" class="lazy" width="780"
@@ -96,7 +96,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="sub_category">
                         <div class="imgBx">
                             <img src="{{asset('frontend/images/s4.webp')}}" loading="lazy" class="lazy" width="780"
@@ -117,7 +117,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="sub_category">
                         <div class="imgBx">
                             <img src="{{asset('frontend/images/s5.webp')}}" loading="lazy" class="lazy" width="780"
@@ -138,7 +138,7 @@
                                     <a href="#!" aria-label="view" class="view">
                                         VIEW
                                     </a>
-                                    <a href="#!" aria-label="enq" class="enq">
+                                   <a href="#!" aria-label="enq" class="enq" data-bs-toggle="modal" data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>

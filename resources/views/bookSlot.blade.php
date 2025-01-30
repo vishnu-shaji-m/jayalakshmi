@@ -33,15 +33,15 @@
 
     <section id="elegance">
         <div class="container">
-            <div class="mainHead">
+            <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainTitle">A World of <span>Elegance</span></div>
             </div>
-            <div class="text">
+            <div class="text wow animate__fadeInUp" data-wow-duration="1s">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at massa neque. Aliquam mi dui,
                 ultricies vitae vehicula at, feugiat et ipsum.
                 Nunc vel ante id neque ultricies rutrum nec sed risus.
             </div>
-            <div class="eleganceBx">
+            <div class="eleganceBx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="d_flx">
                     <div class="lft">
                         <div class="imgBx">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <p>
+            <p class="wow animate__fadeInUp" data-wow-duration="1s">
                 Nunc lacinia in metus ut vehicula. Phasellus et lectus vitae turpis scelerisque convallis a at lorem.
                 Nulla sed lectus suscipit, porta risus non, porta risus. Integer condimentum neque sit amet turpis
                 convallis fermentum sit amet vitae leo. Integer faucibus odio in nibh sollicitudin ullamcorper.
@@ -102,12 +102,12 @@
                 scelerisque, consequat dolor non, eleifend velit. Morbi vehicula gravida risus. Suspendisse sapien mi,
                 ullamcorper ut ipsum ut, pharetra lacinia nulla.\
             </p>
-            <p>
+            <p class="wow animate__fadeInUp" data-wow-duration="1s">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at massa neque. Aliquam mi dui,
                 ultricies vitae vehicula at, feugiat et ipsum. Nunc vel ante id neque ultricies rutrum nec sed risus.
                 Nunc lacinia in metus ut vehicula.
             </p>
-            <ul>
+            <ul class="wow animate__fadeInUp" data-wow-duration="1s">
                 <li>Phasellus et lectus vitae turpis scelerisque convallis</li>
                 <li>Nulla sed lectus suscipit, porta risus non</li>
             </ul>
@@ -238,7 +238,7 @@
     <section id="commenSec">
         <div class="bridalLounge">
             <div class="container">
-                <div class="d_flx">
+                <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="lft">
                         <div class="imgBx">
                             <img src="{{ asset('frontend/images/bridal-lounge.webp')}}" class="lazy" loading="lazy"
@@ -282,7 +282,7 @@
         </div>
         <div class="bridalLounge">
             <div class="container">
-                <div class="d_flx">
+                <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="lft">
                         <div class="imgBx">
                             <img src="{{ asset('frontend/images/bridal-lounge2.webp')}}" class="lazy" loading="lazy"
@@ -327,10 +327,10 @@
 
     <section id="location">
         <div class="container">
-            <div class="mainHead">
+            <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainTitle">A World of <span>Elegance</span></div>
             </div>
-            <div class="d_flx">
+            <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="lft">
                     <div class="locationMap">
                         <a href="https://maps.app.goo.gl/B4bmzefcTbovtuwp9" class="map">
@@ -553,7 +553,7 @@
     <section id="lounge">
         <div class="sp-container rgt">
             <div class="d_flx">
-                <div class="lft">
+                <div class="lft wow animate__fadeInUp" data-wow-duration="1s">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
@@ -710,7 +710,7 @@
                             tabindex="0">...</div>
                     </div>
                 </div>
-                <div class="rgt">
+                <div class="rgt wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="imgBx">
                         <img src="{{ asset('frontend/images/lounge.webp')}}" class="lazy" width="819" height="822"
                             loading="lazy" alt="lounge">

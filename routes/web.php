@@ -10,6 +10,7 @@ Route::get('/categoryListing', [FrontendController::class, 'categoryListing'])->
 Route::get('/subCategoryListing', [FrontendController::class, 'subCategoryListing'])->name('subCategoryListing');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('faq');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
+Route::get('/product-list', [FrontendController::class, 'productList'])->name('productList');
 Route::get('/career', [FrontendController::class, 'career'])->name('career');
 Route::get('/bookSlot', [FrontendController::class, 'bookSlot'])->name('bookSlot');
  
