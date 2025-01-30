@@ -54,7 +54,7 @@ function hidePreloader() {
 
     setTimeout(function() {
         preloader.style.display = "none";
-    }, 3000);
+    }, 5000);
 }
 
 if (document.readyState === 'loading') {

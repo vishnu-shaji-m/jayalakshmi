@@ -191,9 +191,20 @@
                     <div class="flxBx">
                         <div class="imgWrap wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="imgBx">
-                                <img src="{{asset('frontend/images/about.webp')}}"
-                                    data-src="{{asset('frontend/images/about.webp')}}" class="lazy" loading="lazy"
+                                <img src="{{asset('frontend/images/about1.webp')}}"
+                                    data-src="{{asset('frontend/images/about1.webp')}}" class="lazy" loading="lazy"
                                     width="515" height="515" alt="aboutImg">
+                                <!-- <div class="wnBx">
+                                    <img src="{{asset('frontend/images/model.png')}}"
+                                        data-src="{{asset('frontend/images/model.png')}}" class="lazy" loading="lazy"
+                                        width="515" height="515" alt="aboutImg">
+                                </div>
+                                <div class="bgBx">
+                                    <img src="{{asset('frontend/images/cloth.webp')}}"
+                                        data-src="{{asset('frontend/images/cloth.webp')}}" class="lazy" loading="lazy"
+                                        width="515" height="515" alt="aboutImg">
+                                </div> -->
+
                             </div>
                             <div class="tptxt">
                                 <div class="txt">#Forevermore</div>
@@ -395,8 +406,11 @@
                     <div class="swiper-slide">
                         <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
                             <div class="imgbx">
-                                <img src="{{asset('frontend/images/fashion1.webp')}}" width="300" height="420"
-                                    alt="fashionImg">
+                                <video class="lazy video" muted loop playsinline width="300" height="420" rel="preload"
+                                    data-src="{{asset('frontend/videos/productVideo.mp4')}}"
+                                    data-poster="{{asset('frontend/images/fashion1.webp')}}">
+                                    <source type="video/mp4" data-src="{{asset('frontend/videos/productVideo.mp4')}}" />
+                                </video>
                             </div>
                             <div class="info">
                                 <div class="btnSec">
@@ -462,25 +476,6 @@
                                     </div>
                                 </div>
                                 <div class="mainTxt">Gold Printed Art Silk Saree</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
-                            <div class="imgbx">
-                                <img src="{{asset('frontend/images/fashion5.webp')}}" width="300" height="420"
-                                    alt="fashionImg">
-                            </div>
-                            <div class="info">
-                                <div class="btnSec">
-                                    <div class="item">
-                                        <div class="viewBtn">
-                                            VIEW
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mainTxt">Pastel Blue Printed Art
-                                    Silk Saree</div>
                             </div>
                         </a>
                     </div>
@@ -1238,59 +1233,6 @@ $(document).ready(function() {
         }
     });
 
-    // fashionSlider 
-
-    new Swiper('.fashionSlider', {
-        lazy: true,
-        preloadImages: true,
-        slidesPerView: 1,
-        paginationClickable: true,
-        loop: true,
-        watchSlidesProgress: true,
-        spaceBetween: 10,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-            1661: {
-                slidesPerView: 5,
-                spaceBetween: 25
-            },
-            1551: {
-                slidesPerView: 5,
-                spaceBetween: 15
-            },
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 10
-            },
-            992: {
-                slidesPerView: 4,
-                spaceBetween: 15
-            },
-
-            678: {
-                slidesPerView: 3,
-                spaceBetween: 10
-            },
-            478: {
-                slidesPerView: 2,
-                spaceBetween: 10
-            },
-            360: {
-                slidesPerView: 2,
-                spaceBetween: 10
-            }
-        }
-    });
-
 
     $(document).ready(function() {
         let swiperInstance;
@@ -1312,10 +1254,10 @@ $(document).ready(function() {
                             delay: 5000,
                             disableOnInteraction: false,
                         },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
+                        // navigation: {
+                        //     nextEl: ".swiper-button-next",
+                        //     prevEl: ".swiper-button-prev",
+                        // },
                         breakpoints: {
                             868: {
                                 slidesPerView: 3,
@@ -1353,7 +1295,7 @@ $(document).ready(function() {
 
     // foreveSlider
 
-    new Swiper('.foreveSlider', {
+    new Swiper('#foreever .foreveSlider', {
         lazy: true,
         preloadImages: true,
         slidesPerView: 2,
@@ -1367,8 +1309,8 @@ $(document).ready(function() {
         },
 
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: "#foreever .swiper-button-next", // Corrected selector
+            prevEl: "#foreever .swiper-button-prev", // Corrected selector
         },
 
         breakpoints: {
@@ -1405,6 +1347,60 @@ $(document).ready(function() {
     });
 
 
+    // fashionSlider 
+
+    new Swiper('#fashion .fashionSlider', {
+        lazy: true,
+        preloadImages: true,
+        slidesPerView: 1,
+        paginationClickable: true,
+        loop: false,
+        watchSlidesProgress: true,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: "#fashion .swiper-button-next",
+            prevEl: "#fashion .swiper-button-prev",
+        },
+
+        breakpoints: {
+            1661: {
+                slidesPerView: 5,
+                spaceBetween: 25
+            },
+            1551: {
+                slidesPerView: 5,
+                spaceBetween: 15
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 10
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            },
+
+            678: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            478: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            360: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            }
+        }
+    });
+
+
     // First Slider (Left-to-Right)
     new Swiper('.bridalSlider1', {
         lazy: true,
@@ -1418,10 +1414,10 @@ $(document).ready(function() {
             delay: 1,
             disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: ".bridalSlider1 .swiper-button-next",
-            prevEl: ".bridalSlider1 .swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".bridalSlider1 .swiper-button-next",
+        //     prevEl: ".bridalSlider1 .swiper-button-prev",
+        // },
         breakpoints: {
             1661: {
                 slidesPerView: 8
@@ -1461,10 +1457,10 @@ $(document).ready(function() {
             disableOnInteraction: false,
         },
         // direction: 'rtl', // Reverse direction
-        navigation: {
-            nextEl: ".bridalSlider2 .swiper-button-next",
-            prevEl: ".bridalSlider2 .swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".bridalSlider2 .swiper-button-next",
+        //     prevEl: ".bridalSlider2 .swiper-button-prev",
+        // },
         breakpoints: {
             1661: {
                 slidesPerView: 8
@@ -1497,41 +1493,27 @@ $(document).ready(function() {
 $(document).ready(function() {
     // Show the modal automatically when the page loads
     $("#bannerModal").modal("show");
-    
-});
 
-$(document).ready(function () {
-    
-    var timeout;
 
-    if ($(window).width() >= 768) {
-        $("#about").on("mousemove", function (e) {
-            if (timeout) clearTimeout(timeout);
-            timeout = setTimeout(function () {
-                callParallax(e);
-            }, 200);
-        });
+    // paly video on mouse over
 
-        function callParallax(e) {
-            parallaxIt(e, ".abtLx .arlx .flxBx .imgWrap .tptxt", -20);
-            parallaxIt(e, ".btnmTxt", 30);
+    $(".fashionBx").on("mouseenter", function() {
+        var video = $(this).find("video").get(0);
+        if (video) {
+            video.play();
         }
+    });
 
-        function parallaxIt(e, target, movement) {
-            var $this = $("#about");
-            var relX = e.pageX - $this.offset().left;
-            var relY = e.pageY - $this.offset().top;
-
-            gsap.to(target, {
-                x: ((relX - $this.width() / 2) / $this.width()) * movement,
-                y: ((relY - $this.height() / 2) / $this.height()) * movement,
-                duration: 1,
-                ease: "power2.out"
-            });
+    $(".fashionBx").on("mouseleave", function() {
+        var video = $(this).find("video").get(0);
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Reset to start
         }
-    }
-});
+    });
 
+
+});
 </script>
 </div>
 @endpush
