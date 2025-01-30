@@ -89,17 +89,17 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="researchDevelopment" class="cmnLink" aria-label="cmnLink">
+                                        <a href="brides" class="cmnLink" aria-label="cmnLink">
                                             Our Brides
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="news" class="cmnLink" aria-label="cmnLink">
+                                        <a href="bookSlot" class="cmnLink" aria-label="cmnLink">
                                             Book Slot
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact" class="cmnLink" aria-label="cmnLink">
+                                        <a href="career" class="cmnLink" aria-label="cmnLink">
                                             Career
                                         </a>
                                     </li>

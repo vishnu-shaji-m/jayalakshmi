@@ -41,10 +41,10 @@
                                 <img src="{{ asset('frontend/images/about-sec.webp')}}"
                                     data-src="{{ asset('frontend/images/about-sec.webp')}}" class="lazy" width="506"
                                     height="511" loading="lazy" alt="abouImg">
-                                <div class="about-logo">
+                                <!-- <div class="about-logo">
                                     <img src="{{ asset('frontend/images/about-logo.webp')}}" class="lazy" width="273"
                                         height="75" loading="lazy" alt="logo">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="infoSec">
@@ -105,7 +105,7 @@
                         </div>
                         <div class="infoSec">
                             <div class="mainHead">
-                                <div class="mainTitle">About Our <span>founder</span></div>
+                                <div class="mainTitle">Our <span>founder</span></div>
                             </div>
                             <div class="contentBx">
                                 <p>Late Mr. Narasimha Kamath, the visionary founder of Jayalakshmi Stores, was born in a
@@ -147,7 +147,7 @@
             <div class="officeBx">
                 <div class="mainHead">
                     <div class="mainTitle">Corporate Office & Store locations</div>
-                </div>
+                </div> 
                 <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                     <div class="item">
                         <div class="itemBx">

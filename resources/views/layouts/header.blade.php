@@ -485,7 +485,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header">
-                                        <a href="researchDevelopment" class="accordion-button" aria-label="menu_link">
+                                        <a href="brides" class="accordion-button" aria-label="menu_link">
                                             <div class="icon">
                                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -517,7 +517,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header">
-                                        <a href="news" class="accordion-button " aria-label="menu_link">
+                                        <a href="career" class="accordion-button " aria-label="menu_link">
                                             <div class="icon">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -553,7 +553,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header">
-                                        <a href="news" class="accordion-button " aria-label="menu_link">
+                                        <a href="contact" class="accordion-button " aria-label="menu_link">
                                             <div class="icon">
                                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -569,7 +569,7 @@
                                 </div>
                                 <div class="accordion-item">
                                     <div class="accordion-header">
-                                        <a href="news" class="accordion-button hoveranim visitBtn"
+                                        <a href="bookSlot" class="accordion-button hoveranim visitBtn"
                                             aria-label="menu_link">
 
                                             <span>ViSIT US</span>
@@ -655,7 +655,7 @@
 
                         </div>
                         <div class="ritBx">
-                            <a href="news" class="hoveranim visitBtn upper" aria-label="menu_link">
+                            <a href="bookSlot" class="hoveranim visitBtn upper" aria-label="menu_link">
                                 <span>ViSIT US</span>
                             </a>
                             <div class="cNacBtnWrap">
