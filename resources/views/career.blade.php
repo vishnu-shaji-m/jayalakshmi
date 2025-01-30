@@ -34,8 +34,8 @@
     <section id="benefit">
         <div class="container">
             <div class="d_flx">
-                <div class="lft">
-                    <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
+                <div class="lft wow animate__fadeInUp" data-wow-duration="1s">
+                    <div class="mainHead">
                         <div class="mainTitle">Benefits of joining Our <span>team</span></div>
                     </div>
                     <p>
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="rgt">
-                    <div class="imgBx">
+                    <div class="imgBx wow animate__fadeInUp" data-wow-duration="1s">
                         <img src="{{asset('frontend/images/career.webp')}}" loading="lazy" class="lazy" width="716"
                             height="480" alt="career">
                     </div>
@@ -89,7 +89,7 @@
 
     <section id="opportunities">
         <div class="container">
-            <div class="opportunitiBx">
+            <div class="opportunitiBx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="mainHead">
                     <div class="mainTitle">Opportunities</div>
                 </div>
