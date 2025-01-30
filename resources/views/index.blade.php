@@ -1497,7 +1497,41 @@ $(document).ready(function() {
 $(document).ready(function() {
     // Show the modal automatically when the page loads
     $("#bannerModal").modal("show");
+    
 });
+
+$(document).ready(function () {
+    
+    var timeout;
+
+    if ($(window).width() >= 768) {
+        $("#about").on("mousemove", function (e) {
+            if (timeout) clearTimeout(timeout);
+            timeout = setTimeout(function () {
+                callParallax(e);
+            }, 200);
+        });
+
+        function callParallax(e) {
+            parallaxIt(e, ".abtLx .arlx .flxBx .imgWrap .tptxt", -20);
+            parallaxIt(e, ".btnmTxt", 30);
+        }
+
+        function parallaxIt(e, target, movement) {
+            var $this = $("#about");
+            var relX = e.pageX - $this.offset().left;
+            var relY = e.pageY - $this.offset().top;
+
+            gsap.to(target, {
+                x: ((relX - $this.width() / 2) / $this.width()) * movement,
+                y: ((relY - $this.height() / 2) / $this.height()) * movement,
+                duration: 1,
+                ease: "power2.out"
+            });
+        }
+    }
+});
+
 </script>
 </div>
 @endpush

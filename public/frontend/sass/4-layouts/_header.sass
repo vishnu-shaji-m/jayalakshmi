@@ -35,7 +35,7 @@
                 @media only screen and (max-width: 992px)
                     top: 73px
                     height: calc(100vh - 73px)
-              
+
             .mainFlx
                 @media only screen and (max-width: 992px)
                     padding-top: 0
@@ -528,13 +528,15 @@
                             &::before
                                 opacity: 1
                                 visibility: visible
+                            &::after
+                                bottom: 5px
                         &::after
                             position: absolute
                             content: ''
                             top: 0
                             bottom: 0px
                             right: 0px
-                            transform: none
+                            // transform: none
                             display: block
                             background: url('../images/arrows.svg') no-repeat
                             width: 12px
@@ -543,7 +545,7 @@
                                 bottom: -5px
                                 right: -10px
                             @media only screen and (min-width:1441px)
-                                
+
                                 right: 0px
                         &::before
                             @media only screen and (min-width: 992px)
@@ -559,6 +561,9 @@
 
                     &:hover
                         .accordion-button
+                            &::after
+                                bottom: 5px
+                                transform: rotate(180deg)
                             &::before
                                 opacity: 1
                                 visibility: visible
@@ -717,9 +722,9 @@
                             padding: 17px 0px
                             font-size: 13px
                         @media only screen and (min-width: 1551px)
-                            font-size: 15px 
+                            font-size: 15px
                         @media only screen and (min-width: 1661px)
-                            font-size: 16px 
+                            font-size: 16px
                         &:has(.icon)
                             .icon
                                 width: 22px
@@ -763,7 +768,7 @@
                                 height: 40px
                                 width: 100%
                             @media only screen and (min-width: 1200px)
-                                font-size: 16px 
+                                font-size: 16px
                                 min-width: 130px
                             @media only screen and (min-width: 1351px)
                                 height: 45px
