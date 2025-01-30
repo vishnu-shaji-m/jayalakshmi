@@ -36,7 +36,7 @@
             <div class="d_flx">
                 <div class="lft">
                     <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
-                        <div class="mainTitle">benefits of joining Our <span>team</span></div>
+                        <div class="mainTitle">Benefits of joining Our <span>team</span></div>
                     </div>
                     <p>
                         Join a renowned and respected brand with a rich history spanning over 75 years. Contribute to
@@ -91,7 +91,7 @@
         <div class="container">
             <div class="opportunitiBx">
                 <div class="mainHead">
-                    <div class="mainTitle">opportunities</div>
+                    <div class="mainTitle">Opportunities</div>
                 </div>
                 <div class="d_flx">
                     <div class="item">

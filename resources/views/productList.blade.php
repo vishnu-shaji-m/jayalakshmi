@@ -175,12 +175,15 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr1.webp')}}" class="viewBtn"
+                                        aria-label="view-Label" data-fancybox="gallery">
                                         VIEW
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="#!" aria-label="enq" class="enq viewBtn " data-bs-toggle="modal"
+                                        data-bs-target="#subCategoryModal">
+
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -199,12 +202,14 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr2.webp')}}" class="viewBtn" data-fancybox="gallery"
+                                        aria-label="view-Label">
                                         VIEW
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="#!" aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
+                                        data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -223,12 +228,14 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr3.webp')}}" class="viewBtn" data-fancybox="gallery"
+                                        aria-label="view-Label">
                                         VIEW
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="#!" aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
+                                        data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -247,12 +254,13 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr4.webp')}}" class="viewBtn" aria-label="view-Label" data-fancybox="gallery">
                                         VIEW
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="#!" aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
+                                        data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -271,12 +279,13 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr5.webp')}}" class="viewBtn" aria-label="view-Label" data-fancybox="gallery">
                                         VIEW
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="javascript:void(0)" class="viewBtn" aria-label="view-Label">
+                                    <a href="#!" aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
+                                        data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
                                     </a>
                                 </div>
@@ -304,6 +313,43 @@
 
 @endsection
 @push('js')
+
+
+<!-- FANCYBOX  -->
+<noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</noscript>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    window.setTimeout(function() {
+        // FANCYBOX CSS
+        const link = document.createElement('link');
+        link.href =
+            "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css";
+        link.rel = "stylesheet";
+        link.integrity =
+            'sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==';
+        link.referrerPolicy = 'no-referrer';
+        link.crossOrigin = 'anonymous';
+        var appStylesheet = document.getElementById('AppStyle');
+        document.head.insertBefore(link, appStylesheet);
+
+        // FANCYBOX JS
+        const script = document.createElement('script');
+        script.src = "https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js";
+        script.integrity =
+            'sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==';
+        script.referrerPolicy = 'no-referrer';
+        script.crossOrigin = 'anonymous';
+        script.defer = true;
+        script.id = 'FancyboxJs';
+
+        document.head.appendChild(script);
+    }, 100);
+});
+</script>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

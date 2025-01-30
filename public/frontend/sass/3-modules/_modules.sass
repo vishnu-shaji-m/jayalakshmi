@@ -427,7 +427,7 @@
                 top: 0
                 left: 0
                 width: 100%
-                height: 70px
+                height: 65px
                 background: #FFEDED
                 z-index: 9
             .closeBTn
@@ -465,19 +465,26 @@
         .modal-body
             background: #FFEDED
             padding: 30px 15px 40px
-            padding-top: 80px
-            max-height: 550px
+            padding-top: 70px
+            max-height: 610px
             overflow: auto
             @media only screen and (min-width: 768px)
-                padding: 30px 60px 50px
                 max-height: 680px
-                padding-top: 80px
+                padding: 65px 60px 30px
             @media only screen and (min-width: 1351px)
-                padding: 40px 80px 50px
-                padding-top: 70px
+                padding: 65px 80px 30px
             @media only screen and (min-width: 1441px)
                 padding: 70px 90px
-                padding-top: 70px
+            @media only screen and (max-height:600px)
+                max-height: 610px
+            @media only screen and (max-height:550px)
+                max-height: 550px
+            @media only screen and (max-height:500px)
+                max-height: 400px
+            @media only screen and (max-height:400px)
+                max-height: 300px
+            @media only screen and (max-height:300px)
+                max-height: 200px
 
             .mainHead
                 &::after
@@ -487,20 +494,27 @@
                         font-size: 48px
             .thanksBx
                 .icon
-                    width: 65px
-                    height: 65px
+                    width: 45px
+                    height: 45px
                     border-radius: 50%
                     margin: auto
-                    margin-bottom: 40px
+                    margin-bottom: 25px
+                    @media only screen and (min-width:1551px)
+                        width: 65px
+                        margin-bottom: 40px
+                        height: 65px
                     svg
                         @include imgFit
                 .cmnBtn
                     min-width: 240px
                     height: 48px
+                    margin-bottom: 40px
                 .mainHead
                     margin-bottom: 15px
                 p
-                    margin-bottom: 40px
+                    margin-bottom: 30px
+                    @media only screen and (min-width:1551px)
+                        margin-bottom: 40px
             .row
                 margin: -12px
                 >*
@@ -546,6 +560,8 @@
                 @media only screen and (min-width:1551px)
                     margin-top: 20px
 .modal-open
+    overflow: hidden
+    height: 100vh
     #Header
         z-index: 1
 .modal-backdrop.show
