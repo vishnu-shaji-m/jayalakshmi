@@ -191,8 +191,8 @@
                     <div class="flxBx">
                         <div class="imgWrap wow animate__fadeInUp" data-wow-duration="1s">
                             <div class="imgBx">
-                                <img src="{{asset('frontend/images/about1.webp')}}"
-                                    data-src="{{asset('frontend/images/about1.webp')}}" class="lazy" loading="lazy"
+                                <img src="{{asset('frontend/images/about.webp')}}"
+                                    data-src="{{asset('frontend/images/about.webp')}}" class="lazy" loading="lazy"
                                     width="515" height="515" alt="aboutImg">
                                 <!-- <div class="wnBx">
                                     <img src="{{asset('frontend/images/model.png')}}"
