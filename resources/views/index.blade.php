@@ -163,7 +163,7 @@
                 <div class="alx">
                     <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainHeads">
-                            <h1 class="subT">About us</h1>
+                            <h1 class="subT upper">About us</h1>
                             <div class="mainTitle">Jayalakshmi Silks:<br>
                                 A Legacy of <span>Elegance</span></div>
                         </div>
@@ -196,7 +196,7 @@
                                     width="515" height="515" alt="aboutImg">
                             </div>
                             <div class="tptxt">
-                                <div class="txt">Forevermore</div>
+                                <div class="txt">#Forevermore</div>
                             </div>
                             <div class="btnmTxt">
                                 <div class="year">#since1947</div>
@@ -213,7 +213,7 @@
                                 </div>
                                 <div class="item wow animate__fadeInUp" data-wow-duration="1.2s">
                                     <div class="countBx">
-                                        <div class="num"><span data-count="6">0</span>+</div>
+                                        <div class="num"><span data-count="6">0</span></div>
                                         <div class="txt">Store
                                             Locations</div>
                                     </div>
@@ -251,6 +251,13 @@
                                 <img src="{{asset('frontend/images/saree1.webp')}}" width="370" height="450" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Kancheepuram Silk</div>
                             </div>
                         </a>
@@ -261,6 +268,13 @@
                                 <img src="{{asset('frontend/images/saree2.webp')}}" width="370" height="450" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Tussar Silk</div>
                             </div>
                         </a>
@@ -271,6 +285,13 @@
                                 <img src="{{asset('frontend/images/saree3.webp')}}" width="370" height="450" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Banarasi</div>
                             </div>
                         </a>
@@ -281,6 +302,13 @@
                                 <img src="{{asset('frontend/images/saree4.webp')}}" width="370" height="450" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Kasavu Kada</div>
                             </div>
                         </a>
@@ -371,6 +399,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Magenta Pink Printed Art
                                     Silk Saree</div>
                             </div>
@@ -383,6 +418,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt"> Gold Printed Art Silk Saree</div>
                             </div>
                         </a>
@@ -394,6 +436,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Mauve Printed Art Silk Saree</div>
                             </div>
                         </a>
@@ -405,6 +454,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Gold Printed Art Silk Saree</div>
                             </div>
                         </a>
@@ -416,6 +472,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Pastel Blue Printed Art
                                     Silk Saree</div>
                             </div>
@@ -428,6 +491,13 @@
                                     alt="fashionImg">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Pastel Blue Printed Art
                                     Silk Saree</div>
                             </div>
@@ -543,6 +613,13 @@
                                 <img src="{{asset('frontend/images/style1.webp')}}" width="510" height="350" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Saree</div>
                             </div>
                         </a>
@@ -553,6 +630,13 @@
                                 <img src="{{asset('frontend/images/style2.webp')}}" width="510" height="350" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Lehenga</div>
                             </div>
                         </a>
@@ -563,6 +647,13 @@
                                 <img src="{{asset('frontend/images/style3.webp')}}" width="510" height="350" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Gown</div>
                             </div>
                         </a>
@@ -573,6 +664,13 @@
                                 <img src="{{asset('frontend/images/style4.webp')}}" width="510" height="350" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Mens Wear</div>
                             </div>
                         </a>
@@ -583,6 +681,13 @@
                                 <img src="{{asset('frontend/images/style5.webp')}}" width="510" height="350" alt="">
                             </div>
                             <div class="info">
+                                <div class="btnSec">
+                                    <div class="item">
+                                        <div class="viewBtn">
+                                            VIEW
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="mainTxt">Kids Wear</div>
                             </div>
                         </a>
@@ -1387,6 +1492,11 @@ $(document).ready(function() {
 
 
 
+});
+
+$(document).ready(function() {
+    // Show the modal automatically when the page loads
+    $("#bannerModal").modal("show");
 });
 </script>
 </div>

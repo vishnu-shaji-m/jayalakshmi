@@ -426,7 +426,8 @@
         <div class="container-fluid">
             <div class="bridalSlider wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="swiper-wrapper">
-                    @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
+                    @for ($i = 1; $i <= 17; $i++) 
+                    <div class="swiper-slide">
                         <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
                             aria-label="bridaLink" data-fancybox="gallery">
                             <div class="imgBx">
@@ -457,7 +458,7 @@
 @endsection
 @push('js')
 {{-- Placeholder for pushing JavaScript files specific to this page into the stack --}}
-@endpush
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -538,3 +539,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+@endpush

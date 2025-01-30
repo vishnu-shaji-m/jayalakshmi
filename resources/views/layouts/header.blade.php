@@ -137,7 +137,7 @@
                             <div class="menuSecBx">
                                 <div class="accordion-item">
                                     <div class="accordion-header">
-                                        <a href="index" class="accordion-button" aria-label="menu_link">
+                                        <a href="index.php" class="accordion-button" aria-label="menu_link">
                                             <div class="icon">
                                                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">

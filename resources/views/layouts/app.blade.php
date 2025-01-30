@@ -225,10 +225,7 @@
         });
     });
 
-    $(document).ready(function() {
-        // Show the modal automatically when the page loads
-        $("#bannerModal").modal("show");
-    });
+   
     </script>
 </body>
 
