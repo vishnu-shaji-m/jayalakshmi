@@ -198,8 +198,8 @@
                     </div>
                     <div class="bannerImBx">
                         <img src="{{asset('frontend/images/bannerPopImg.webp')}}"
-                            data-src="{{asset('frontend/images/bannerPopImg.webp')}}" width="1480" height="730"
-                            alt="banner Img">
+                            data-src="{{asset('frontend/images/bannerPopImg.webp')}}" class="lazy" loading="lazy"
+                            width="1480" height="730" alt="banner Img">
                     </div>
                 </div>
             </div>
@@ -210,14 +210,9 @@
     $(document).ready(function() {
         $("#submitBtn").click(function() {
             var currentModal = $(this).closest(".modal");
-
-            // Close the current modal first
             currentModal.modal("hide");
-
-            // Wait for the first modal to fully hide before showing the next modal
             currentModal.on("hidden.bs.modal", function() {
                 $("#thanksModal").modal("show");
-                // Remove event listener to avoid multiple triggers
                 currentModal.off("hidden.bs.modal");
             });
         });

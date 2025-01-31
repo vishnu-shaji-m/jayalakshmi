@@ -812,6 +812,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+nodeMarquee({
+    parent: '#locationScro',
+    speed: 1
+});
 </script>
+
 
 <div id="viewport">

@@ -45,23 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
 })();
 
 // SITE LOADER
-function hidePreloader() {
+window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     const circle = document.querySelector(".circle");
 
     circle.style.transform = "scale(16)";
     preloader.style.opacity = "0";
 
-    setTimeout(function() {
+    setTimeout(function () {
         preloader.style.display = "none";
-    }, 5000);
-}
+    }, 8000);
+});
 
-if (document.readyState === 'loading') {
-    document.addEventListener("DOMContentLoaded", hidePreloader);
-} else {
-    hidePreloader();
-}
 </script>
 
  
