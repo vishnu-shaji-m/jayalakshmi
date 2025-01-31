@@ -901,8 +901,7 @@
                                             height="245" alt="Bridal Image {{ $i }}">
                                     </div>
                                 </a>
-                        </div>
-                        @endfor
+                        </div> @endfor
                     </div>
                 </div>
             </div>
@@ -911,14 +910,13 @@
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
                             <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
-                                aria-label="bridaLink" data-fancybox="gallery">
+                                aria-label="bridaLink" data-fancybox="gallery1">
                                 <div class="imgBx">
                                     <img src="{{ asset('frontend/images/br' . $i . '.webp') }}" width="245" height="245"
                                         alt="Bridal Image {{ $i }}">
                                 </div>
                             </a>
-                    </div>
-                    @endfor
+                    </div> @endfor
                 </div>
             </div>
         </div>
@@ -1242,7 +1240,7 @@ $(document).ready(function() {
 
             if (windowWidth < 992) {
                 if (!swiperInstance) {
-                    swiperInstance = new Swiper('.signatureSlider', {
+                    swiperInstance = new Swiper(".signatureSlider", {
                         lazy: true,
                         preloadImages: true,
                         slidesPerView: 1,
@@ -1254,10 +1252,6 @@ $(document).ready(function() {
                             delay: 5000,
                             disableOnInteraction: false,
                         },
-                        // navigation: {
-                        //     nextEl: ".swiper-button-next",
-                        //     prevEl: ".swiper-button-prev",
-                        // },
                         breakpoints: {
                             868: {
                                 slidesPerView: 3,
@@ -1276,7 +1270,17 @@ $(document).ready(function() {
                                 spaceBetween: 10,
                             },
                         },
+                        on: {
+                            init: function() {
+                                setTimeout(() => {
+                                    this
+                                        .update(); // Ensures the slider updates fully
+                                }, 100);
+                            },
+                        },
                     });
+                } else {
+                    swiperInstance.update(); // Ensure the slider refreshes on resize
                 }
             } else {
                 if (swiperInstance) {
@@ -1285,9 +1289,13 @@ $(document).ready(function() {
                 }
             }
         }
-        initializeSwiper();
 
-        $(window).on('resize', function() {
+        // Ensure Swiper initializes only after a short delay
+        setTimeout(() => {
+            initializeSwiper();
+        }, 200);
+
+        $(window).on("resize", function() {
             initializeSwiper();
         });
     });
@@ -1512,6 +1520,7 @@ $(document).ready(function() {
         }
     });
 
+   
 
 });
 </script>

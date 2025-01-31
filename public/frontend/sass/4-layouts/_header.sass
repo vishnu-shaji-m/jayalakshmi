@@ -578,6 +578,7 @@
                             padding: 0
                             min-width: 450px
                             top: 100%
+                            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08) inset 
                         @media only screen and (min-width:1441px)
                             // top: calc(100% + 3px)
                             min-width: 540px
@@ -596,6 +597,15 @@
                                     padding: 15px 25px !important
                         .flxBx
                             display: flex
+                            // &:has(.rtbx .accordion-item .show)
+                            //     .lftbX
+                            //         ul
+                            //             li
+                            //                 position: relative
+                            //                 .accordion-button
+                            //                     background: rgba(255, 223, 223, 1)
+                            //                     color: $basecolor
+                            //                     font-weight: 700
                             .lftbX
                                 width: 200px
                                 background: #F5F5F5
@@ -626,10 +636,12 @@
                                                 &::after
                                                     opacity: 1
                                                     visibility: visible
-                                            &:not(.collapsed)
+                                            &.active
                                                 background: rgba(255, 223, 223, 1)
                                                 color: $basecolor
                                                 font-weight: 700
+                                                // @media only screen and (min-width:992px)
+                                                //     pointer-events: none
                                                 &::after
                                                     opacity: 1
                                                     visibility: visible
@@ -714,7 +726,7 @@
                             width: fit-content
                             font-size: 14px
                             letter-spacing: 0.2px
-                            padding: 20px 0px
+                            padding: 16px 0px
                         @media only screen and (min-width: 1200px)
                             padding: 17px 0px
                             font-size: 12px

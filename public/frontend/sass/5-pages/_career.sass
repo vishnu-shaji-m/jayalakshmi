@@ -34,7 +34,9 @@
                         display: none
                 .benefitBx
                     background-color: #FFE7E7
-                    padding: 25px 25px
+                    padding: 20px 15px
+                    @media only screen and (min-width:992px)
+                        padding: 25px 25px
                     @media only screen and (min-width:1551px)
                         padding: 35px 35px
                     ul
@@ -61,12 +63,11 @@
                                 width: 10px
                                 height: 10px
                                 background-size: 10px
-                                top: 3px
+                                top: 5px
                                 left: 0
                                 @media only screen and (min-width:1200px)
                                     width: 14px
                                     height: 14px
-                                    top: 6px
                                     background-size: 14px
             .rgt
                 width: 100%
@@ -102,7 +103,7 @@
             padding: 35px 0px 90px
         .opportunitiBx
             background-color: #EFEFEF
-            padding: 15px 10px 40px 10px
+            padding: 15px 25px
             @media only screen and (min-width:1200px)
                 padding: 25px 25px 45px 30px
             @media only screen and (min-width:1441px)
@@ -114,30 +115,20 @@
                     display: none
                 .mainTitle
                     position: relative
+                    overflow: hidden
                     margin-bottom: 0px
                     &::after
                         content: ""
                         position: absolute
-                        right: 0px
+                        // right: 0px
                         height: 1px
                         background-color: #BE965D
-                        width: 13%
+                        width: 100%
                         top: 15px
                         bottom: 0
-                        margin: auto
+                        margin: auto 10px
                         z-index: 0
-                        @media only screen and (min-width:440px)
-                            width: 20%
-                        @media only screen and (min-width:510px)
-                            width: 70%
-                        @media only screen and (min-width:630px)
-                            width: 73%
-                        @media only screen and (min-width:768px)
-                            width: 82%
-                        @media only screen and (min-width:992px)
-                            width: 80%
-                        @media only screen and (min-width:1441px)
-                            width: 79%
+                         
             .d_flx
                 display: flex
                 flex-wrap: wrap

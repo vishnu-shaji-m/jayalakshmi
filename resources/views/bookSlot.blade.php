@@ -259,14 +259,15 @@
                         <p>
                             Discover the Bridal Suite—a private, luxurious space tailored just for you. Enjoy;
                         </p>
+                        <ul>
+                            <li>Personalized selection</li>
+                            <li>Total Privacy</li>
+                            <li>Intimate Setting for families</li>
+                            <li>Stylist Access</li>
+                        </ul>
                         <div class="bridalBx">
                             <div class="borderBx">
-                                <ul>
-                                    <li>Personalized selection</li>
-                                    <li>Total Privacy</li>
-                                    <li>Intimate Setting for families</li>
-                                    <li>Stylist Access</li>
-                                </ul>
+
                             </div>
                         </div>
                         <p>
@@ -328,7 +329,7 @@
     <section id="location">
         <div class="container">
             <div class="mainHead wow animate__fadeInUp" data-wow-duration="1s">
-                <div class="mainTitle">A World of <span>Elegance</span></div>
+                <div class="mainTitle">How To <span>reach</span></div>
             </div>
             <div class="d_flx wow animate__fadeInUp" data-wow-duration="1s">
                 <div class="lft">
@@ -578,7 +579,6 @@
                                 we will connect with you soon.
                             </div>
                             <form action="/submit-form" method="post">
-                                <div class="action-alert success d-none">Success Message</div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -707,7 +707,139 @@
 
                         </div>
                         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                            tabindex="0">...</div>
+                            tabindex="0">
+
+                            <div class="text">
+                                Fill in the details below to book your slot,
+                                we will connect with you soon.
+                            </div>
+                            <form action="/submit-form" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName">Name</label>
+                                            <input type="text" class="form-control" id="Name"
+                                                placeholder="Enter your name" name="Name">
+                                            <div class="help-block danger d-none">Invalid Input</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phoneNumber">Contact number</label>
+                                            <input type="tel" class="form-control" id="phoneNumber"
+                                                placeholder="Enter your contact number" name="phoneNumber">
+                                            <div class="help-block danger d-none">Invalid Input</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="location">Preferred store location</label>
+                                            <select name="category" id="location1" class="select">
+                                                <option selected disabled="disabled">--- Select Store ---</option>
+                                                <option value="1">demo 1</option>
+                                                <option value="2">demo 2</option>
+                                                <option value="3">demo 3</option>
+                                                <option value="4">demo 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="date">Confirm your visit date and time</label>
+                                            <div class="dateBx">
+                                                <div class="icon">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M13.5703 8.08594C13.9586 8.08594 14.2734 7.77114 14.2734 7.38281C14.2734 6.99449 13.9586 6.67969 13.5703 6.67969C13.182 6.67969 12.8672 6.99449 12.8672 7.38281C12.8672 7.77114 13.182 8.08594 13.5703 8.08594Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M15.1875 1.40625H14.2734V0.703125C14.2734 0.314789 13.9586 0 13.5703 0C13.182 0 12.8672 0.314789 12.8672 0.703125V1.40625H9.66797V0.703125C9.66797 0.314789 9.35318 0 8.96484 0C8.57651 0 8.26172 0.314789 8.26172 0.703125V1.40625H5.09766V0.703125C5.09766 0.314789 4.78287 0 4.39453 0C4.0062 0 3.69141 0.314789 3.69141 0.703125V1.40625H2.8125C1.26169 1.40625 0 2.66794 0 4.21875V15.1875C0 16.7383 1.26169 18 2.8125 18H8.19141C8.57974 18 8.89453 17.6852 8.89453 17.2969C8.89453 16.9085 8.57974 16.5938 8.19141 16.5938H2.8125C2.03709 16.5938 1.40625 15.9629 1.40625 15.1875V4.21875C1.40625 3.44334 2.03709 2.8125 2.8125 2.8125H3.69141V3.51562C3.69141 3.90396 4.0062 4.21875 4.39453 4.21875C4.78287 4.21875 5.09766 3.90396 5.09766 3.51562V2.8125H8.26172V3.51562C8.26172 3.90396 8.57651 4.21875 8.96484 4.21875C9.35318 4.21875 9.66797 3.90396 9.66797 3.51562V2.8125H12.8672V3.51562C12.8672 3.90396 13.182 4.21875 13.5703 4.21875C13.9586 4.21875 14.2734 3.90396 14.2734 3.51562V2.8125H15.1875C15.9629 2.8125 16.5938 3.44334 16.5938 4.21875V8.22656C16.5938 8.6149 16.9085 8.92969 17.2969 8.92969C17.6852 8.92969 18 8.6149 18 8.22656V4.21875C18 2.66794 16.7383 1.40625 15.1875 1.40625Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M13.7461 9.49219C11.4005 9.49219 9.49219 11.4005 9.49219 13.7461C9.49219 16.0917 11.4005 18 13.7461 18C16.0917 18 18 16.0917 18 13.7461C18 11.4005 16.0917 9.49219 13.7461 9.49219ZM13.7461 16.5938C12.1759 16.5938 10.8984 15.3163 10.8984 13.7461C10.8984 12.1759 12.1759 10.8984 13.7461 10.8984C15.3163 10.8984 16.5938 12.1759 16.5938 13.7461C16.5938 15.3163 15.3163 16.5938 13.7461 16.5938Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M14.7656 13.043H14.4492V12.3047C14.4492 11.9164 14.1344 11.6016 13.7461 11.6016C13.3578 11.6016 13.043 11.9164 13.043 12.3047V13.7461C13.043 14.1344 13.3578 14.4492 13.7461 14.4492H14.7656C15.154 14.4492 15.4688 14.1344 15.4688 13.7461C15.4688 13.3578 15.154 13.043 14.7656 13.043Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M10.5117 8.08594C10.9 8.08594 11.2148 7.77114 11.2148 7.38281C11.2148 6.99449 10.9 6.67969 10.5117 6.67969C10.1234 6.67969 9.80859 6.99449 9.80859 7.38281C9.80859 7.77114 10.1234 8.08594 10.5117 8.08594Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M7.45312 11.1406C7.84145 11.1406 8.15625 10.8258 8.15625 10.4375C8.15625 10.0492 7.84145 9.73438 7.45312 9.73438C7.0648 9.73438 6.75 10.0492 6.75 10.4375C6.75 10.8258 7.0648 11.1406 7.45312 11.1406Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M4.39453 8.08594C4.78286 8.08594 5.09766 7.77114 5.09766 7.38281C5.09766 6.99449 4.78286 6.67969 4.39453 6.67969C4.00621 6.67969 3.69141 6.99449 3.69141 7.38281C3.69141 7.77114 4.00621 8.08594 4.39453 8.08594Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M4.39453 11.1406C4.78286 11.1406 5.09766 10.8258 5.09766 10.4375C5.09766 10.0492 4.78286 9.73438 4.39453 9.73438C4.00621 9.73438 3.69141 10.0492 3.69141 10.4375C3.69141 10.8258 4.00621 11.1406 4.39453 11.1406Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M4.39453 14.2031C4.78286 14.2031 5.09766 13.8883 5.09766 13.5C5.09766 13.1117 4.78286 12.7969 4.39453 12.7969C4.00621 12.7969 3.69141 13.1117 3.69141 13.5C3.69141 13.8883 4.00621 14.2031 4.39453 14.2031Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M7.45312 14.2031C7.84145 14.2031 8.15625 13.8883 8.15625 13.5C8.15625 13.1117 7.84145 12.7969 7.45312 12.7969C7.0648 12.7969 6.75 13.1117 6.75 13.5C6.75 13.8883 7.0648 14.2031 7.45312 14.2031Z"
+                                                            fill="#696969" />
+                                                        <path
+                                                            d="M7.45312 8.08594C7.84145 8.08594 8.15625 7.77114 8.15625 7.38281C8.15625 6.99449 7.84145 6.67969 7.45312 6.67969C7.0648 6.67969 6.75 6.99449 6.75 7.38281C6.75 7.77114 7.0648 8.08594 7.45312 8.08594Z"
+                                                            fill="#696969" />
+                                                    </svg>
+
+                                                </div>
+                                                <input type="text" id="eventDate" name="daterange" class="form-control"
+                                                    placeholder="--- Select date & time ---">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="attire">What type of attire are you looking for?</label>
+                                            <select name="category" id="attire1" class="select">
+                                                <option selected disabled="disabled">--- Select attire ---</option>
+                                                <option value="1">demo 1</option>
+                                                <option value="2">demo 2</option>
+                                                <option value="3">demo 3</option>
+                                                <option value="4">demo 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="categorySelect2">What occasion are you shopping for?</label>
+                                            <select name="occasion" id="occasion1" class="select"
+                                                aria-label="Default select example">
+                                                <option selected disabled="disabled">--- Select occasion ---</option>
+                                                <option value="1">demo 1</option>
+                                                <option value="2">demo 2</option>
+                                                <option value="3">demo 3</option>
+                                                <option value="4">demo 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="people">How many people will accompany you?</label>
+                                            <select name="people" id="people1" class="select"
+                                                aria-label="Default select example">
+                                                <option selected disabled="disabled">--- Select number of people ---
+                                                </option>
+                                                <option value="1">demo 1</option>
+                                                <option value="2">demo 2</option>
+                                                <option value="3">demo 3</option>
+                                                <option value="4">demo 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="btnWrap">
+                                            <button type="submit" class="baseBtn baseBtn1 hoveranim">
+                                                <span>SUBMIT</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="rgt wow animate__fadeInUp" data-wow-duration="1s">

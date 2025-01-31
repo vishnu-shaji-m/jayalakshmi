@@ -194,7 +194,7 @@
                                                 <div class="lftbX">
                                                     <ul>
                                                         <li>
-                                                            <button class="accordion-button " type="button"
+                                                            <button class="accordion-button active" type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord1" aria-expanded="true"
                                                                 aria-controls="submenuAccord1">
@@ -202,7 +202,7 @@
                                                             </button>
                                                         </li>
                                                         <li>
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button  " type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord2" aria-expanded="true"
                                                                 aria-controls="submenuAccord2">
@@ -210,7 +210,7 @@
                                                             </button>
                                                         </li>
                                                         <li>
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button  " type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord3" aria-expanded="true"
                                                                 aria-controls="submenuAccord3">
@@ -218,7 +218,7 @@
                                                             </button>
                                                         </li>
                                                         <li>
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button  " type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord4" aria-expanded="true"
                                                                 aria-controls="submenuAccord4">
@@ -226,7 +226,7 @@
                                                             </button>
                                                         </li>
                                                         <li>
-                                                            <button class="accordion-button collapsed" type="button"
+                                                            <button class="accordion-button  " type="button"
                                                                 data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord5" aria-expanded="true"
                                                                 aria-controls="submenuAccord5">
@@ -254,7 +254,7 @@
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
-                                                                                Banarasi Saree
+                                                                                Banarasi Saree1
                                                                             </a>
                                                                         </li>
                                                                         <li>
@@ -302,7 +302,7 @@
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
-                                                                                Banarasi Saree
+                                                                                Banarasi Saree2
                                                                             </a>
                                                                         </li>
                                                                         <li>
@@ -350,7 +350,7 @@
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
-                                                                                Banarasi Saree
+                                                                                Banarasi Saree3
                                                                             </a>
                                                                         </li>
                                                                         <li>
@@ -398,7 +398,7 @@
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
-                                                                                Banarasi Saree
+                                                                                Banarasi Saree4
                                                                             </a>
                                                                         </li>
                                                                         <li>
@@ -446,7 +446,7 @@
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
-                                                                                Banarasi Saree
+                                                                                Banarasi Saree5
                                                                             </a>
                                                                         </li>
                                                                         <li>
@@ -813,10 +813,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-nodeMarquee({
-    parent: '#locationScro',
-    speed: 1
+
+
+
+$(document).ready(function() {
+    function applyHoverEffect() {
+        if ($(window).width() > 992) {
+            $('.lftbX .accordion-button').hover(function() {
+                $('.rtbx .accordion-collapse').removeClass('show');
+                $('.lftbX .accordion-button').removeClass('active');
+                $(this).addClass('active');
+
+                var targetId = $(this).attr('data-bs-target');
+                $(targetId).addClass('show');
+            });
+        } else {
+            $('.lftbX .accordion-button').off("mouseenter mouseleave");
+        }
+    }
+
+    applyHoverEffect();
+    $(window).resize(applyHoverEffect);
 });
+
 </script>
 
 

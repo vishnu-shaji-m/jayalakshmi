@@ -292,6 +292,7 @@
         font-weight: 400
         color: $white
         font-size: 14px
+
         white-space-collapse: break-spaces
         @media only screen and (min-width:1441px)
             font-size: 16px
@@ -311,22 +312,31 @@
         align-items: center
         flex-wrap: wrap
         justify-content: space-between
-        padding: 15px 0
+        padding: 10px 0
         border-top: 1px solid rgba($white, 0.1)
         width: 100%
+        @media only screen and (min-width:1441px)
+            padding: 10px 0
         >*
             padding: 8px
             @media only screen and (max-width:992px)
                 width: 100%
             // width: calc(100% / 3)
+            &:nth-child(1)
+                @media only screen and (max-width:992px)
+                    order: 2
+            &:nth-child(3)
+                @media only screen and (max-width:992px)
+                    order: 3
         .copyLink
             display: flex
             width: fit-content
             color: #444444
             font-size: 18px
+            cursor: text
+            @media only screen and (max-width:1551px)
+                font-size: 15px
             @media only screen and (max-width:992px)
-                // margin: auto
-                // text-align: center
                 font-size: 14px
             @media only screen and (max-width:330px)
                 font-size: 13px
@@ -336,12 +346,20 @@
             .social
                 display: flex
                 align-items: center
-                margin: 0 -12px
                 li
-                    padding: 0px 12px
+                    margin: 0 12px
                     a
+                        display: flex
+                        align-items: center
+                        width: 18px
+                        height: 18px
+                        @media only screen and (min-width:1551px)
+                            width: 22px
+                            height: 22px
                         svg
                             fill: #6C6C6C
+                            @include imgFit
+
                         &:hover
                             svg
                                 fill: $basecolor

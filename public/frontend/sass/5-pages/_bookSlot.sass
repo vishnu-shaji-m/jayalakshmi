@@ -243,6 +243,7 @@
                 padding: 50px 0px 50px
             @media only screen and (min-width:1551px)
                 padding: 75px 0px 70px
+
             .d_flx
                 display: flex
                 flex-wrap: wrap
@@ -306,7 +307,7 @@
                         margin-bottom: 10px
                         &::after
                             display: none
-                    .text
+                    .text, h2, h3
                         font-size: 14px
                         font-weight: 500
                         font-style: italic
@@ -319,55 +320,72 @@
                             font-size: 18px
                         @media only screen and (min-width:1551px)
                             font-size: 20px
-                    .bridalBx
+
+                    ul
                         background-color: #fff
-                        padding: 10px 10px
                         position: relative
                         z-index: 1
                         margin-bottom: 15px
+                        padding: 30px
+                        @media only screen and (min-width: 500px)
+                            padding: 40px
+                            columns: 2
+                            -webkit-columns: 2
+                            -moz-columns: 2
+                            column-gap: 20px
                         @media only screen and (min-width:1441px)
-                            padding: 15px 15px
                             margin-bottom: 25px
-                        .borderBx
+                        &:after
+                            position: absolute
+                            content: ''
+                            left: 0
+                            right: 0
+                            top: 0
+                            width: calc(100% - 30px)
+                            height: calc(100% - 30px)
                             border: 1px dashed #BD7923
-                            padding: 15px 10px 10px 15px
-                            @media only screen and (min-width:1200px)
-                                padding: 15px 70px 10px 15px
-                            @media only screen and (min-width:1441px)
-                                padding: 20px 80px 10px 25px
-                            ul
-                                @media only screen and (min-width: 500px)
-                                    columns: 2
-                                    -webkit-columns: 2
-                                    -moz-columns: 2
-                                    column-gap: 20px
-                                li
-                                    font-size: 14px
-                                    color: #2C2C2C
-                                    position: relative
-                                    padding-left: 25px
-                                    padding-bottom: 15px
-                                    @media only screen and (min-width:1351px)
-                                        font-size: 16px
-                                    @media only screen and (min-width:1551px)
-                                        font-size: 18px
-                                    &::after
-                                        content: ""
-                                        position: absolute
-                                        background-image: url(../images/list2.webp)
-                                        background-repeat: no-repeat
-                                        width: 10px
-                                        height: 10px
-                                        background-size: 10px
-                                        top: 3px
-                                        left: 0
-                                        @media only screen and (min-width:1200px)
-                                            width: 14px
-                                            height: 14px
-                                            top: 6px
-                                            background-size: 14px
+                            margin: auto
+                            bottom: 0
+
+                        li
+                            font-size: 14px
+                            color: #2C2C2C
+                            position: relative
+                            padding-left: 25px
+                            padding-bottom: 15px
+                            @media only screen and (min-width:1351px)
+                                font-size: 16px
+                            @media only screen and (min-width:1551px)
+                                font-size: 18px
+                            &::after
+                                content: ""
+                                position: absolute
+                                background-image: url(../images/list2.webp)
+                                background-repeat: no-repeat
+                                width: 10px
+                                height: 10px
+                                background-size: 10px
+                                top: 3px
+                                left: 0
+                                @media only screen and (min-width:1200px)
+                                    width: 14px
+                                    height: 14px
+                                    top: 6px
+                                    background-size: 14px
             &:nth-child(even)
                 background-color: #F9E1C3
+                .mainHead
+                    .mainTitle
+                        position: relative
+                        width: fit-content
+                        &::after
+                            position: absolute
+                            content: ''
+                            bottom: 0
+                            left: 0
+                            height: 1px
+                            background: #EAAA56
+                            width: 100%
                 .d_flx
                     flex-direction: row-reverse
                     .lft
