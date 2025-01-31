@@ -250,7 +250,7 @@
     <section id="saree">
         <div class="container">
             <div class="mainHead center wow animate__fadeInUp" data-wow-duration="1s">
-                <div class="mainTitle">Saree <span>Collections</span></div>
+                <h2 class="mainTitle">Saree <span>Collections</span></h2>
                 <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with love and
                     adorned with intricate details.</p>
             </div>
@@ -346,8 +346,8 @@
                 <div class="col-lg-4 leftbx">
                     <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainHead white">
-                            <div class="mainTitle">Celebrate life's <span>special</span> <br>
-                                moments in <span>style</span></div>
+                            <h2 class="mainTitle">Celebrate life's <span>special</span> <br>
+                                moments in <span>style</span></h2>
                             <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with
                                 love and adorned with intricate details.</p>
                         </div>
