@@ -340,6 +340,12 @@
                             <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with
                                 love and adorned with intricate details.</p>
                         </div>
+                        <ul>
+                            <li> Personalized selection </li>
+                            <li>Intimate Setting for families</li>
+                            <li>Total Privacy</li>
+                            <li>Stylist Access</li>
+                        </ul>
                         <a href="javascript:void(0)" class="hoveranim cmnBtn">
                             <span>VIEW COLLECTIONS</span>
                         </a>
@@ -1497,17 +1503,17 @@ $(document).ready(function() {
 $(document).ready(function() {
     // Show the modal automatically when the page loads
     $("#bannerModal").modal("show");
-    
+
 });
 
-$(document).ready(function () {
-    
+$(document).ready(function() {
+
     var timeout;
 
     if ($(window).width() >= 768) {
-        $("#about").on("mousemove", function (e) {
+        $("#about").on("mousemove", function(e) {
             if (timeout) clearTimeout(timeout);
-            timeout = setTimeout(function () {
+            timeout = setTimeout(function() {
                 callParallax(e);
             }, 200);
         });
@@ -1531,7 +1537,6 @@ $(document).ready(function () {
         }
     }
 });
-
 </script>
 </div>
 @endpush
