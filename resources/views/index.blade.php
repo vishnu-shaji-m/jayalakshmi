@@ -194,6 +194,17 @@
                                 <img src="{{asset('frontend/images/about.webp')}}"
                                     data-src="{{asset('frontend/images/about.webp')}}" class="lazy" loading="lazy"
                                     width="515" height="515" alt="aboutImg">
+                                <!-- <div class="wnBx">
+                                    <img src="{{asset('frontend/images/model.png')}}"
+                                        data-src="{{asset('frontend/images/model.png')}}" class="lazy" loading="lazy"
+                                        width="515" height="515" alt="aboutImg">
+                                </div>
+                                <div class="bgBx">
+                                    <img src="{{asset('frontend/images/cloth.webp')}}"
+                                        data-src="{{asset('frontend/images/cloth.webp')}}" class="lazy" loading="lazy"
+                                        width="515" height="515" alt="aboutImg">
+                                </div> -->
+
                             </div>
                             <div class="tptxt">
                                 <div class="txt">#Forevermore</div>
@@ -239,7 +250,7 @@
     <section id="saree">
         <div class="container">
             <div class="mainHead center wow animate__fadeInUp" data-wow-duration="1s">
-                <div class="mainTitle">Saree <span>Collections</span></div>
+                <h2 class="mainTitle">Saree <span>Collections</span></h2>
                 <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with love and
                     adorned with intricate details.</p>
             </div>
@@ -335,8 +346,8 @@
                 <div class="col-lg-4 leftbx">
                     <div class="contentBx wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="mainHead white">
-                            <div class="mainTitle">Celebrate life's <span>special</span> <br>
-                                moments in <span>style</span></div>
+                            <h2 class="mainTitle">Celebrate life's <span>special</span> <br>
+                                moments in <span>style</span></h2>
                             <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with
                                 love and adorned with intricate details.</p>
                         </div>
@@ -401,8 +412,11 @@
                     <div class="swiper-slide">
                         <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
                             <div class="imgbx">
-                                <img src="{{asset('frontend/images/fashion1.webp')}}" width="300" height="420"
-                                    alt="fashionImg">
+                                <video class="lazy video" muted loop playsinline width="300" height="420" rel="preload"
+                                    data-src="{{asset('frontend/videos/productVideo.mp4')}}"
+                                    data-poster="{{asset('frontend/images/fashion1.webp')}}">
+                                    <source type="video/mp4" data-src="{{asset('frontend/videos/productVideo.mp4')}}" />
+                                </video>
                             </div>
                             <div class="info">
                                 <div class="btnSec">
@@ -468,25 +482,6 @@
                                     </div>
                                 </div>
                                 <div class="mainTxt">Gold Printed Art Silk Saree</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="javascript:void(0)" class="fashionBx" aria-label="fashionLink">
-                            <div class="imgbx">
-                                <img src="{{asset('frontend/images/fashion5.webp')}}" width="300" height="420"
-                                    alt="fashionImg">
-                            </div>
-                            <div class="info">
-                                <div class="btnSec">
-                                    <div class="item">
-                                        <div class="viewBtn">
-                                            VIEW
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mainTxt">Pastel Blue Printed Art
-                                    Silk Saree</div>
                             </div>
                         </a>
                     </div>
@@ -575,6 +570,7 @@
                 <p>
                     Discover the Bridal Suite—a private, luxurious space tailored just for you. Enjoy;
                 </p>
+
                 <ul>
                     <li> Personalized selection </li>
                     <li>Intimate Setting for families</li>
@@ -912,8 +908,7 @@
                                             height="245" alt="Bridal Image {{ $i }}">
                                     </div>
                                 </a>
-                        </div>
-                        @endfor
+                        </div> @endfor
                     </div>
                 </div>
             </div>
@@ -922,14 +917,13 @@
                     <div class="swiper-wrapper">
                         @for ($i = 1; $i <= 17; $i++) <div class="swiper-slide">
                             <a href="{{ asset('frontend/images/br' . $i . '.webp') }}" class="bridalimBx"
-                                aria-label="bridaLink" data-fancybox="gallery">
+                                aria-label="bridaLink" data-fancybox="gallery1">
                                 <div class="imgBx">
                                     <img src="{{ asset('frontend/images/br' . $i . '.webp') }}" width="245" height="245"
                                         alt="Bridal Image {{ $i }}">
                                 </div>
                             </a>
-                    </div>
-                    @endfor
+                    </div> @endfor
                 </div>
             </div>
         </div>
@@ -1244,59 +1238,6 @@ $(document).ready(function() {
         }
     });
 
-    // fashionSlider 
-
-    new Swiper('.fashionSlider', {
-        lazy: true,
-        preloadImages: true,
-        slidesPerView: 1,
-        paginationClickable: true,
-        loop: true,
-        watchSlidesProgress: true,
-        spaceBetween: 10,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-            1661: {
-                slidesPerView: 5,
-                spaceBetween: 25
-            },
-            1551: {
-                slidesPerView: 5,
-                spaceBetween: 15
-            },
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 10
-            },
-            992: {
-                slidesPerView: 4,
-                spaceBetween: 15
-            },
-
-            678: {
-                slidesPerView: 3,
-                spaceBetween: 10
-            },
-            478: {
-                slidesPerView: 2,
-                spaceBetween: 10
-            },
-            360: {
-                slidesPerView: 2,
-                spaceBetween: 10
-            }
-        }
-    });
-
 
     $(document).ready(function() {
         let swiperInstance;
@@ -1306,7 +1247,7 @@ $(document).ready(function() {
 
             if (windowWidth < 992) {
                 if (!swiperInstance) {
-                    swiperInstance = new Swiper('.signatureSlider', {
+                    swiperInstance = new Swiper(".signatureSlider", {
                         lazy: true,
                         preloadImages: true,
                         slidesPerView: 1,
@@ -1317,10 +1258,6 @@ $(document).ready(function() {
                         autoplay: {
                             delay: 5000,
                             disableOnInteraction: false,
-                        },
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
                         },
                         breakpoints: {
                             868: {
@@ -1340,7 +1277,17 @@ $(document).ready(function() {
                                 spaceBetween: 10,
                             },
                         },
+                        on: {
+                            init: function() {
+                                setTimeout(() => {
+                                    this
+                                        .update(); // Ensures the slider updates fully
+                                }, 100);
+                            },
+                        },
                     });
+                } else {
+                    swiperInstance.update(); // Ensure the slider refreshes on resize
                 }
             } else {
                 if (swiperInstance) {
@@ -1349,9 +1296,13 @@ $(document).ready(function() {
                 }
             }
         }
-        initializeSwiper();
 
-        $(window).on('resize', function() {
+        // Ensure Swiper initializes only after a short delay
+        setTimeout(() => {
+            initializeSwiper();
+        }, 200);
+
+        $(window).on("resize", function() {
             initializeSwiper();
         });
     });
@@ -1359,7 +1310,7 @@ $(document).ready(function() {
 
     // foreveSlider
 
-    new Swiper('.foreveSlider', {
+    new Swiper('#foreever .foreveSlider', {
         lazy: true,
         preloadImages: true,
         slidesPerView: 2,
@@ -1373,8 +1324,8 @@ $(document).ready(function() {
         },
 
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: "#foreever .swiper-button-next", // Corrected selector
+            prevEl: "#foreever .swiper-button-prev", // Corrected selector
         },
 
         breakpoints: {
@@ -1411,6 +1362,60 @@ $(document).ready(function() {
     });
 
 
+    // fashionSlider 
+
+    new Swiper('#fashion .fashionSlider', {
+        lazy: true,
+        preloadImages: true,
+        slidesPerView: 1,
+        paginationClickable: true,
+        loop: false,
+        watchSlidesProgress: true,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: "#fashion .swiper-button-next",
+            prevEl: "#fashion .swiper-button-prev",
+        },
+
+        breakpoints: {
+            1661: {
+                slidesPerView: 5,
+                spaceBetween: 25
+            },
+            1551: {
+                slidesPerView: 5,
+                spaceBetween: 15
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 10
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            },
+
+            678: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            478: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            360: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            }
+        }
+    });
+
+
     // First Slider (Left-to-Right)
     new Swiper('.bridalSlider1', {
         lazy: true,
@@ -1424,10 +1429,10 @@ $(document).ready(function() {
             delay: 1,
             disableOnInteraction: false,
         },
-        navigation: {
-            nextEl: ".bridalSlider1 .swiper-button-next",
-            prevEl: ".bridalSlider1 .swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".bridalSlider1 .swiper-button-next",
+        //     prevEl: ".bridalSlider1 .swiper-button-prev",
+        // },
         breakpoints: {
             1661: {
                 slidesPerView: 8
@@ -1467,10 +1472,10 @@ $(document).ready(function() {
             disableOnInteraction: false,
         },
         // direction: 'rtl', // Reverse direction
-        navigation: {
-            nextEl: ".bridalSlider2 .swiper-button-next",
-            prevEl: ".bridalSlider2 .swiper-button-prev",
-        },
+        // navigation: {
+        //     nextEl: ".bridalSlider2 .swiper-button-next",
+        //     prevEl: ".bridalSlider2 .swiper-button-prev",
+        // },
         breakpoints: {
             1661: {
                 slidesPerView: 8
@@ -1504,38 +1509,26 @@ $(document).ready(function() {
     // Show the modal automatically when the page loads
     $("#bannerModal").modal("show");
 
-});
 
-$(document).ready(function() {
+    // paly video on mouse over
 
-    var timeout;
-
-    if ($(window).width() >= 768) {
-        $("#about").on("mousemove", function(e) {
-            if (timeout) clearTimeout(timeout);
-            timeout = setTimeout(function() {
-                callParallax(e);
-            }, 200);
-        });
-
-        function callParallax(e) {
-            parallaxIt(e, ".abtLx .arlx .flxBx .imgWrap .tptxt", -20);
-            parallaxIt(e, ".btnmTxt", 30);
+    $(".fashionBx").on("mouseenter", function() {
+        var video = $(this).find("video").get(0);
+        if (video) {
+            video.play();
         }
+    });
 
-        function parallaxIt(e, target, movement) {
-            var $this = $("#about");
-            var relX = e.pageX - $this.offset().left;
-            var relY = e.pageY - $this.offset().top;
-
-            gsap.to(target, {
-                x: ((relX - $this.width() / 2) / $this.width()) * movement,
-                y: ((relY - $this.height() / 2) / $this.height()) * movement,
-                duration: 1,
-                ease: "power2.out"
-            });
+    $(".fashionBx").on("mouseleave", function() {
+        var video = $(this).find("video").get(0);
+        if (video) {
+            video.pause();
+            video.currentTime = 0; // Reset to start
         }
-    }
+    });
+
+
+
 });
 </script>
 </div>

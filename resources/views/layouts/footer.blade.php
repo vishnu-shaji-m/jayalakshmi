@@ -444,9 +444,10 @@ document.addEventListener("DOMContentLoaded", function() {
         };
 
         document.head.appendChild(script);
-    }, );
+    }, 10);
 });
 </script>
+<!-- Include node-marquee CDN -->
 <script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>
 
 <script>
@@ -462,9 +463,18 @@ function initializeWowJs() {
         wow.init();
     }
 }
+ 
+    // Initialize nodeMarquee after document is ready
+    $(document).ready(function() {
+        if (typeof nodeMarquee !== "undefined") {
+            nodeMarquee({
+                parent: '#locationScro',
+                speed: 1
+            });
+        } else {
+            console.error("nodeMarquee is not available.");
+        }
+    });
+</script>
 
-nodeMarquee({
-    parent: '#locationScro',
-    speed: 1
-});
 </script>

@@ -15,7 +15,7 @@
         @media only screen and (min-width: 576px)
             padding: 30px 0 40px
         @media only screen and (min-width: 992px)
-            padding: 20px 0 60
+            padding: 20px 0 60px
         @media only screen and (min-width: 1551px)
             padding: 60px 0 75px
         .item
@@ -41,221 +41,213 @@
                         @media only screen and (min-width: 1441px)
                             font-size: 18px
         .cntWrap
-            h1, h2, h3, h4, h5, h6
-                line-height: 1.1
-                color: $text
-                margin: 15px 0
-                @media only screen and (min-width: 576px)
+        h1, h2, h3, h4, h5, h6
+            line-height: 1.1
+            color: $text
+            margin: 15px 0
+            @media only screen and (min-width: 576px)
+                margin: 20px 0
+            @media only screen and (min-width: 1551px)
+                margin: 30px 0
+        h1
+            color: $black
+            font-weight: 700
+            line-height: 1
+            font-size: 24px
+            font-family: $fontstack2
+            margin-bottom: 60px
+            position: relative
+            @media only screen and (min-width:578px)
+                font-size: 28px
+            @media only screen and (min-width:992px)
+                font-size: 30px
+            @media only screen and (min-width:1200px)
+                font-size: 34px
+            @media only screen and (min-width:1351px)
+                font-size: 38px
+            @media only screen and (min-width:1441px)
+                font-size: 44px
+                margin-bottom: 80px
+            @media only screen and (min-width:1551px)
+                font-size: 56px
+            span
+                font-style: italic
+                padding-right: 5px
+                font-weight: 500
+            &::after
+                content: ""
+                position: absolute
+                background: url('../images/iconLog.svg') no-repeat
+                left: 0
+                width: 80px
+                background-size: 80px
+                height: 21px
+                left: 0
+                bottom: -35px
+                @media only screen and (min-width: 1441px)
+                    width: 110px
+                    background-size: 110px
+                    height: 30px
+                    bottom: -45px
+        h2, h3
+            font-size: 16px
+            font-weight: 700
+            @media only screen and (min-width: 1200px)
+                font-size: 20px
+            @media only screen and (min-width: 1441px)
+                font-size: 28px
+            @media only screen and (min-width: 1551px)
+                font-size: 30px
+        h4, h5, h6
+            font-size: 16px
+            font-weight: 700
+            @media only screen and (min-width: 1200px)
+                font-size: 18px
+            @media only screen and (min-width: 1441px)
+                font-size: 20px
+            @media only screen and (min-width: 1551px)
+                font-size: 22px
+        img
+            max-width: 100%
+            max-height: 100%
+            will-change: transform
+            margin-bottom: 15px
+            @include imgFit
+            @media only screen and ( min-width: 576px )
+                margin-bottom: 20px
+            @media only screen and ( min-width: 992px )
+                margin-bottom: 30px
+        %legalPageTxt
+            font-size: 12px
+            line-height: 1.4
+            font-weight: 400
+            color: #111111
+            margin-bottom: 10px
+            @media only screen and (min-width: 376px)
+                font-size: 13px
+            @media only screen and (min-width: 576px)
+                font-size: 14px
+            @media only screen and (min-width: 992px)
+                font-size: 14px
+            @media only screen and (min-width: 1200px)
+                font-size: 16px
+            @media only screen and (min-width: 1441px)
+                font-size: 18px
+        .txtLg
+            font-size: 16px
+            line-height: 1.4
+            font-weight: 700
+            color: $white
+            @media only screen and (min-width: 576px)
+                font-size: 18px
+            @media only screen and (min-width: 992px)
+                font-size: 20px
+            @media only screen and (min-width: 1200px)
+                font-size: 22px
+            @media only screen and (min-width: 1441px)
+                font-size: 25px
+        p
+            @extend %legalPageTxt
+        .infoTxt
+            @extend %legalPageTxt
+            font-weight: 400
+        ul, ol
+            padding-left: 0
+            margin: 0
+            margin-bottom: 15px
+            @media only screen and (min-width: 768px)
+                margin-bottom: 20px
+            @media only screen and (min-width: 992px)
+                margin-bottom: 30px
+            li
+                @extend %legalPageTxt
+                margin: 10px 0
+                @media only screen and (min-width: 768px)
+                    margin: 15px 0
+                @media only screen and (min-width: 1441px)
                     margin: 20px 0
-                @media only screen and (min-width: 992px)
-                    margin: 30px 0
-            h1
-                color: $black
+        ol
+            padding-left: 20px
+            li
+                list-style: decimal
+                font-size: 14px
+                color: #000
                 font-weight: 700
-                line-height: 1
-                font-size: 24px
-                font-family: $fontstack2
                 margin-bottom: 10px
+                @media only screen and (min-width: 1200px)
+                    font-size: 18px
+                @media only screen and (min-width: 1441px)
+                    font-size: 22px
+                ul, ol
+                    padding-left: 20px
+                    li
+                        list-style: disc
+                        font-size: 12px
+                        font-weight: 400
+                        padding-left: 0px
+                        @media only screen and (min-width: 376px)
+                            font-size: 13px
+                        @media only screen and (min-width: 992px)
+                            font-size: 14px
+                        @media only screen and (min-width: 1200px)
+                            font-size: 16px
+                        @media only screen and (min-width: 1441px)
+                            font-size: 18px
+                        &::before
+                            content: none
+                ol
+                    li
+                        list-style: decimal
+                p
+                    margin: 10px 0px
+        ul
+            li
+                padding-left: 20px
                 position: relative
-                @media only screen and (min-width:578px)
-                    font-size: 28px
-                @media only screen and (min-width:992px)
-                    font-size: 30px
-                @media only screen and (min-width:1200px)
-                    font-size: 34px
-                @media only screen and (min-width:1351px)
-                    font-size: 38px
-                @media only screen and (min-width:1441px)
-                    font-size: 44px
-                    margin-bottom: 25px
-                @media only screen and (min-width:1551px)
-                    font-size: 56px
-                span
-                    font-style: italic
-                    padding-right: 5px
-                    font-weight: 500
-                &::after
+                &::before
                     content: ""
                     position: absolute
-                    background: url('../images/iconLog.svg') no-repeat
+                    width: 6px
+                    height: 6px
+                    border-radius: 50%
+                    background-color: #000
+                    top: 10px
                     left: 0
-                    width: 80px
-                    background-size: 80px
-                    height: 21px
-                    left: 0
-                    bottom: -35px
-                    @media only screen and (min-width: 1441px)
-                        width: 110px
-                        background-size: 110px
-                        height: 30px
-                        bottom: -45px
-            h2, h3
-                font-size: 20px
-                font-weight: 700
-                @media only screen and (min-width: 576px)
-                    font-size: 24px
-                @media only screen and (min-width: 992px)
-                    font-size: 26px
-                @media only screen and (min-width: 1200px)
-                    font-size: 28px
-                @media only screen and (min-width: 1551px)
-                    font-size: 30px
-            h4, h5, h6
-                font-size: 16px
-                font-weight: 700
-                @media only screen and (min-width: 576px)
-                    font-size: 18px
-                @media only screen and (min-width: 992px)
-                    font-size: 20px
-                @media only screen and (min-width: 1551px)
-                    font-size: 22px
-            img
-                max-width: 100%
-                max-height: 100%
-                will-change: transform
-                margin-bottom: 15px
-                @include imgFit
-                @media only screen and ( min-width: 576px )
-                    margin-bottom: 20px
-                @media only screen and ( min-width: 992px )
-                    margin-bottom: 30px
-            %legalPageTxt
-                font-size: 12px
-                line-height: 1.4
-                font-weight: 400
-                color: #111111
-                margin-bottom: 10px
-                @media only screen and (min-width: 376px)
-                    font-size: 13px
-                @media only screen and (min-width: 576px)
-                    font-size: 14px
-                @media only screen and (min-width: 992px)
-                    font-size: 14px
-                @media only screen and (min-width: 1200px)
-                    font-size: 16px
-                @media only screen and (min-width: 1441px)
-                    font-size: 18px
-            .txtLg
-                font-size: 16px
-                line-height: 1.4
-                font-weight: 700
-                color: $white
-                @media only screen and (min-width: 576px)
-                    font-size: 18px
-                @media only screen and (min-width: 992px)
-                    font-size: 20px
-                @media only screen and (min-width: 1200px)
-                    font-size: 22px
-                @media only screen and (min-width: 1441px)
-                    font-size: 25px
-            p
-                @extend %legalPageTxt
-            .infoTxt
-                @extend %legalPageTxt
-                font-weight: 400
-            ul, ol
-                padding-left: 0
-                margin: 0
-                margin-bottom: 15px
-                @media only screen and (min-width: 768px)
-                    margin-bottom: 20px
-                @media only screen and (min-width: 992px)
-                    margin-bottom: 30px
-                li
-                    @extend %legalPageTxt
-                    margin: 10px 0
-                    @media only screen and (min-width: 768px)
-                        margin: 15px 0
-                    @media only screen and (min-width: 1441px)
-                        margin: 20px 0
-            ol
-                padding-left: 20px
-                li
-                    list-style: decimal
-                    font-size: 16px
-                    color: #000
+                span
                     font-weight: 700
-                    margin-bottom: 10px
-                    @media only screen and (min-width: 576px)
-                        font-size: 18px
-                    @media only screen and (min-width: 1200px)
-                        font-size: 20px
-                    @media only screen and (min-width: 1441px)
-                        font-size: 22px
-                    ul, ol
-                        padding-left: 20px
-                        li
-                            list-style: disc
-                            font-size: 12px
-                            font-weight: 400
-                            padding-left: 0px
-                            @media only screen and (min-width: 376px)
-                                font-size: 13px
-                            @media only screen and (min-width: 576px)
-                                font-size: 14px
-                            @media only screen and (min-width: 992px)
-                                font-size: 14px
-                            @media only screen and (min-width: 1200px)
-                                font-size: 16px
-                            @media only screen and (min-width: 1441px)
-                                font-size: 18px
-                            &::before
-                                content: none
-                    ol
-                        li
-                            list-style: decimal
-                    p
-                        margin: 10px 0px
-            ul
-                li
-                    padding-left: 20px
-                    position: relative
-                    @media only screen and (min-width: 992px)
-                        padding-left: 25px
-                    &::before
-                        content: ""
-                        position: absolute
-                        width: 6px
-                        height: 6px
-                        border-radius: 50%
-                        background-color: #000
-                        top: 6px
-                        left: 0
-                    span
-                        font-weight: 700
-                        color: #111
-            table
-                display: table
-                max-width: 100%
-                margin: 5px 0
-                border-collapse: collapse
-                border-top: 1px solid rgba($basecolor, 0.2)
-                border-left: 1px solid rgba($basecolor, 0.2)
+                    color: #111
+        table
+            display: table
+            max-width: 100%
+            margin: 5px 0
+            border-collapse: collapse
+            border-top: 1px solid rgba($basecolor, 0.2)
+            border-left: 1px solid rgba($basecolor, 0.2)
+            @media only screen and (min-width: 576px)
+                margin: 10px 0
+            @media only screen and (min-width: 992px)
+                margin: 15px 0
+            th, td
+                @extend %legalPageTxt
+                line-height: 1.2
+                color: $black
+                padding: 4px 5px
+                border-right: 1px solid rgba($basecolor, 0.2)
+                border-bottom: 1px solid rgba($basecolor, 0.2)
                 @media only screen and (min-width: 576px)
-                    margin: 10px 0
+                    padding: 6px 10px
                 @media only screen and (min-width: 992px)
-                    margin: 15px 0
-                th, td
-                    @extend %legalPageTxt
-                    line-height: 1.2
-                    color: $black
-                    padding: 4px 5px
-                    border-right: 1px solid rgba($basecolor, 0.2)
-                    border-bottom: 1px solid rgba($basecolor, 0.2)
-                    @media only screen and (min-width: 576px)
-                        padding: 6px 10px
-                    @media only screen and (min-width: 992px)
-                        padding: 10px 15px
-                    @media only screen and (min-width: 1551px)
-                        padding: 15px 25px
-                th
-                    color: $white
-                    background-color: $basecolor
-                    border-color: rgba($white, 0.2)
-                tbody
-                    tr
-                        &:nth-child(even)
-                            background-color: rgba($basecolor, 0.1)
-            p, ul
-                &:has(+ h1), &:has(+ h2), &:has(+ h3), &:has(+ h4), &:has(+ h5), &:has(+ h6)
-                    margin-bottom: 25px
+                    padding: 10px 15px
+                @media only screen and (min-width: 1551px)
+                    padding: 15px 25px
+            th
+                color: $white
+                background-color: $basecolor
+                border-color: rgba($white, 0.2)
+            tbody
+                tr
+                    &:nth-child(even)
+                        background-color: rgba($basecolor, 0.1)
+        p, ul
+            &:has(+ h1), &:has(+ h2), &:has(+ h3), &:has(+ h4), &:has(+ h5), &:has(+ h6)
+                margin-bottom: 25px

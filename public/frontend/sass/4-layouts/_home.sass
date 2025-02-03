@@ -40,7 +40,7 @@
                 @media only screen and (min-width:578px)
                     font-size: 28px
                 @media only screen and (min-width:992px)
-                    font-size: 30px 
+                    font-size: 30px
                 @media only screen and (min-width:1200px)
                     font-size: 44px
                 @media only screen and (min-width:1551px)
@@ -56,10 +56,10 @@
                 position: relative
                 font-size: 12px
                 @media only screen and (min-width:578px)
-                    font-size: 14px
-                @media only screen and (min-width:768px)
-                    font-size: 16px
-                @media only screen and (min-width:1200px)
+                    font-size: 13px
+                @media only screen and (min-width:1441px)
+                    font-size: 15px
+                @media only screen and (min-width:1551px)
                     font-size: 18px
 
         .abtLx
@@ -120,7 +120,37 @@
                             width: 100%
                             height: 100%
                             overflow: hidden
+                            // background: #DDB17A
                             aspect-ratio: 515 / 510
+                            transition: all 0.5s
+                            position: relative
+                            // .wnBx
+                            //     position: absolute
+                            //     left: 0
+                            //     top: 0
+                            //     transition: all 0.5s
+                            //     bottom: 0
+                            //     margin: auto
+                            //     max-width: 160px
+                            //     right: 0
+                            //     z-index: 1
+                            //     img
+                            //         width: auto
+                            //         object-fit: contain
+                            // .bgBx
+                            //     position: absolute
+                            //     transition: all 1s
+                            //     left: 0
+                            //     top: 0
+                            //     bottom: 0
+                            //     margin: auto
+                            //     max-width: 450px
+                            //     img
+                            //         // transition: all 1s
+                            //         animation: swinging 6s linear infinite 
+                            //         width: auto
+                            //         object-fit: contain
+
                             img
                                 @include imgFit
                         .tptxt
@@ -357,6 +387,7 @@
                 left: 0
                 padding: 20px
                 z-index: 4
+                width: 70%
                 .btnSec
                     display: flex
                     flex-wrap: wrap
@@ -468,8 +499,13 @@
         >*
             padding: 10px
     .contentBx
-        max-width: 660px
+        // max-width: 590px
         width: 100%
+        max-width: 350px
+        @media only screen and (min-width: 1441px)
+            max-width: 395px
+        @media only screen and (min-width: 1551px)
+            max-width: 440px
         .mainHead
             margin-bottom: 15px
             @media only screen and (min-width: 678px)
@@ -491,7 +527,6 @@
                 font-size: 18px
             @media only screen and (min-width: 1551px)
                 font-size: 20px
-
         p
             font-weight: 300
             color: $white
@@ -634,7 +669,9 @@
                 max-width: 14px
         .swiper-button-next
             left: unset
-            right: -22px
+            right: -5px
+            @media only screen and (min-width:992px)
+                right: -22px
 
     .fashionBx
         display: block
@@ -666,7 +703,7 @@
             height: 100%
             overflow: hidden
             aspect-ratio: 300 / 420
-            img
+            img, video
                 transition: all 0.5s
                 @include imgFit
         .info
@@ -1349,6 +1386,7 @@
     position: relative
     background: #FFEDED
     padding: 40px 0 0
+    overflow: hidden
     @media only screen and (min-width:992px)
         padding: 60px 0 0
     @media only screen and (min-width:1441px)

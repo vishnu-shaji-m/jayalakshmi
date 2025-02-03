@@ -26,6 +26,41 @@
 figure {
     margin: 0 !important;
 }
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    transition: opacity 0.4s ease-out;
+}
+
+#preloader .circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #DDB17A;
+    border-radius: 50%;
+    box-shadow: 0 0 0 100vw #fff;
+}
+
+#preloader .logo {
+    width: 90px;
+    height: auto;
+    z-index: 1;
+    animation: scaleEffect 1.5s infinite alternate ease-in-out;
+}
+
+#preloader .hidden {
+    opacity: 0;
+    visibility: hidden;
+}
 </style>
 
 <script>
@@ -45,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
 })();
 
 // SITE LOADER
-function hidePreloader() {
+window.addEventListener("load", function() {
     const preloader = document.getElementById("preloader");
     const circle = document.querySelector(".circle");
 
@@ -54,26 +89,19 @@ function hidePreloader() {
 
     setTimeout(function() {
         preloader.style.display = "none";
-    }, 3000);
-}
-
-if (document.readyState === 'loading') {
-    document.addEventListener("DOMContentLoaded", hidePreloader);
-} else {
-    hidePreloader();
-}
+    }, 4000);
+});
 </script>
 
- 
+
 
 <!-- FONTS -->
 <link rel="preload"
-    href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    as="style" onload="this.onload=null;this.rel='stylesheet'">
+    href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
 <noscript>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </noscript>
 
