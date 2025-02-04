@@ -94,39 +94,41 @@
                                 </div>
                             </div>
                             <div class="locations">
-                                <ul class="allLocatins" id="locationScro">
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span>Trivandrum</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span>Kochi</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span>Thrissur</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span>Calicut</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span>Mangalore</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)" class="locatnBtn">
-                                            <span> Coming soon @ Palarivattom</span>
-                                        </a>
-                                    </li>
+                                <marquee behavior="" direction="">
+                                    <ul class="allLocatins">
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span>Trivandrum</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span>Kochi</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span>Thrissur</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span>Calicut</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span>Mangalore</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="locatnBtn">
+                                                <span> Coming soon @ Palarivattom</span>
+                                            </a>
+                                        </li>
 
-                                </ul>
+                                    </ul>
+                                </marquee>
                             </div>
                         </div>
                     </div>
@@ -194,8 +196,13 @@
                                                 <div class="lftbX">
                                                     <ul>
                                                         <li>
-                                                            <button class="accordion-button active" type="button"
-                                                                data-bs-toggle="collapse"
+                                                            <a href="about"
+                                                                class="accordion-button active d-none d-lg-block"
+                                                                data-bs-target="#submenuAccord1">
+                                                                Sarees
+                                                            </a>
+                                                            <button class="accordion-button active d-block d-lg-none"
+                                                                type="button" data-bs-toggle="collapse"
                                                                 data-bs-target="#submenuAccord1" aria-expanded="true"
                                                                 aria-controls="submenuAccord1">
                                                                 Sarees
@@ -442,7 +449,7 @@
                                                             <div id="submenuAccord5" class="accordion-collapse collapse"
                                                                 data-bs-parent="#submenuAccord">
                                                                 <div class="accordion-body">
-                                                                    <ul>
+                                                                    <!-- <ul>
                                                                         <li>
                                                                             <a href="javascript:void(0)" class="cmnLink"
                                                                                 aria-label="cmnlink">
@@ -473,7 +480,10 @@
                                                                                 Silk Saree
                                                                             </a>
                                                                         </li>
-                                                                    </ul>
+                                                                    </ul> -->
+                                                                    <div class="coming_soon">
+                                                                        coming soon ....
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -572,7 +582,7 @@
                                         <a href="bookSlot" class="accordion-button hoveranim visitBtn"
                                             aria-label="menu_link">
 
-                                            <span>ViSIT US</span>
+                                            <span>Visit Our Flagship Store</span>
                                         </a>
                                     </div>
                                 </div>
@@ -656,7 +666,7 @@
                         </div>
                         <div class="ritBx">
                             <a href="bookSlot" class="hoveranim visitBtn upper" aria-label="menu_link">
-                                <span>ViSIT US</span>
+                                <span>Visit Our Flagship Store</span>
                             </a>
                             <div class="cNacBtnWrap">
                                 <button type="button" class="cNacBtn" aria-label="menu button">
@@ -835,7 +845,6 @@ $(document).ready(function() {
     applyHoverEffect();
     $(window).resize(applyHoverEffect);
 });
-
 </script>
 
 

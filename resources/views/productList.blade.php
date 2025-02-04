@@ -202,8 +202,8 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="{{asset('frontend/images/pr2.webp')}}" class="viewBtn" data-fancybox="gallery"
-                                        aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr2.webp')}}" class="viewBtn"
+                                        data-fancybox="gallery" aria-label="view-Label">
                                         VIEW
                                     </a>
                                 </div>
@@ -228,8 +228,8 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="{{asset('frontend/images/pr3.webp')}}" class="viewBtn" data-fancybox="gallery"
-                                        aria-label="view-Label">
+                                    <a href="{{asset('frontend/images/pr3.webp')}}" class="viewBtn"
+                                        data-fancybox="gallery" aria-label="view-Label">
                                         VIEW
                                     </a>
                                 </div>
@@ -254,7 +254,8 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="{{asset('frontend/images/pr4.webp')}}" class="viewBtn" aria-label="view-Label" data-fancybox="gallery">
+                                    <a href="{{asset('frontend/images/pr4.webp')}}" class="viewBtn"
+                                        aria-label="view-Label" data-fancybox="gallery">
                                         VIEW
                                     </a>
                                 </div>
@@ -279,7 +280,8 @@
                         <div class="info">
                             <div class="btnSec">
                                 <div class="item">
-                                    <a href="{{asset('frontend/images/pr5.webp')}}" class="viewBtn" aria-label="view-Label" data-fancybox="gallery">
+                                    <a href="{{asset('frontend/images/pr5.webp')}}" class="viewBtn"
+                                        aria-label="view-Label" data-fancybox="gallery">
                                         VIEW
                                     </a>
                                 </div>
@@ -304,7 +306,11 @@
                 <li><a href="javascript:void(0)" aria-label="links" data-page="4">04</a></li>
                 <li class="next active"><a href="javascript:void(0)" aria-label="links" data-page="1"></a></li>
             </ul>
+            <div class="comingSoon">
+                coming soon ....
+            </div>
         </div>
+
 </div>
 </section>
 
@@ -367,7 +373,7 @@ $(document).ready(function() {
         spaceBetween: 35,
         speed: 200,
         autoplay: {
-            delay: 6000,
+            delay: 3000,
             disableOnInteraction: false,
         },
 

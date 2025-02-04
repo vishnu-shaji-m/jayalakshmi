@@ -16,6 +16,8 @@
     transition: background 0s ease
     border-bottom: 1px solid rgba($black,0.4)
     padding-bottom: 8px
+    @media only screen and (min-width: 992px)
+        background: #fff
     &.hide
         display: none
     &.sticky
@@ -219,32 +221,36 @@
                             width: calc(100% - 145px)
                             @media only screen and (min-width: 992px)
                                 width: calc(100% - 260px)
+                            marquee
+                                overflow: hidden
+                                white-space: nowrap
+                                position: relative
+                                width: 100%
                             .allLocatins
-                                display: flex
+                                // display: flex
+                                // align-items: center
+                                display: flex !important
                                 align-items: center
-                                .node-marquee__el
-                                    display: flex !important
-                                    align-items: center
+                                .locatnBtn
+                                    display: flex
+                                    width: fit-content
+                                    color: #545454
+                                    font-size: 15px
+                                    padding: 0 10px
+                                    transition: all 0.5s
+                                    @media only screen and (min-width: 992px)
+                                        font-size: 16px
+                                    &:hover
+                                        color: $basecolor
+                                li
+                                    display: block
+                                    &:not(:last-of-type)
                                     .locatnBtn
-                                        display: flex
-                                        width: fit-content
-                                        color: #545454
-                                        font-size: 15px
-                                        padding: 0 10px
-                                        transition: all 0.5s
-                                        @media only screen and (min-width: 992px)
-                                            font-size: 16px
-                                        &:hover
-                                            color: $basecolor
-                                    li
+                                        border-right: 1px solid rgba(84, 84, 84, 0.5)
+                                    a
                                         display: block
-                                        &:not(:last-of-type)
-                                        .locatnBtn
-                                            border-right: 1px solid rgba(84, 84, 84, 0.5)
-                                        a 
-                                            display: block
-                                        span
-                                            display: block
+                                    span
+                                        display: block
 
         .cNacBtn
             --btn-w: 28px
@@ -291,9 +297,9 @@
                 @media only screen and (min-width: 576px)
                     margin: 4px 0
                 &:nth-child(1)
-                    width: 85%
+                    width: 85% !important
                 &:nth-child(3)
-                    width: 55%
+                    width: 55% !important
             .icon
                 width: 24px
                 height: 24px
@@ -321,20 +327,22 @@
                 background: $basecolor
                 color: $white
                 font-weight: 400
-                min-width: 80px
-                height: 35px
-                font-size: 14px
+                min-width: 100px
+                height: 30px
+                font-size: 11px
                 @include center
+                text-align: center
+                text-transform: capitalize !important
                 @media only screen and (min-width: 360px)
-                    font-size: 16px
-                    min-width: 90px
-                    height: 40px
+                    font-size: 12px
+                    min-width: 135px
+                    height: 35px
                 @media only screen and (min-width: 578px)
-                    min-width: 103px
+                    min-width: 140px
                     height: 40px
+                    font-size: 12px
                 @media only screen and (min-width: 992px)
                     display: none
-
         #CNavPOP
             padding: 10px 0
             @media only screen and (min-width: 992px)
@@ -527,8 +535,10 @@
                 &:has(.megMenu)
                     .accordion-button
                         @media only screen and (min-width: 992px)
-                            padding-right: 20px
+                            padding-right: 12px
                             // padding-bottom: 25px
+                        @media only screen and (min-width: 1441px)
+                            padding-right: 20px
                         &:not(.collapsed)
                             &::before
                                 opacity: 1
@@ -583,7 +593,7 @@
                             padding: 0
                             min-width: 450px
                             top: 100%
-                            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08) inset 
+                            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08) inset
                         @media only screen and (min-width:1441px)
                             // top: calc(100% + 3px)
                             min-width: 540px
@@ -634,6 +644,7 @@
                                             color: #1D1D1D
                                             transition: all 0.5s
                                             position: relative
+                                            display: block
                                             &:hover
                                                 background: rgba(255, 223, 223, 1)
                                                 color: $basecolor
@@ -772,25 +783,36 @@
                             color: $white
                             height: 40px
                             width: 105px
-                            font-size: 16px
+                            font-size: 12px
                             font-weight: 400
                             margin: 0px
                             margin-top: 15px
                             text-align: center
                             @include center
                             margin-bottom: 40px
+                            text-transform: capitalize !important
                             @media only screen and (min-width: 992px)
-                                min-width: 105px
+                                min-width: 145px
                                 margin: 0
                                 height: 40px
                                 width: 100%
                             @media only screen and (min-width: 1200px)
-                                font-size: 16px
-                                min-width: 130px
+                                font-size: 12px
+                                min-width: 145px
                             @media only screen and (min-width: 1351px)
                                 height: 45px
                                 min-width: 150px
-
+                            &:hover
+                                @media only screen and (max-width: 578px)
+                                    background: $basecolor !important
+                                    color: #fff !important
+                            &.hoveranim
+                                span
+                                    @media only screen and (max-width: 578px)
+                                        color: #fff !important
+                                &::before
+                                    @media only screen and (max-width: 578px)
+                                        display: none !important
                         &::after
                             display: none
             .logoBx
@@ -800,7 +822,14 @@
                     display: none
                 img
                     @include imgFit
-
+    .coming_soon
+        background: linear-gradient(270deg, #EAAA56 0%, #846031 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        display: inline-block
+        font-size: 18px
+        font-weight: 700
+        text-transform: uppercase
 .noBanner
     #Header
         #HeaderMain

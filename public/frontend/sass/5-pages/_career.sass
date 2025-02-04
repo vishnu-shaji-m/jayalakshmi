@@ -46,11 +46,12 @@
                             -moz-columns: 2
                             column-gap: 20px
                         li
-                            font-size: 14px
+                            font-size: 15px
                             color: #111111
                             position: relative
                             padding-left: 25px
                             padding-bottom: 15px
+                            font-weight: 500
                             @media only screen and (min-width:1351px)
                                 font-size: 16px
                             @media only screen and (min-width:1551px)
@@ -63,12 +64,19 @@
                                 width: 10px
                                 height: 10px
                                 background-size: 10px
-                                top: 5px
+                                top: 6px
                                 left: 0
                                 @media only screen and (min-width:1200px)
                                     width: 14px
                                     height: 14px
                                     background-size: 14px
+                                    top: 5px
+                                @media only screen and (min-width:1351px)
+                                    top: 5px
+                            a 
+                                color: #111111
+                                &:hover
+                                    color: $basecolor
             .rgt
                 width: 100%
                 padding: 10px 0px

@@ -68,6 +68,9 @@
             .form-control
                 border: none
                 border-radius: 0px
+                width: calc( 100% - 34px )
+                @media only screen and (min-width:1200px)
+                    width: calc( 100% - 50px )
                 &::placeholder
                     font-size: 14px
                     color: #ACACAC
@@ -76,12 +79,18 @@
                         font-size: 16px
                     @media only screen and (min-width:1441px)
                         font-size: 18px
+        .help-block
+            margin: 2px 20px
+            bottom: -20px 
         button
             display: block
             background-color: #fff
             padding-right: 10px
+            width: 34px
             @media only screen and (min-width:1200px)
                 padding-right: 25px
+                width: 50px
+                width: 50px
     .cmnLink
         display: flex
         align-items: center
@@ -114,8 +123,10 @@
             align-items: center
             white-space-collapse: preserve-spaces
             span
-                padding-left: 15px
+                padding-left: 6px
                 width: calc(100% - 16px)
+                @media only screen and (min-width:1200px)
+                    padding-left: 15px
                 @media only screen and (min-width:1551px)
                     width: calc(100% - 22px)
     .contBx
@@ -319,7 +330,7 @@
             padding: 10px 0
         >*
             padding: 8px
-            @media only screen and (max-width:992px)
+            @media only screen and (max-width: 768px)
                 width: 100%
             // width: calc(100% / 3)
             &:nth-child(1)
