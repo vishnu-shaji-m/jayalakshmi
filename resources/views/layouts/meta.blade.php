@@ -18,8 +18,8 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="https://uxdev.intersmarthosting.in/">
 
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#064352">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#064352">
-<meta name="msapplication-TileColor" content="#064352">
-<meta name="msapplication-navbutton-color" content="#064352">
-<meta name="apple-mobile-web-app-status-bar-style" content="#064352">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#EA2126">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#EA2126">
+<meta name="msapplication-TileColor" content="#EA2126">
+<meta name="msapplication-navbutton-color" content="#EA2126">
+<meta name="apple-mobile-web-app-status-bar-style" content="#EA2126">

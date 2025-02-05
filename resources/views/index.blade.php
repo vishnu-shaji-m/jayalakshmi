@@ -351,6 +351,12 @@
                             <p>Discover a breathtaking collection of traditional and contemporary sarees, woven with
                                 love and adorned with intricate details.</p>
                         </div>
+                        <ul>
+                            <li> Personalized selection </li>
+                            <li>Intimate Setting for families</li>
+                            <li>Total Privacy</li>
+                            <li>Stylist Access</li>
+                        </ul>
                         <a href="javascript:void(0)" class="hoveranim cmnBtn">
                             <span>VIEW COLLECTIONS</span>
                         </a>
@@ -564,6 +570,7 @@
                 <p>
                     Discover the Bridal Suite—a private, luxurious space tailored just for you. Enjoy;
                 </p>
+
                 <ul>
                     <li> Personalized selection </li>
                     <li>Intimate Setting for families</li>
@@ -1520,7 +1527,7 @@ $(document).ready(function() {
         }
     });
 
-   
+
 
 });
 </script>

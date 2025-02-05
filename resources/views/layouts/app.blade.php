@@ -16,7 +16,7 @@
     <div id="preloader">
         <div class="circle">
         </div>
-        <img loading="lazy" decoding="async" class="logo" src="{{asset('frontend/images/logo.svg')}}" width="108"
+        <img loading="lazy" decoding="async" class="logo" src="{{asset('frontend/images/loder.svg')}}" width="108"
             height="92" alt="logo">
     </div>
 
