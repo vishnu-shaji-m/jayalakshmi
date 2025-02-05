@@ -231,7 +231,7 @@
                                 </div>
                                 <div class="item wow animate__fadeInUp" data-wow-duration="1.4s">
                                     <div class="countBx">
-                                        <div class="num"><span data-count="2">0 </span>Million</div>
+                                        <div class="num"><span data-count="200">0 </span>Million+</div>
                                         <div class="txt">Jayalakshmi
                                             Brides</div>
                                     </div>

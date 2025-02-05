@@ -45,7 +45,7 @@ figure {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: #DDB17A;
+    /* background: #DDB17A;  */
     border-radius: 50%;
     box-shadow: 0 0 0 100vw #fff;
 }
