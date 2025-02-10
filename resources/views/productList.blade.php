@@ -208,10 +208,10 @@
                                     </a>
                                 </div>
                                 <div class="item">
-                                    <a href="#!" aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
+                                    <button aria-label="enq" class="enq viewBtn" data-bs-toggle="modal"
                                         data-bs-target="#subCategoryModal">
                                         ENQUIRE NOW
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                             <div class="mainTxt">Green Kanjivaram Saree</div>

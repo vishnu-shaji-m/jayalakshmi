@@ -22,7 +22,7 @@
                             <a href="index" aria-label="links">Home</a>
                         </li>
                         <li>
-                            <a href="#!" class="current" aria-label="links">About Us</a>
+                            <span class="current" aria-label="links">About Us</span>
                         </li>
                     </ul>
                 </div>
